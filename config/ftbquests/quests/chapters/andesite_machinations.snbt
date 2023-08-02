@@ -1,0 +1,114 @@
+{
+	id: "474466DA563BF007"
+	group: "0B1836238D543CCD"
+	order_index: 3
+	filename: "andesite_machinations"
+	title: "Copper Conception"
+	icon: "create:copper_casing"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 1.0d
+			y: 1.0d
+			dependencies: [
+				"4C351B64DC9AB23F"
+				"037C6A9E7331A19C"
+			]
+			id: "31284DCE27BBC499"
+			tasks: [{
+				id: "6E5E1992F98A4705"
+				type: "item"
+				item: "minecraft:anvil"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			dependencies: ["31284DCE27BBC499"]
+			id: "71D543EAC26F0236"
+			tasks: [{
+				id: "2998011607F5EC74"
+				type: "item"
+				item: "create:copper_sheet"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 0.0d
+			dependencies: ["71D543EAC26F0236"]
+			id: "3B13E43B384FE405"
+			tasks: [{
+				id: "5E6D9940BD1EF3EF"
+				type: "item"
+				item: "create:copper_valve_handle"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 0.0d
+			dependencies: ["71D543EAC26F0236"]
+			id: "456C705236261386"
+			tasks: [{
+				id: "071496276D89C17F"
+				type: "item"
+				item: "create:copper_casing"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 1.0d
+			dependencies: [
+				"456C705236261386"
+				"36C7D318C66C9ACC"
+			]
+			id: "6F59F0653A09FA8F"
+			tasks: [{
+				id: "0E4D8890BD00842A"
+				type: "item"
+				item: "create:spout"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			dependencies: ["456C705236261386"]
+			id: "50FB343AADA740CA"
+			tasks: [{
+				id: "187F95C0C45BB1D4"
+				type: "item"
+				item: "create:item_drain"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 1.0d
+			dependencies: [
+				"456C705236261386"
+				"295D222683F0174C"
+			]
+			id: "3B95669457605DA9"
+			tasks: [{
+				id: "4E965DD16BBAAF8A"
+				type: "item"
+				item: "compressedcreativity:air_blower"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 1.0d
+			dependencies: ["71D543EAC26F0236"]
+			id: "05EF6F5041BD1D59"
+			tasks: [{
+				id: "024369350E1CBD62"
+				type: "item"
+				item: {
+					id: "create:copper_backtank"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+	]
+	quest_links: [ ]
+}

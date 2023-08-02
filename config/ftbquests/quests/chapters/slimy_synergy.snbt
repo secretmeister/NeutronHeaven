@@ -1,0 +1,363 @@
+{
+	id: "02785D52C1682D9D"
+	group: "0B1836238D543CCD"
+	order_index: 4
+	filename: "slimy_synergy"
+	title: "Slimy Synergy"
+	icon: "tconstruct:slimesteel_ingot"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -2.0d
+			y: -4.0d
+			dependencies: [
+				"650FF8F8F3DA9C06"
+				"19518A85318783FF"
+				"4887A0F37F0FF05D"
+			]
+			id: "535FF2C776D23901"
+			tasks: [{
+				id: "1F60AAFF2C48C936"
+				type: "item"
+				item: "tconstruct:sky_slime_ball"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -4.0d
+			dependencies: [
+				"535FF2C776D23901"
+				"1FD5E5AC1B09F3CE"
+			]
+			id: "71210FE62C24CCDE"
+			tasks: [{
+				id: "6A51954E2E705469"
+				type: "item"
+				item: "tconstruct:slimesteel_ingot"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -1.5d
+			description: ["The crushiest block"]
+			dependencies: [
+				"4C351B64DC9AB23F"
+				"037C6A9E7331A19C"
+			]
+			id: "6C8CB54AB1A7A411"
+			tasks: [{
+				id: "3FC073446574B207"
+				type: "item"
+				item: "minecraft:anvil"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -1.5d
+			dependencies: ["6C8CB54AB1A7A411"]
+			id: "3EC80E2120E24ADA"
+			tasks: [{
+				id: "53EB43683B3DEBAE"
+				type: "item"
+				item: "create:iron_sheet"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -2.5d
+			dependencies: ["3EC80E2120E24ADA"]
+			id: "04C49E6C439DF14C"
+			tasks: [{
+				id: "49C8539DCD01F1EA"
+				type: "item"
+				item: "minecraft:blast_furnace"
+			}]
+		}
+		{
+			title: "Pressure Chamber"
+			icon: "pneumaticcraft:pressure_chamber_wall"
+			x: -2.5d
+			y: -2.5d
+			dependencies: ["1B1146A650021F90"]
+			id: "650FF8F8F3DA9C06"
+			tasks: [{
+				id: "039B7B7918BD4A92"
+				type: "item"
+				item: "pneumaticcraft:pressure_chamber_wall"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -2.5d
+			dependencies: ["1988CC578B98690C"]
+			id: "1FD5E5AC1B09F3CE"
+			tasks: [{
+				id: "6CCBA688D5B1060F"
+				type: "item"
+				item: "tconstruct:scorched_alloyer"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.5d
+			dependencies: [
+				"3B95669457605DA9"
+				"0CD1D31C720D8760"
+				"274489E7A89845B8"
+			]
+			id: "1988CC578B98690C"
+			tasks: [{
+				id: "25339289EF417052"
+				type: "item"
+				item: "tconstruct:scorched_brick"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -4.0d
+			dependencies: [
+				"04C49E6C439DF14C"
+				"04036B57D522636E"
+				"2E7AA8DC7F4A93D0"
+			]
+			id: "19518A85318783FF"
+			tasks: [{
+				id: "5C67867D41A8D892"
+				type: "item"
+				item: "tconstruct:earth_slime_crystal"
+			}]
+		}
+		{
+			x: -4.5d
+			y: -2.5d
+			dependencies: ["6F59F0653A09FA8F"]
+			id: "04036B57D522636E"
+			tasks: [{
+				id: "559D4CE836EE4693"
+				type: "item"
+				item: "create:spout"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -2.5d
+			dependencies: [
+				"6C8CB54AB1A7A411"
+				"0CD1D31C720D8760"
+			]
+			id: "4887A0F37F0FF05D"
+			tasks: [{
+				id: "53A9CAA326AA0432"
+				type: "item"
+				item: "minecraft:lapis_lazuli"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -1.5d
+			dependencies: ["5A0C5186D79252F3"]
+			id: "49902A8191A56842"
+			tasks: [{
+				id: "333F48BE9A7BCD5C"
+				type: "item"
+				item: "minecraft:lightning_rod"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -1.5d
+			description: ["Burning skyslime might cause the sky to unleash it's fury"]
+			dependencies: ["49902A8191A56842"]
+			id: "0CD1D31C720D8760"
+			tasks: [{
+				id: "0DABCCC4641CE1B3"
+				type: "item"
+				item: "tconstruct:soul_glass"
+			}]
+		}
+		{
+			title: "Mushroom"
+			x: 2.0d
+			y: -4.0d
+			description: ["There is tell of spores which spread the mushroom's influence"]
+			dependencies: [
+				"71210FE62C24CCDE"
+				"192815939B1F0D99"
+				"046DF423E57F6695"
+			]
+			id: "6C2ED88A8B94729A"
+			tasks: [
+				{
+					id: "677C82A65E0C9045"
+					type: "item"
+					item: "minecraft:brown_mushroom"
+				}
+				{
+					id: "00BDE82A5D63FDAE"
+					type: "item"
+					item: "minecraft:red_mushroom"
+				}
+			]
+		}
+		{
+			x: 2.5d
+			y: -2.5d
+			dependencies: ["6C97B793DD1F7215"]
+			id: "192815939B1F0D99"
+			tasks: [{
+				id: "749720CC6F48AA94"
+				type: "item"
+				item: "pneumaticcraft:vegetable_oil_bucket"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -2.5d
+			dependencies: ["71210FE62C24CCDE"]
+			id: "27DA28702C374D05"
+			tasks: [{
+				id: "50046869C44037D0"
+				type: "item"
+				item: {
+					id: "tconstruct:pick_head"
+					Count: 1b
+					tag: {
+						Material: "tconstruct:slimesteel"
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: -1.5d
+			dependencies: ["31284DCE27BBC499"]
+			id: "41F478375CFCE3F3"
+			tasks: [{
+				id: "789646F3911DB866"
+				type: "item"
+				item: {
+					id: "tconstruct:tool_handle"
+					Count: 1b
+					tag: {
+						Material: "tconstruct:rock"
+					}
+				}
+			}]
+		}
+		{
+			title: "Pickadze"
+			x: 1.5d
+			y: -2.5d
+			dependencies: [
+				"0AAF53D8A5E0C1E4"
+				"27DA28702C374D05"
+				"41F478375CFCE3F3"
+			]
+			id: "046DF423E57F6695"
+			tasks: [{
+				id: "276508CD7E646B82"
+				type: "item"
+				item: {
+					id: "tconstruct:pickadze"
+					Count: 1b
+					tag: {
+						tic_multipliers: {
+							"tconstruct:mining_speed": 0.75f
+							"tconstruct:attack_damage": 1.15f
+							"tconstruct:durability": 1.3f
+						}
+						tic_stats: {
+							"tconstruct:attack_speed": 1.3f
+							"tconstruct:mining_speed": 4.3312497f
+							"tconstruct:attack_damage": 2.3f
+							"tconstruct:harvest_tier": "minecraft:diamond"
+							"tconstruct:durability": 730.6f
+						}
+						tic_broken: 0b
+						tic_modifiers: [
+							{
+								name: "tconstruct:overslime"
+								level: 1s
+							}
+							{
+								name: "tconstruct:bane_of_sssss"
+								level: 1s
+							}
+							{
+								name: "tconstruct:stonebound"
+								level: 1s
+							}
+							{
+								name: "tconstruct:dwarven"
+								level: 1s
+							}
+							{
+								name: "tconstruct:overcast"
+								level: 1s
+							}
+							{
+								name: "tconstruct:pathing"
+								level: 1s
+							}
+						]
+						tic_materials: [
+							"tconstruct:slimesteel"
+							"tconstruct:rock"
+							"tconstruct:copper"
+						]
+						Damage: 0
+						tic_volatile_data: {
+							"tconstruct:overslime_cap": 135
+							"tconstruct:overslime_friend": 1b
+						}
+						tic_persistent_data: {
+							abilities: 1
+							upgrades: 3
+						}
+					}
+				}
+				match_nbt: false
+			}]
+		}
+		{
+			x: 1.0d
+			y: -1.5d
+			dependencies: ["5F78FB2A53E1932D"]
+			id: "274489E7A89845B8"
+			tasks: [{
+				id: "08937E003778D4E8"
+				type: "item"
+				item: {
+					id: "tconstruct:flint_and_brick"
+					Count: 1b
+					tag: {
+						tic_stats: {
+							"tconstruct:durability": 100.0f
+						}
+						tic_broken: 0b
+						Damage: 0
+						tic_modifiers: [
+							{
+								name: "tconstruct:fiery"
+								level: 1s
+							}
+							{
+								name: "tconstruct:scorching"
+								level: 1s
+							}
+							{
+								name: "tconstruct:firestarter"
+								level: 1s
+							}
+						]
+						tic_persistent_data: {
+							upgrades: 1
+						}
+					}
+				}
+			}]
+		}
+	]
+	quest_links: [ ]
+}

@@ -1,0 +1,371 @@
+{
+	id: "03E40A625528D6DC"
+	group: "437B64C75C6F34C8"
+	order_index: 0
+	filename: "sky_of_beginning"
+	title: "Botanic Beckoning"
+	icon: "botania:pure_daisy"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -7.0d
+			y: 1.0d
+			dependencies: ["6C2ED88A8B94729A"]
+			id: "4F545A6BD04F9808"
+			tasks: [{
+				id: "224E31E5B459A7D3"
+				type: "item"
+				item: "botania:apothecary_default"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 0.0d
+			dependencies: [
+				"4F545A6BD04F9808"
+				"57BC98F4EFBC35D0"
+				"4793BC32BF5C3531"
+			]
+			id: "5C11E253B8480B88"
+			tasks: [{
+				id: "3EFC76EEFF3414FA"
+				type: "item"
+				item: "botania:pure_daisy"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 1.0d
+			dependencies: ["535FF2C776D23901"]
+			id: "57BC98F4EFBC35D0"
+			tasks: [{
+				id: "38DF5EA10CE4130A"
+				type: "item"
+				item: "minecraft:water_bucket"
+			}]
+		}
+		{
+			x: -8.0d
+			y: 0.0d
+			dependencies: [
+				"0AA6397E19FDD6D7"
+				"6F59F0653A09FA8F"
+				"0909F7157C567D58"
+			]
+			id: "4793BC32BF5C3531"
+			tasks: [{
+				id: "2F1D69407FB43044"
+				type: "item"
+				item: "minecraft:white_dye"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 1.0d
+			dependencies: ["5C11E253B8480B88"]
+			id: "1E2DE2693196501E"
+			tasks: [{
+				id: "408417A3D20C3853"
+				type: "item"
+				item: "botania:livingrock"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 2.0d
+			dependencies: ["1E2DE2693196501E"]
+			id: "192BD709F5C629D1"
+			tasks: [{
+				id: "6AD6A72D19EE6C7B"
+				type: "item"
+				item: "botania:mana_pool"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 5.0d
+			dependencies: ["72CE81EB18FBE5F2"]
+			id: "41430DBE61B489F1"
+			tasks: [{
+				id: "38CD79C8F7888F30"
+				type: "item"
+				item: "botania:runic_altar"
+			}]
+		}
+		{
+			x: -7.0d
+			y: 2.0d
+			dependencies: [
+				"558940C3BAABE3D6"
+				"0AA6397E19FDD6D7"
+				"02B2D5DABAFAD89D"
+				"4F545A6BD04F9808"
+			]
+			id: "65E9BDFB82E2D7CF"
+			tasks: [{
+				id: "6E79BCE67F164503"
+				type: "item"
+				item: "botania:endoflame"
+			}]
+		}
+		{
+			x: -8.0d
+			y: 3.0d
+			dependencies: ["046DF423E57F6695"]
+			id: "558940C3BAABE3D6"
+			tasks: [{
+				id: "7B561BEB09FBF186"
+				type: "item"
+				item: "minecraft:beetroot"
+			}]
+		}
+		{
+			x: -8.0d
+			y: 1.0d
+			dependencies: [
+				"1B1146A650021F90"
+				"5AFEABBD7EED079B"
+				"4C351B64DC9AB23F"
+			]
+			id: "0AA6397E19FDD6D7"
+			tasks: [{
+				id: "47CC489E664CE8C6"
+				type: "item"
+				item: "create:millstone"
+			}]
+		}
+		{
+			x: -8.0d
+			y: 2.0d
+			dependencies: ["046DF423E57F6695"]
+			id: "02B2D5DABAFAD89D"
+			tasks: [{
+				id: "4126339A33314616"
+				type: "item"
+				item: "minecraft:cocoa_beans"
+			}]
+		}
+		{
+			title: "Mana Materials"
+			icon: "botania:manasteel_ingot"
+			x: -5.0d
+			y: 3.5d
+			dependencies: [
+				"192BD709F5C629D1"
+				"65E9BDFB82E2D7CF"
+				"05CFC69251B16453"
+				"6EA8648EB67181A7"
+			]
+			id: "72CE81EB18FBE5F2"
+			tasks: [
+				{
+					id: "4EB4CA0894DCA397"
+					type: "item"
+					item: "botania:manasteel_ingot"
+				}
+				{
+					id: "0CD86E0786012FFB"
+					type: "item"
+					item: "botania:mana_diamond"
+				}
+				{
+					id: "4CDF5476B8694792"
+					type: "item"
+					item: "botania:quartz_mana"
+				}
+				{
+					id: "586A7BB90C6372DD"
+					type: "item"
+					item: "botania:mana_powder"
+				}
+			]
+		}
+		{
+			x: -6.0d
+			y: 7.0d
+			dependencies: [
+				"41430DBE61B489F1"
+				"194A44D04A80BDB6"
+			]
+			id: "6E0C1DFE3784B4C4"
+			tasks: [{
+				id: "39CAE789718E9689"
+				type: "item"
+				item: "botania:rune_earth"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 7.0d
+			dependencies: [
+				"41430DBE61B489F1"
+				"63C36487E18FBF96"
+				"73DE3999221D25DA"
+			]
+			id: "535B256EEBA8FCC3"
+			tasks: [{
+				id: "63194E1B35FBD458"
+				type: "item"
+				item: "botania:rune_air"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 7.0d
+			dependencies: [
+				"41430DBE61B489F1"
+				"29E1F886D3B50A2A"
+			]
+			id: "5646D6F069B8F165"
+			tasks: [{
+				id: "175445C373B23B29"
+				type: "item"
+				item: "botania:rune_fire"
+			}]
+		}
+		{
+			x: -7.0d
+			y: 7.0d
+			dependencies: [
+				"41430DBE61B489F1"
+				"63C36487E18FBF96"
+				"6224906F31FA2A4A"
+			]
+			id: "74AA7B48781A88E8"
+			tasks: [{
+				id: "260D138797C154D3"
+				type: "item"
+				item: "botania:rune_water"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 7.0d
+			subtitle: "Unfinished"
+			id: "29E1F886D3B50A2A"
+			tasks: [{
+				id: "5B45CD84DDA5FEC5"
+				type: "item"
+				item: "minecraft:nether_wart"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 5.5d
+			subtitle: "Not Yet Implemented"
+			id: "73DE3999221D25DA"
+			tasks: [{
+				id: "4A6A826C0EA08D98"
+				type: "item"
+				item: "minecraft:feather"
+			}]
+		}
+		{
+			x: -6.5d
+			y: 5.5d
+			subtitle: "Not Finished"
+			id: "63C36487E18FBF96"
+			tasks: [{
+				id: "7AD8E4E9A3F73729"
+				type: "item"
+				item: "minecraft:string"
+			}]
+		}
+		{
+			x: -8.0d
+			y: 7.0d
+			subtitle: "Also Not Finished"
+			id: "6224906F31FA2A4A"
+			tasks: [{
+				id: "4E7C3E15968FB6E0"
+				type: "item"
+				item: "minecraft:sugar_cane"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 7.0d
+			dependencies: [
+				"41430DBE61B489F1"
+				"43BA0605185EEDF0"
+			]
+			id: "09C9D61131C1E823"
+			tasks: [{
+				id: "7D927434663584FE"
+				type: "item"
+				item: "botania:rune_mana"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 8.5d
+			subtitle: "No Chance"
+			id: "43BA0605185EEDF0"
+			tasks: [{
+				id: "422151173022662B"
+				type: "item"
+				item: "minecraft:ender_pearl"
+			}]
+		}
+		{
+			x: -6.5d
+			y: 8.5d
+			subtitle: "No Recipe"
+			id: "194A44D04A80BDB6"
+			tasks: [{
+				id: "6FEED4FCB5269C28"
+				type: "item"
+				item: "minecraft:deepslate"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 2.0d
+			dependencies: ["0064B3E23969AFF5"]
+			id: "05CFC69251B16453"
+			tasks: [{
+				id: "3E0FE8082E522F46"
+				type: "item"
+				item: "botania:mana_spreader"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 1.0d
+			dependencies: [
+				"5C11E253B8480B88"
+				"470581C32012496F"
+			]
+			id: "0064B3E23969AFF5"
+			tasks: [{
+				id: "749EEC0BC91FEBB9"
+				type: "item"
+				item: "botania:livingwood_log"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 1.5d
+			dependencies: ["6C97B793DD1F7215"]
+			id: "470581C32012496F"
+			tasks: [{
+				id: "459B20CF8DAA3A7F"
+				type: "item"
+				item: "minecraft:basalt"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 2.0d
+			dependencies: ["57BC98F4EFBC35D0"]
+			id: "23696CD4F1516DA1"
+			tasks: [{
+				id: "7BF127D3B50EE93B"
+				type: "item"
+				item: "minecraft:redstone"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

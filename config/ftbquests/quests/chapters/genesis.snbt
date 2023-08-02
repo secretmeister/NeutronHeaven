@@ -1,0 +1,245 @@
+{
+	id: "0AE586E57D991939"
+	group: "0B1836238D543CCD"
+	order_index: 0
+	filename: "genesis"
+	title: "The Beginning"
+	icon: "minecraft:cobblestone"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -2.5d
+			y: -2.0d
+			description: [
+				"This book seems to have a page that provides endless cobblestone"
+				"And this dimension allows you to break it into four parts, the same as the whole"
+			]
+			id: "4D0586A728999E99"
+			tasks: [{
+				id: "05744176C4E6A740"
+				type: "item"
+				item: "minecraft:cobblestone"
+				count: 64L
+			}]
+		}
+		{
+			x: -2.0d
+			y: -4.0d
+			description: ["It floats like an angel, what else?"]
+			dependencies: ["031875BE79D6F923"]
+			id: "7C73653F015E2D43"
+			tasks: [{
+				id: "247055CC8DEA4BFC"
+				type: "item"
+				item: "angelblockrenewed:angel_block"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -3.0d
+			dependencies: ["4D0586A728999E99"]
+			id: "031875BE79D6F923"
+			tasks: [{
+				id: "4914A72EA8403325"
+				type: "item"
+				item: {
+					id: "tconstruct:sledge_hammer"
+					Count: 1b
+					tag: {
+						tic_multipliers: {
+							"tconstruct:mining_speed": 0.4f
+							"tconstruct:attack_damage": 1.35f
+							"tconstruct:durability": 4.0f
+						}
+						tic_stats: {
+							"tconstruct:attack_speed": 0.75f
+							"tconstruct:mining_speed": 1.68f
+							"tconstruct:attack_damage": 5.4f
+							"tconstruct:harvest_tier": "minecraft:stone"
+							"tconstruct:durability": 464.0f
+						}
+						tic_broken: 0b
+						tic_modifiers: [
+							{
+								name: "tconstruct:smite"
+								level: 2s
+							}
+							{
+								name: "tconstruct:stonebound"
+								level: 4s
+							}
+						]
+						tic_materials: [
+							"tconstruct:rock"
+							"tconstruct:rock"
+							"tconstruct:rock"
+							"tconstruct:rock"
+						]
+						Damage: 0
+						tic_persistent_data: {
+							abilities: 1
+							upgrades: 2
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: -0.5d
+			y: -2.0d
+			dependencies: ["7C73653F015E2D43"]
+			id: "172854BCDFC44230"
+			tasks: [{
+				id: "53119AD3A6F69825"
+				type: "item"
+				item: "minecraft:andesite"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -2.5d
+			dependencies: ["172854BCDFC44230"]
+			id: "5A0C5186D79252F3"
+			tasks: [{
+				id: "72CD0B06C47E6718"
+				type: "item"
+				item: "crafting_on_a_stick:crafting_table"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -1.5d
+			dependencies: ["5A0C5186D79252F3"]
+			id: "1CAB9F50BBF644A6"
+			tasks: [{
+				id: "4162B014B861F2E6"
+				type: "item"
+				item: "minecraft:furnace"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -1.5d
+			dependencies: ["1CAB9F50BBF644A6"]
+			id: "24FC422FA3589D5D"
+			tasks: [{
+				id: "2F740DB41321E6CF"
+				type: "item"
+				item: "minecraft:iron_ingot"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -4.0d
+			dependencies: ["7C73653F015E2D43"]
+			id: "3C6D3B1CC8DA0171"
+			tasks: [{
+				id: "6E0C565D59179443"
+				type: "item"
+				item: "minecraft:coarse_dirt"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -0.5d
+			dependencies: ["24FC422FA3589D5D"]
+			id: "4C351B64DC9AB23F"
+			tasks: [{
+				id: "3A90263FB6BF216E"
+				type: "item"
+				item: "create:andesite_alloy"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -4.0d
+			dependencies: ["3C6D3B1CC8DA0171"]
+			id: "5ACD90E637161C6D"
+			tasks: [{
+				id: "62D82A4524024B47"
+				type: "item"
+				item: "tconstruct:earth_slime_leaves"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -3.0d
+			dependencies: ["7C73653F015E2D43"]
+			id: "3AC26F7400AB3086"
+			tasks: [{
+				id: "3F30DC78A6F19CF0"
+				type: "item"
+				item: "minecraft:gunpowder"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -3.0d
+			dependencies: [
+				"5A0C5186D79252F3"
+				"3AC26F7400AB3086"
+			]
+			id: "20F69AAFD25882DE"
+			tasks: [{
+				id: "66EB739AAD2ADB76"
+				type: "item"
+				item: "minecraft:tnt"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -0.5d
+			dependencies: [
+				"24FC422FA3589D5D"
+				"20F69AAFD25882DE"
+			]
+			id: "037C6A9E7331A19C"
+			tasks: [{
+				id: "0D2F53D50C414009"
+				type: "item"
+				item: "pneumaticcraft:ingot_iron_compressed"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -1.5d
+			dependencies: ["7C73653F015E2D43"]
+			id: "29844BB8562318DA"
+			tasks: [{
+				id: "3D36AF0FEB86BF28"
+				type: "item"
+				item: "tconstruct:grout"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -0.5d
+			dependencies: [
+				"29844BB8562318DA"
+				"1CAB9F50BBF644A6"
+			]
+			id: "5F78FB2A53E1932D"
+			tasks: [{
+				id: "20AE35C788201E69"
+				type: "item"
+				item: "tconstruct:seared_brick"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -0.5d
+			dependencies: [
+				"5ACD90E637161C6D"
+				"31284DCE27BBC499"
+			]
+			id: "2E7AA8DC7F4A93D0"
+			tasks: [{
+				id: "1FC09C50C14899AB"
+				type: "item"
+				item: "minecraft:slime_ball"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

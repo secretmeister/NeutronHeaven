@@ -1,0 +1,109 @@
+{
+	id: "5BCAF674959256B5"
+	group: "0B1836238D543CCD"
+	order_index: 2
+	filename: "pressurized_party"
+	title: "Pressurized Party"
+	icon: "pneumaticcraft:ingot_iron_compressed"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Pressure Chamber"
+			icon: "pneumaticcraft:pressure_chamber_valve"
+			x: 0.5d
+			y: 0.5d
+			dependencies: [
+				"037C6A9E7331A19C"
+				"295D222683F0174C"
+			]
+			id: "1B1146A650021F90"
+			tasks: [
+				{
+					id: "72345D62E3972747"
+					type: "item"
+					item: "pneumaticcraft:pressure_chamber_wall"
+					count: 23L
+				}
+				{
+					id: "3DB3AFA02CD1577C"
+					type: "item"
+					item: "pneumaticcraft:pressure_chamber_interface"
+					count: 2L
+				}
+				{
+					id: "16C08BC3A9B7B58D"
+					type: "item"
+					item: "pneumaticcraft:pressure_chamber_valve"
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			dependencies: ["037C6A9E7331A19C"]
+			id: "295D222683F0174C"
+			tasks: [{
+				id: "4EE29762FAD6E4A6"
+				type: "item"
+				item: "pneumaticcraft:pressure_tube"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 0.5d
+			dependencies: ["295D222683F0174C"]
+			id: "7DDF2BDDBDF68C36"
+			tasks: [{
+				id: "1D1EC0ED2E407951"
+				type: "item"
+				item: "pneumaticcraft:air_compressor"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 2.0d
+			dependencies: ["037C6A9E7331A19C"]
+			id: "457DB2F28A9A447C"
+			tasks: [{
+				id: "40EB8A6C0501EEE4"
+				type: "item"
+				item: "pneumaticcraft:small_tank"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 1.5d
+			dependencies: ["457DB2F28A9A447C"]
+			id: "6C97B793DD1F7215"
+			tasks: [{
+				id: "37F3963E6D0F680A"
+				type: "item"
+				item: "pneumaticcraft:thermopneumatic_processing_plant"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 1.5d
+			dependencies: ["1B1146A650021F90"]
+			id: "6EA8648EB67181A7"
+			tasks: [{
+				id: "24E864A91AEF0ED2"
+				type: "item"
+				item: "minecraft:diamond"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 1.0d
+			dependencies: ["037C6A9E7331A19C"]
+			id: "70D1B2464D172CAF"
+			tasks: [{
+				id: "42C754283E7226A3"
+				type: "item"
+				item: "pneumaticcraft:compressed_iron_gear"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

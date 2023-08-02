@@ -1,0 +1,11 @@
+{
+	id: "65B7D82C036E1703"
+	group: "437B64C75C6F34C8"
+	order_index: 2
+	filename: "pressurized_procedures"
+	title: "Compressed Chaos"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+	quest_links: [ ]
+}

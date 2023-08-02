@@ -1,0 +1,53 @@
+{
+	id: "008AE26D4B898A6F"
+	group: "088D69D914535C04"
+	order_index: 0
+	filename: "elven_endeavours"
+	title: "Elven Endeavours"
+	always_invisible: true
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -1.5d
+			y: -0.5d
+			id: "1AFFC3C05CFFF1B1"
+			tasks: [{
+				id: "3932647CEE679096"
+				type: "item"
+				item: "botania:glimmering_livingwood_log"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -0.5d
+			id: "35EF2CEC5A769A34"
+			tasks: [{
+				id: "6A035FBB312FFC62"
+				type: "item"
+				item: "botania:natura_pylon"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 0.5d
+			id: "30342C8B7475D983"
+			tasks: [{
+				id: "6832EA3E323E4182"
+				type: "item"
+				item: "botania:alfheim_portal"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 1.5d
+			id: "21EE8AA0B6155DC5"
+			tasks: [{
+				id: "6E9E53F5E3DC95BC"
+				type: "item"
+				item: "botania:elementium_ingot"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

@@ -1,0 +1,114 @@
+{
+	id: "4F4DA479EEF923E7"
+	group: "437B64C75C6F34C8"
+	order_index: 4
+	filename: "avengers_agglomerate"
+	title: "Avengers, Agglomerate"
+	icon: "botania:terrasteel_ingot"
+	always_invisible: true
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -1.0d
+			y: -1.5d
+			id: "2D270448FD08C7FA"
+			tasks: [{
+				id: "39673E6DF89BE736"
+				type: "item"
+				item: "botania:terra_plate"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 0.0d
+			dependencies: [
+				"2D270448FD08C7FA"
+				"36C281CD720A3834"
+				"64E237652236F672"
+				"196D51BBCC32DEC1"
+				"643D2BA875AF17FC"
+				"6BEFAB1A472ABDF9"
+				"436ADF89B019C755"
+			]
+			id: "225275D6A83495EC"
+			tasks: [{
+				id: "4217C787617BD8CD"
+				type: "item"
+				item: "botania:terrasteel_ingot"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 0.0d
+			id: "196D51BBCC32DEC1"
+			tasks: [{
+				id: "24A8CCF329C7F597"
+				type: "item"
+				item: "minecraft:grass"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.0d
+			id: "6BEFAB1A472ABDF9"
+			tasks: [{
+				id: "4E8DD1ED220C58FD"
+				type: "item"
+				item: "minecraft:fern"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -1.0d
+			id: "36C281CD720A3834"
+			tasks: [{
+				id: "59F963EEC6B5516F"
+				type: "item"
+				item: "tconstruct:pig_iron_ingot"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 0.0d
+			id: "436ADF89B019C755"
+			tasks: [{
+				id: "52D123C9BCBAEA20"
+				type: "item"
+				item: "minecraft:moss_block"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.0d
+			id: "64E237652236F672"
+			tasks: [{
+				id: "67D6A91C77A408A5"
+				type: "item"
+				item: "minecraft:emerald"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 1.0d
+			id: "643D2BA875AF17FC"
+			tasks: [{
+				id: "12E726426DEC7BB7"
+				type: "item"
+				item: "minecraft:vine"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 1.5d
+			dependencies: ["225275D6A83495EC"]
+			id: "721F878ACB7EA0DB"
+			tasks: [{
+				id: "25623FDE22C0219E"
+				type: "item"
+				item: "integrateddynamics:menril_sapling"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

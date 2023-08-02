@@ -1,0 +1,11 @@
+{
+	id: "301C8D9B58E04D68"
+	group: "437B64C75C6F34C8"
+	order_index: 3
+	filename: "andesite_and_alloyed_aggravations"
+	title: "Andesite Aggravations"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+	quest_links: [ ]
+}

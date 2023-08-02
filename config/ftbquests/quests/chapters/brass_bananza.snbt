@@ -1,0 +1,11 @@
+{
+	id: "24CF8D0B8773E12A"
+	group: "088D69D914535C04"
+	order_index: 1
+	filename: "brass_bananza"
+	title: "Brass Bananza"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+	quest_links: [ ]
+}
