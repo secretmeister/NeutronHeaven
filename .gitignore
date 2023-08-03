@@ -96,7 +96,6 @@ logs/latest.log
 usernamecache.json
 usercache.json
 saves/Playtest
-minecraftinstance.json
 **/*.jar
 !InstanceSync*.jar
 **/*.jar.disabled
