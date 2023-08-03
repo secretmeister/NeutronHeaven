@@ -2,97 +2,11 @@
 .curseclient
 *.png
 journeymap/config/5.9/journeymap.webmap.config
-journeymap/data/sp/Neutron Heaven/overworld/-5/cache/r.-1.-1.mca
-journeymap/data/sp/Neutron Heaven/overworld/-5/cache/r.-1.0.mca
-journeymap/data/sp/Neutron Heaven/overworld/-5/cache/r.0.-1.mca
-journeymap/data/sp/Neutron Heaven/overworld/-5/cache/r.0.0.mca
-journeymap/data/sp/Neutron Heaven/overworld/-6/cache/r.-1.-1.mca
-journeymap/data/sp/Neutron Heaven/overworld/-6/cache/r.-1.0.mca
-journeymap/data/sp/Neutron Heaven/overworld/-6/cache/r.0.-1.mca
-journeymap/data/sp/Neutron Heaven/overworld/-6/cache/r.0.0.mca
-journeymap/data/sp/Neutron Heaven/overworld/cache/r.-1.-1.mca
-journeymap/data/sp/Neutron Heaven/overworld/cache/r.-1.0.mca
-journeymap/data/sp/Neutron Heaven/overworld/cache/r.0.-1.mca
-journeymap/data/sp/Neutron Heaven/overworld/cache/r.0.0.mca
-journeymap/data/sp/Neutron Heaven/overworld/topo/cache/r.-1.-1.mca
-journeymap/data/sp/Neutron Heaven/overworld/topo/cache/r.-1.0.mca
-journeymap/data/sp/Neutron Heaven/overworld/topo/cache/r.0.-1.mca
-journeymap/data/sp/Neutron Heaven/overworld/topo/cache/r.0.0.mca
-journeymap/data/sp/New World (1)/overworld/cache/r.-1.-1.mca
-journeymap/data/sp/New World (1)/overworld/cache/r.-1.0.mca
-journeymap/data/sp/New World (1)/overworld/cache/r.0.-1.mca
-journeymap/data/sp/New World (1)/overworld/cache/r.0.0.mca
-journeymap/data/sp/New World (1)/overworld/topo/cache/r.-1.-1.mca
-journeymap/data/sp/New World (1)/overworld/topo/cache/r.-1.0.mca
-journeymap/data/sp/New World (1)/overworld/topo/cache/r.0.-1.mca
-journeymap/data/sp/New World (1)/overworld/topo/cache/r.0.0.mca
-journeymap/data/sp/New World (2)/overworld/-2/cache/r.-1.-1.mca
-journeymap/data/sp/New World (2)/overworld/-2/cache/r.-1.0.mca
-journeymap/data/sp/New World (2)/overworld/-2/cache/r.0.-1.mca
-journeymap/data/sp/New World (2)/overworld/-2/cache/r.0.0.mca
-journeymap/data/sp/New World (2)/overworld/cache/r.-1.-1.mca
-journeymap/data/sp/New World (2)/overworld/cache/r.-1.0.mca
-journeymap/data/sp/New World (2)/overworld/cache/r.0.-1.mca
-journeymap/data/sp/New World (2)/overworld/cache/r.0.0.mca
-journeymap/data/sp/New World (2)/overworld/topo/cache/r.-1.-1.mca
-journeymap/data/sp/New World (2)/overworld/topo/cache/r.-1.0.mca
-journeymap/data/sp/New World (2)/overworld/topo/cache/r.0.-1.mca
-journeymap/data/sp/New World (2)/overworld/topo/cache/r.0.0.mca
-journeymap/data/sp/New World (2)/waypoints/Death-12-04-37-07-24-2023_-48-46-75.json
-journeymap/data/sp/New World (2)/waypoints/Death-12-52-52-07-26-2023_-45-48-73.json
-journeymap/data/sp/New World (2)/waypoints/Death-12-53-55-07-26-2023_-46-48-75.json
-journeymap/data/sp/New World (2)/waypoints/Death-12-57-22-07-26-2023_-47-48-75.json
-journeymap/data/sp/New World/overworld/cache/r.-1.-1.mca
-journeymap/data/sp/New World/overworld/cache/r.-1.0.mca
-journeymap/data/sp/New World/overworld/cache/r.0.-1.mca
-journeymap/data/sp/New World/overworld/cache/r.0.0.mca
-journeymap/data/sp/New World/overworld/topo/cache/r.-1.-1.mca
-journeymap/data/sp/New World/overworld/topo/cache/r.-1.0.mca
-journeymap/data/sp/New World/overworld/topo/cache/r.0.-1.mca
-journeymap/data/sp/New World/overworld/topo/cache/r.0.0.mca
-journeymap/icon/theme/default.theme.config
-journeymap/icon/theme/flat/DesertTemple.theme2.json
-journeymap/icon/theme/flat/EndCity.theme2.json
-journeymap/icon/theme/flat/ForestMansion.theme2.json
-journeymap/icon/theme/flat/NetherFortress.theme2.json
-journeymap/icon/theme/flat/OceanMonument.theme2.json
-journeymap/icon/theme/flat/Purist.theme2.json
-journeymap/icon/theme/flat/Stronghold.theme2.json
+journeymap/data/sp
+journeymap/icon
 journeymap/journeymap.log
-journeymap/server/5.9/journeymap.server.default.config
-journeymap/server/5.9/journeymap.server.global.config
-journeymap/server/5.9/journeymap.server.minecraft~overworld.config
-journeymap/server/5.9/journeymap.server.minecraft~the_end.config
-journeymap/server/5.9/journeymap.server.minecraft~the_nether.config
-logs/2023-07-21-1.log.gz
-logs/2023-07-22-1.log.gz
-logs/2023-07-23-1.log.gz
-logs/2023-07-23-2.log.gz
-logs/2023-07-23-3.log.gz
-logs/2023-07-23-4.log.gz
-logs/2023-07-23-5.log.gz
-logs/2023-07-24-1.log.gz
-logs/2023-07-24-2.log.gz
-logs/2023-07-24-3.log.gz
-logs/2023-07-24-4.log.gz
-logs/2023-07-24-5.log.gz
-logs/2023-07-25-1.log.gz
-logs/2023-07-26-1.log.gz
-logs/2023-07-26-2.log.gz
-logs/2023-07-26-3.log.gz
-logs/2023-07-27-1.log.gz
-logs/2023-07-28-1.log.gz
-logs/2023-07-29-1.log.gz
-logs/2023-07-29-2.log.gz
-logs/2023-07-30-1.log.gz
-logs/2023-07-30-2.log.gz
-logs/2023-07-31-1.log.gz
-logs/2023-08-01-1.log.gz
-logs/2023-08-01-2.log.gz
-logs/2023-08-01-3.log.gz
-logs/2023-08-02-1.log.gz
-logs/crafttweaker.log
-logs/latest.log
+journeymap/server
+/logs
 usernamecache.json
 usercache.json
 saves/Playtest
