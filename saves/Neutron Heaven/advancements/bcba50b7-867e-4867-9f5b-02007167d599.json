@@ -1,0 +1,63 @@
+{
+  "tconstruct:tools/materials_and_you": {
+    "criteria": {
+      "crafted_book": "2023-08-02 18:25:32 -0700"
+    },
+    "done": true
+  },
+  "tconstruct:internal/starting_book": {
+    "criteria": {
+      "tick": "2023-08-02 18:25:32 -0700"
+    },
+    "done": true
+  },
+  "compactcrafting:recipes/compactcrafting/match_proxy": {
+    "criteria": {
+      "got_redstone": "2023-08-02 18:25:32 -0700"
+    },
+    "done": true
+  },
+  "compactcrafting:recipes/compactcrafting/projector_dish": {
+    "criteria": {
+      "got_ender_eye": "2023-08-02 18:25:32 -0700"
+    },
+    "done": true
+  },
+  "compactcrafting:recipes/compactcrafting/field_projector": {
+    "criteria": {
+      "got_ender_eye": "2023-08-02 18:25:32 -0700"
+    },
+    "done": true
+  },
+  "create:root": {
+    "criteria": {
+      "0": "2023-08-02 18:25:32 -0700"
+    },
+    "done": true
+  },
+  "compactcrafting:recipes/compactcrafting/base": {
+    "criteria": {
+      "got_ender_eye": "2023-08-02 18:25:32 -0700"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2023-08-02 18:25:32 -0700"
+    },
+    "done": false
+  },
+  "compactcrafting:recipes/compactcrafting/rescan_proxy": {
+    "criteria": {
+      "got_crafting_table": "2023-08-02 18:25:32 -0700"
+    },
+    "done": true
+  },
+  "craftingautomat:recipes/redstone/autocrafter": {
+    "criteria": {
+      "has_end_stone": "2023-08-02 18:25:32 -0700"
+    },
+    "done": true
+  },
+  "DataVersion": 2975
+}
