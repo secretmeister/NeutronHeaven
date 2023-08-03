@@ -17,7 +17,7 @@ recipes.remove(<item:tconstruct:earth_slime_dirt>);
     {"item": "tconstruct:sky_slime_ball", "count": 2}]});
 
 LycheeRecipeManager.addRecipe("soulsand", <recipetype:lychee:lightning_channeling>, new LycheeRecipeBuilder()
-    .post([LycheePosts.placeBlock(<block:tconstruct:soul_glass>, new BlockPos(0, -2, 0)).condition([LycheeConditions.block(<block:minecraft:glass>, new BlockPos(0, -2, 0))])])
+    .post([LycheePosts.placeBlock(<block:tconstruct:soul_glass>, new BlockPos(0, -2, 0)).condition([LycheeConditions.block(<block:minecraft:glass>, new BlockPos(0, -2, 0))]),LycheePosts.executeCommand("weather thunder 150", true).condition([LycheeConditions.chance(0.3)])])
     .comment("Scares the glass below into soul glass")
 );
 
@@ -44,6 +44,6 @@ craftingTable.addShapeless("pickhead", <item:tconstruct:pick_head>.withTag({Mate
 
 LycheeRecipeManager.addRecipe("thunder", <recipetype:lychee:item_burning>, new LycheeRecipeBuilder()
   .itemIn(<item:minecraft:blue_stained_glass>)
-  .post([LycheePosts.executeCommand("weather thunder 150", true),LycheePosts.executeCommand("summon minecraft:lightning_bolt", true)])
+  .post([LycheePosts.executeCommand("weather thunder 600", true),LycheePosts.executeCommand("summon minecraft:lightning_bolt", true)])
   .comment("Summons the Rain")
 );
