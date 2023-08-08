@@ -1,4 +1,6 @@
 import crafttweaker.api.util.math.BlockPos;
+import crafttweaker.api.loot.modifier.CommonLootModifiers;
+
 
 recipes.remove(<item:tconstruct:earth_slime_dirt>);
 
@@ -21,11 +23,14 @@ LycheeRecipeManager.addRecipe("soulsand", <recipetype:lychee:lightning_channelin
     .comment("Scares the glass below into soul glass")
 );
 
-
-LycheeRecipeManager.addRecipe("lapis", <recipetype:lychee:block_crushing>, new LycheeRecipeBuilder()
+LycheeRecipeManager.addRecipe("lapisbad", <recipetype:lychee:block_crushing>, new LycheeRecipeBuilder()
+    .crushingFallingBlock(<block:minecraft:gravel>)
+    .crushingLandingBlock(<block:minecraft:diorite>)
+    .post([LycheePosts.preventDefault(),LycheePosts.dropItem(<item:minecraft:lapis_lazuli>).condition([LycheeConditions.chance(0.05)]),LycheePosts.dropItem(<item:minecraft:quartz>).condition([LycheeConditions.chance(0.075)])]));
+LycheeRecipeManager.addRecipe("lapisgood", <recipetype:lychee:block_crushing>, new LycheeRecipeBuilder()
     .crushingFallingBlock(<tag:blocks:minecraft:anvil>)
     .crushingLandingBlock(<block:minecraft:diorite>)
-    .post([LycheePosts.anvilDamageChance(0.7),LycheePosts.dropItem(<item:minecraft:lapis_lazuli>).condition([LycheeConditions.chance(0.33)])]));
+    .post([LycheePosts.anvilDamageChance(0.6),LycheePosts.dropItem(<item:minecraft:lapis_lazuli>).condition([LycheeConditions.chance(0.75)]),LycheePosts.dropItem(<item:minecraft:quartz>).condition([LycheeConditions.chance(0.9)])]));
 LycheeRecipeManager.addRecipe("handle", <recipetype:lychee:block_crushing>, new LycheeRecipeBuilder()
     .crushingFallingBlock(<tag:blocks:minecraft:anvil>)
     .itemIn(<item:tconstruct:tough_handle>.withTag({Material: "tconstruct:rock" as string}))
@@ -45,5 +50,35 @@ craftingTable.addShapeless("pickhead", <item:tconstruct:pick_head>.withTag({Mate
 LycheeRecipeManager.addRecipe("thunder", <recipetype:lychee:item_burning>, new LycheeRecipeBuilder()
   .itemIn(<item:minecraft:blue_stained_glass>)
   .post([LycheePosts.executeCommand("weather thunder 600", true),LycheePosts.executeCommand("summon minecraft:lightning_bolt", true)])
-  .comment("Summons the Rain")
+  .comment("Summons the Rain"));
+
+LycheeRecipeManager.addRecipe("earthslimecryst", <recipetype:lychee:block_interacting>, new LycheeRecipeBuilder()
+    .itemIn(<item:minecraft:wheat_seeds>)
+    .blockIn(<block:tconstruct:earth_slime_crystal_block>)
+    .post([LycheePosts.placeBlock(<block:tconstruct:budding_earth_slime_crystal>)]));
+LycheeRecipeManager.addRecipe("skyslimecryst", <recipetype:lychee:block_interacting>, new LycheeRecipeBuilder()
+    .itemIn(<item:botania:infused_seeds>)
+    .blockIn(<block:tconstruct:sky_slime_crystal_block>)
+    .post([LycheePosts.placeBlock(<block:tconstruct:budding_sky_slime_crystal>)]));
+LycheeRecipeManager.addRecipe("endslimecryst", <recipetype:lychee:block_interacting>, new LycheeRecipeBuilder()
+    .itemIn(<item:tconstruct:ender_slime_grass_seeds>)
+    .blockIn(<block:tconstruct:ender_slime_crystal_block>)
+    .post([LycheePosts.placeBlock(<block:tconstruct:budding_ender_slime_crystal>)]));
+
+
+<block:tconstruct:greenheart_log>.addLootModifier(
+    "greenheartnt",
+    CommonLootModifiers.replaceWith(<item:tconstruct:greenheart_log>, <item:tconstruct:earth_congealed_slime>)
+);
+<block:tconstruct:stripped_greenheart_log>.addLootModifier(
+    "strgreenheartnt",
+    CommonLootModifiers.replaceWith(<item:tconstruct:stripped_greenheart_log>, <item:tconstruct:earth_congealed_slime>)
+);
+<block:tconstruct:greenheart_wood>.addLootModifier(
+    "greenheartntw",
+    CommonLootModifiers.replaceWith(<item:tconstruct:greenheart_wood>, <item:tconstruct:earth_congealed_slime>)
+);
+<block:tconstruct:stripped_greenheart_wood>.addLootModifier(
+    "strgreenheartntw",
+    CommonLootModifiers.replaceWith(<item:tconstruct:stripped_greenheart_wood>, <item:tconstruct:earth_congealed_slime>)
 );

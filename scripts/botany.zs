@@ -50,7 +50,7 @@ recipes.remove(<item:create:millstone>);
     .addOutput(<item:minecraft:wheat_seeds>, 1)
     .addStep<mods.createtweaker.FillingRecipe>((rb) => rb.require(<fluid:pneumaticcraft:vegetable_oil> * 100))
     .addStep<mods.createtweaker.FillingRecipe>((rb) => rb.require(<fluid:tconstruct:earth_slime> * 250))
-    .addStep<mods.createtweaker.FillingRecipe>((rb) => rb.require(<fluid:tconstruct:molten_slimesteel> * 90)));
+    .addStep<mods.createtweaker.FillingRecipe>((rb) => rb.require(<fluid:tconstruct:molten_slimesteel> * 30)));
 
 <recipetype:pneumaticcraft:thermo_plant>.addJsonRecipe("basalt",{
   "type": "pneumaticcraft:thermo_plant",

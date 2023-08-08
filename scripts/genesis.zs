@@ -58,7 +58,7 @@ LycheeRecipeManager.addRecipe("crushcob", <recipetype:lychee:block_interacting>,
 LycheeRecipeManager.addRecipe("crushsand", <recipetype:lychee:block_interacting>, new LycheeRecipeBuilder()
     .itemIn(<tag:items:crafttweaker:hammers>)
     .blockIn(<block:minecraft:sand>)
-    .post([LycheePosts.placeBlock(<block:minecraft:air>),LycheePosts.random([LycheePosts.dropItem(<item:minecraft:gunpowder>).withWeight(2),LycheePosts.dropItem(<item:minecraft:clay_ball>).withWeight(7),LycheePosts.placeBlock(<block:minecraft:air>).withWeight(23)]),LycheePosts.damageItem(1)]));
+    .post([LycheePosts.placeBlock(<block:minecraft:air>),LycheePosts.random([LycheePosts.dropItem(<item:minecraft:gunpowder>).withWeight(2),LycheePosts.dropItem(<item:minecraft:clay_ball>).withWeight(9),LycheePosts.placeBlock(<block:minecraft:air>).withWeight(21)]),LycheePosts.damageItem(1)]));
 LycheeRecipeManager.addRecipe("crushredsand", <recipetype:lychee:block_interacting>, new LycheeRecipeBuilder()
     .itemIn(<tag:items:crafttweaker:hammers>)
     .blockIn(<block:minecraft:red_sand>)
@@ -78,15 +78,15 @@ LycheeRecipeManager.addRecipe("crushgran", <recipetype:lychee:block_interacting>
 LycheeRecipeManager.addRecipe("crushcoarsedirt", <recipetype:lychee:block_interacting>, new LycheeRecipeBuilder()
     .itemIn(<tag:items:crafttweaker:hammers>)
     .blockIn(<block:minecraft:coarse_dirt>)
-    .post([LycheePosts.placeBlock(<block:minecraft:air>),LycheePosts.random([LycheePosts.dropItem(<item:minecraft:dead_bush>).withWeight(2),LycheePosts.placeBlock(<block:minecraft:air>).withWeight(2),LycheePosts.placeBlock(<block:minecraft:dirt>).withWeight(5)]),LycheePosts.damageItem(1)]));
+    .post([LycheePosts.placeBlock(<block:minecraft:air>),LycheePosts.random([LycheePosts.dropItem(<item:minecraft:dead_bush>).withWeight(1),LycheePosts.placeBlock(<block:minecraft:air>).withWeight(2),LycheePosts.placeBlock(<block:minecraft:dirt>).withWeight(5)]),LycheePosts.damageItem(1)]));
 LycheeRecipeManager.addRecipe("crushdirt", <recipetype:lychee:block_interacting>, new LycheeRecipeBuilder()
     .itemIn(<tag:items:crafttweaker:hammers>)
     .blockIn(<block:minecraft:dirt>)
-    .post([LycheePosts.placeBlock(<block:minecraft:air>),LycheePosts.random([LycheePosts.dropItem(<item:minecraft:wheat_seeds>).withWeight(4),LycheePosts.dropItem(<item:tconstruct:earth_slime_leaves>),LycheePosts.placeBlock(<block:minecraft:air>).withWeight(13)], 1, 2),LycheePosts.damageItem(1)]));
+    .post([LycheePosts.placeBlock(<block:minecraft:air>),LycheePosts.random([LycheePosts.dropItem(<item:minecraft:wheat_seeds>).withWeight(4),LycheePosts.dropItem(<item:tconstruct:earth_slime_leaves>),LycheePosts.placeBlock(<block:minecraft:air>).withWeight(7)], 1, 2),LycheePosts.damageItem(1)]));
 LycheeRecipeManager.addRecipe("crushclay", <recipetype:lychee:block_interacting>, new LycheeRecipeBuilder()
     .itemIn(<tag:items:crafttweaker:hammers>)
     .blockIn(<block:minecraft:clay>)
-    .post([LycheePosts.placeBlock(<block:minecraft:air>),LycheePosts.random([LycheePosts.dropItem(<item:minecraft:kelp>).withWeight(1),LycheePosts.dropItem(<item:minecraft:clay_ball>).withWeight(7),LycheePosts.placeBlock(<block:minecraft:air>).withWeight(4)], 2, 5),LycheePosts.damageItem(1)]));
+    .post([LycheePosts.placeBlock(<block:minecraft:air>),LycheePosts.random([LycheePosts.dropItem(<item:minecraft:kelp>).withWeight(1),LycheePosts.dropItem(<item:minecraft:clay_ball>).withWeight(7),LycheePosts.placeBlock(<block:minecraft:air>).withWeight(2)], 2, 5),LycheePosts.damageItem(1)]));
 
 
 LycheeRecipeManager.addRecipe("slime", <recipetype:lychee:block_crushing>, new LycheeRecipeBuilder()
@@ -140,17 +140,3 @@ LycheeRecipeManager.addRecipe("earlygoldplate", <recipetype:lychee:block_crushin
         {"item": "create:copper_nugget","count": 6}},
         { "item": "create:copper_nugget","chance": 0.9}]},});
 
-
-
-
-
-
-
-
-CTEventManager.register<crafttweaker.api.event.block.BlockBreakEvent>((event) => {
- var block = event.state;
- var pos = event.pos;
- var world = event.world;
- if (block == <block:minecraft:dirt>) {
-world.setBlockAndUpdate(pos, block);}
- });
