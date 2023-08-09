@@ -1,7 +1,6 @@
 <recipetype:tconstruct:alloying>.removeByName("tconstruct:smeltery/alloys/molten_slimesteel");
 <recipetype:tconstruct:alloying>.removeByName("tconstruct:smeltery/alloys/molten_brass");
 <recipetype:tconstruct:casting_basin>.removeByName("tconstruct:smeltery/casting/slime/earth/dirt");
-<recipetype:tconstruct:casting_basin>.removeByName("tconstruct:smeltery/casting/seared/smeltery_controller");
 
 
 <recipetype:tconstruct:molding_table>.addJsonRecipe("roundplatesand",{

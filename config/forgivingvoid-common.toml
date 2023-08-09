@@ -3,7 +3,7 @@
 triggerAtDistanceBelow = 32
 #The amount of damage applied to the player when they land.
 #Range: > -2147483648
-damageOnFall = 19
+damageOnFall = 0
 #The height from which the player will be falling after falling through the void.
 #Range: > -2147483648
 fallingHeight = 300

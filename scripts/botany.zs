@@ -3,6 +3,10 @@
 <tag:items:minecraft:planks>.remove(<item:botania:livingwood_planks>);
 <tag:items:minecraft:planks>.remove(<item:botania:framed_livingwood>);
 <tag:items:minecraft:planks>.remove(<item:botania:pattern_framed_livingwood>);
+<tag:items:minecraft:wooden_slabs>.remove(<item:botania:livingwood_slab>);
+<tag:items:minecraft:wooden_slabs>.remove(<item:botania:stripped_livingwood_slab>);
+<tag:items:minecraft:wooden_slabs>.remove(<item:botania:livingwood_planks_slab>);
+<tag:items:minecraft:logs_that_burn>.remove(<tag:items:botania:livingwood_logs>);
 
 recipes.remove(<item:create:millstone>);
 
