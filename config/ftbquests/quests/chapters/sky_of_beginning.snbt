@@ -312,6 +312,7 @@
 			x: -6.5d
 			y: 8.5d
 			subtitle: "No Recipe"
+			dependencies: ["76B2E5503503D064"]
 			id: "194A44D04A80BDB6"
 			tasks: [{
 				id: "6FEED4FCB5269C28"
@@ -358,12 +359,27 @@
 		{
 			x: -6.0d
 			y: 2.0d
-			dependencies: ["57BC98F4EFBC35D0"]
+			dependencies: [
+				"57BC98F4EFBC35D0"
+				"7464615230CFD315"
+			]
+			dependency_requirement: "one_completed"
 			id: "23696CD4F1516DA1"
 			tasks: [{
 				id: "7BF127D3B50EE93B"
 				type: "item"
 				item: "minecraft:redstone"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 8.5d
+			dependencies: ["43BA0605185EEDF0"]
+			id: "76B2E5503503D064"
+			tasks: [{
+				id: "7F9A7296F612C803"
+				type: "item"
+				item: "botania:alchemy_catalyst"
 			}]
 		}
 	]

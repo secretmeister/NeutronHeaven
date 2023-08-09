@@ -14,7 +14,7 @@
 			dependencies: [
 				"650FF8F8F3DA9C06"
 				"19518A85318783FF"
-				"4887A0F37F0FF05D"
+				"0CD1D31C720D8760"
 			]
 			id: "535FF2C776D23901"
 			tasks: [{
@@ -64,7 +64,7 @@
 			}]
 		}
 		{
-			x: -3.5d
+			x: -4.5d
 			y: -2.5d
 			dependencies: ["3EC80E2120E24ADA"]
 			id: "04C49E6C439DF14C"
@@ -114,22 +114,7 @@
 			}]
 		}
 		{
-			x: -4.0d
-			y: -4.0d
-			dependencies: [
-				"04C49E6C439DF14C"
-				"04036B57D522636E"
-				"2E7AA8DC7F4A93D0"
-			]
-			id: "19518A85318783FF"
-			tasks: [{
-				id: "5C67867D41A8D892"
-				type: "item"
-				item: "tconstruct:earth_slime_crystal"
-			}]
-		}
-		{
-			x: -4.5d
+			x: -3.5d
 			y: -2.5d
 			dependencies: ["6F59F0653A09FA8F"]
 			id: "04036B57D522636E"
@@ -140,12 +125,9 @@
 			}]
 		}
 		{
-			x: -1.5d
-			y: -2.5d
-			dependencies: [
-				"6C8CB54AB1A7A411"
-				"0CD1D31C720D8760"
-			]
+			x: -2.0d
+			y: -1.5d
+			dependencies: ["6C8CB54AB1A7A411"]
 			id: "4887A0F37F0FF05D"
 			tasks: [{
 				id: "53A9CAA326AA0432"
@@ -154,7 +136,7 @@
 			}]
 		}
 		{
-			x: -2.0d
+			x: -1.0d
 			y: -1.5d
 			dependencies: ["5A0C5186D79252F3"]
 			id: "49902A8191A56842"
@@ -165,13 +147,16 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: -1.5d
+			x: -1.5d
+			y: -2.5d
 			description: [
 				"Burning blue glass might toggle the weather"
 				"Lightning takes a while, it is recommended to create many harness stations"
 			]
-			dependencies: ["49902A8191A56842"]
+			dependencies: [
+				"49902A8191A56842"
+				"4887A0F37F0FF05D"
+			]
 			id: "0CD1D31C720D8760"
 			tasks: [{
 				id: "0DABCCC4641CE1B3"
@@ -457,6 +442,21 @@
 						}
 					}
 				}
+			}]
+		}
+		{
+			x: -4.0d
+			y: -4.0d
+			dependencies: [
+				"04C49E6C439DF14C"
+				"04036B57D522636E"
+				"2E7AA8DC7F4A93D0"
+			]
+			id: "19518A85318783FF"
+			tasks: [{
+				id: "5C67867D41A8D892"
+				type: "item"
+				item: "tconstruct:earth_slime_crystal"
 			}]
 		}
 	]

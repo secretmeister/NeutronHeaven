@@ -7,6 +7,7 @@
 <tag:items:minecraft:wooden_slabs>.remove(<item:botania:stripped_livingwood_slab>);
 <tag:items:minecraft:wooden_slabs>.remove(<item:botania:livingwood_planks_slab>);
 <tag:items:minecraft:logs_that_burn>.remove(<tag:items:botania:livingwood_logs>);
+<tag:items:minecraft:logs_that_burn>.remove(<item:botania:stripped_livingwood_log>);
 
 recipes.remove(<item:create:millstone>);
 
@@ -25,7 +26,8 @@ recipes.remove(<item:create:millstone>);
 <recipetype:botania:mana_infusion>.addRecipe("zincrefining", <item:create:crushed_raw_zinc>, <item:create:zinc_nugget>*15, 100, <block:minecraft:polished_diorite>);
 <recipetype:botania:mana_infusion>.addRecipe("goldrefining", <item:create:crushed_raw_gold>, <item:minecraft:gold_nugget>*15, 100, <block:minecraft:red_sandstone>);
 
-<recipetype:botania:runic_altar>.addJsonRecipe("earth2",{
+<recipetype:botania:runic_altar>.remove(<item:botania:rune_earth>);
+<recipetype:botania:runic_altar>.addJsonRecipe("earth",{
   "type": "botania:runic_altar",
   "output": 
     {"item": "botania:rune_earth","count": 2},

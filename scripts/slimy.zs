@@ -25,10 +25,14 @@ LycheeRecipeManager.addRecipe("soulsand", <recipetype:lychee:lightning_channelin
     .comment("Scares the glass below into soul glass")
 );
 
-LycheeRecipeManager.addRecipe("lapisbad", <recipetype:lychee:block_crushing>, new LycheeRecipeBuilder()
+LycheeRecipeManager.addRecipe("quartzinter", <recipetype:lychee:block_crushing>, new LycheeRecipeBuilder()
     .crushingFallingBlock(<block:minecraft:gravel>)
     .crushingLandingBlock(<block:minecraft:diorite>)
-    .post([LycheePosts.preventDefault(),LycheePosts.dropItem(<item:minecraft:lapis_lazuli>).condition([LycheeConditions.chance(0.05)]),LycheePosts.dropItem(<item:minecraft:quartz>).condition([LycheeConditions.chance(0.075)])]));
+    .post([LycheePosts.preventDefault(),LycheePosts.dropItem(<item:minecraft:quartz>).condition([LycheeConditions.chance(0.2)])]));
+LycheeRecipeManager.addRecipe("lapisinter", <recipetype:lychee:block_crushing>, new LycheeRecipeBuilder()
+    .crushingFallingBlock(<block:minecraft:blue_concrete_powder>)
+    .crushingLandingBlock(<block:minecraft:diorite>)
+    .post([LycheePosts.preventDefault(),LycheePosts.dropItem(<item:minecraft:lapis_lazuli>).condition([LycheeConditions.chance(0.3)]),LycheePosts.dropItem(<item:minecraft:quartz>).condition([LycheeConditions.chance(0.075)])]));
 LycheeRecipeManager.addRecipe("lapisgood", <recipetype:lychee:block_crushing>, new LycheeRecipeBuilder()
     .crushingFallingBlock(<tag:blocks:minecraft:anvil>)
     .crushingLandingBlock(<block:minecraft:diorite>)

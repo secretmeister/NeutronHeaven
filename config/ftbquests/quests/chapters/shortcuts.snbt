@@ -1,0 +1,63 @@
+{
+	id: "35DBEA9DA3717C06"
+	group: "4F2C7F90A8B0D390"
+	order_index: 0
+	filename: "shortcuts"
+	title: "Shortcuts"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 2.0d
+			y: 3.0d
+			dependencies: ["55D7C452A91BEA8D"]
+			invisible: true
+			id: "482977C98BE4CA92"
+			tasks: [{
+				id: "377C1E774BD40348"
+				type: "item"
+				item: "create:andesite_casing"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 3.0d
+			dependencies: ["19518A85318783FF"]
+			invisible: true
+			id: "55D7C452A91BEA8D"
+			tasks: [{
+				id: "165FFFCF4A2C2BF1"
+				type: "item"
+				item: "tconstruct:stripped_greenheart_log"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 4.0d
+			invisible: true
+			id: "6ACE93F44C470D62"
+			tasks: [{
+				id: "02151F919E73F945"
+				type: "observation"
+				title: "Ice"
+				icon: "minecraft:ice"
+				timer: 0L
+				observe_type: 0
+				to_observe: "minecraft:ice"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 4.0d
+			dependencies: ["6ACE93F44C470D62"]
+			invisible: true
+			id: "7464615230CFD315"
+			tasks: [{
+				id: "4EDD278379016C4C"
+				type: "item"
+				item: "minecraft:water_bucket"
+			}]
+		}
+	]
+	quest_links: [ ]
+}
