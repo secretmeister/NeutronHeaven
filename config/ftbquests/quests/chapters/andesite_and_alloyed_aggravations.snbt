@@ -4,8 +4,66 @@
 	order_index: 3
 	filename: "andesite_and_alloyed_aggravations"
 	title: "Andesite Aggravations"
+	always_invisible: true
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [ ]
+	quests: [
+		{
+			x: -2.0d
+			y: 0.0d
+			dependencies: ["0064B3E23969AFF5"]
+			id: "24A297A149F48F9F"
+			tasks: [{
+				id: "107A7BD66DDC0E53"
+				type: "item"
+				item: "create:andesite_casing"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -0.5d
+			dependencies: [
+				"24A297A149F48F9F"
+				"482977C98BE4CA92"
+			]
+			dependency_requirement: "one_completed"
+			id: "222F08D6C17F6786"
+			tasks: [{
+				id: "154ECB8DB5F5F8DE"
+				type: "item"
+				item: "create:mechanical_saw"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 0.5d
+			dependencies: [
+				"24A297A149F48F9F"
+				"482977C98BE4CA92"
+			]
+			dependency_requirement: "one_completed"
+			id: "660BB3E3529D970A"
+			tasks: [{
+				id: "23DBF00CB7AAD35A"
+				type: "item"
+				item: "create:mechanical_press"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 0.0d
+			dependencies: [
+				"24A297A149F48F9F"
+				"482977C98BE4CA92"
+			]
+			dependency_requirement: "one_completed"
+			id: "3B473B01232F0C66"
+			tasks: [{
+				id: "7884EB056170C1CE"
+				type: "item"
+				item: "create:encased_fan"
+			}]
+		}
+	]
 	quest_links: [ ]
 }

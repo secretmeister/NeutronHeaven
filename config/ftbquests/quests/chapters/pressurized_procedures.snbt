@@ -4,8 +4,71 @@
 	order_index: 2
 	filename: "pressurized_procedures"
 	title: "Compressed Chaos"
+	always_invisible: true
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [ ]
+	quests: [
+		{
+			x: -0.5d
+			y: -1.5d
+			dependencies: ["23696CD4F1516DA1"]
+			id: "4978B9493706987B"
+			tasks: [{
+				id: "3E76FC802F690E6D"
+				type: "item"
+				item: "pneumaticcraft:turbine_blade"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -2.5d
+			dependencies: ["4978B9493706987B"]
+			id: "4D42C2AB06A255A5"
+			tasks: [{
+				id: "47B50DA61F2AFB5C"
+				type: "item"
+				item: "pneumaticcraft:fluid_mixer"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -1.5d
+			dependencies: [
+				"4D42C2AB06A255A5"
+				"2EA1A468B0D52FFA"
+			]
+			id: "28D38FDF31C2ADC3"
+			tasks: [{
+				id: "6724EB51B9BA9BF7"
+				type: "item"
+				item: "pneumaticcraft:glycerol"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -2.5d
+			dependencies: [
+				"4D42C2AB06A255A5"
+				"2EA1A468B0D52FFA"
+			]
+			id: "52864D0B457305AD"
+			tasks: [{
+				id: "28C76A5962545172"
+				type: "item"
+				item: "pneumaticcraft:lubricant_bucket"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -2.5d
+			dependencies: ["76B2E5503503D064"]
+			id: "2EA1A468B0D52FFA"
+			tasks: [{
+				id: "0A85A83F911EBD85"
+				type: "item"
+				item: "minecraft:melon_seeds"
+			}]
+		}
+	]
 	quest_links: [ ]
 }

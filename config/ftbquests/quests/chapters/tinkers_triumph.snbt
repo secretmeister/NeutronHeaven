@@ -4,8 +4,19 @@
 	order_index: 1
 	filename: "tinkers_triumph"
 	title: "Tinker's Triumph"
+	always_invisible: true
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [ ]
+	quests: [{
+		x: -1.5d
+		y: -0.5d
+		dependencies: ["5646D6F069B8F165"]
+		id: "065733ADE9F5E7DC"
+		tasks: [{
+			id: "08C128FC7AFB544F"
+			type: "item"
+			item: "minecraft:lava_bucket"
+		}]
+	}]
 	quest_links: [ ]
 }
