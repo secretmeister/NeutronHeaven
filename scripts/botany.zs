@@ -13,8 +13,8 @@ recipes.remove(<item:create:millstone>);
   "output": "botania:livingwood_log"
 });
 
-<recipetype:botania:pure_daisy>.addRecipe("pureclay", <blockstate:minecraft:sand>, <blockstate:minecraft:clay>, 100);
-<recipetype:botania:pure_daisy>.addRecipe("purecoal", <blockstate:minecraft:black_terracotta>, <blockstate:minecraft:coal_block>, 200);
+<recipetype:botania:pure_daisy>.addRecipe("pureclay", <blockstate:minecraft:clay>, <blockstate:minecraft:sand>,  100);
+<recipetype:botania:pure_daisy>.addRecipe("purecoal", <blockstate:minecraft:coal_block>, <blockstate:minecraft:black_terracotta>, 200);
 
 <recipetype:botania:mana_infusion>.addRecipe("copprefining", <item:create:crushed_raw_copper>, <item:create:copper_nugget>*15, 100, <block:minecraft:polished_granite>);
 <recipetype:botania:mana_infusion>.addRecipe("ironrefining", <item:create:crushed_raw_iron>, <item:minecraft:iron_nugget>*15, 100, <block:minecraft:polished_andesite>);
