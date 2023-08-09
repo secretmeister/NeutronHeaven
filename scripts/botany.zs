@@ -17,7 +17,7 @@ recipes.remove(<item:create:millstone>);
 <recipetype:botania:pure_daisy>.addRecipe("purecoal", <blockstate:minecraft:black_terracotta>, <blockstate:minecraft:coal_block>, 200);
 
 <recipetype:botania:mana_infusion>.addRecipe("copprefining", <item:create:crushed_raw_copper>, <item:create:copper_nugget>*15, 100, <block:minecraft:polished_granite>);
-<recipetype:botania:mana_infusion>.addRecipe("ironrefining", <item:create:crushed_raw_iron>, <item:minecraft:copper_nugget>*15, 100, <block:minecraft:polished_andesite>);
+<recipetype:botania:mana_infusion>.addRecipe("ironrefining", <item:create:crushed_raw_iron>, <item:minecraft:iron_nugget>*15, 100, <block:minecraft:polished_andesite>);
 <recipetype:botania:mana_infusion>.addRecipe("zincrefining", <item:create:crushed_raw_zinc>, <item:create:zinc_nugget>*15, 100, <block:minecraft:polished_diorite>);
 <recipetype:botania:mana_infusion>.addRecipe("goldrefining", <item:create:crushed_raw_gold>, <item:minecraft:gold_nugget>*15, 100, <block:minecraft:red_sandstone>);
 

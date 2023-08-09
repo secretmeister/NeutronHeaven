@@ -80,6 +80,7 @@
 		{
 			x: 2.5d
 			y: 1.5d
+			description: ["Rose gold is cheaper than Slimesteel"]
 			dependencies: ["66652730F0380203"]
 			id: "0AAF53D8A5E0C1E4"
 			tasks: [{
@@ -89,9 +90,10 @@
 					id: "tconstruct:tinkers_anvil"
 					Count: 1b
 					tag: {
-						texture: "tconstruct:slimesteel_block"
+						texture: "tconstruct:rose_gold_block"
 					}
 				}
+				match_nbt: false
 			}]
 		}
 		{

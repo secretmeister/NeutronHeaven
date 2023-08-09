@@ -167,7 +167,10 @@
 		{
 			x: -1.0d
 			y: -1.5d
-			description: ["Burning skyslime might cause the sky to unleash it's fury"]
+			description: [
+				"Burning blue glass might toggle the weather"
+				"Lightning takes a while, it is recommended to create many harness stations"
+			]
 			dependencies: ["49902A8191A56842"]
 			id: "0CD1D31C720D8760"
 			tasks: [{

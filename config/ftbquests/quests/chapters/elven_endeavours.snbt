@@ -31,6 +31,10 @@
 		{
 			x: -0.5d
 			y: 0.5d
+			dependencies: [
+				"1AFFC3C05CFFF1B1"
+				"35EF2CEC5A769A34"
+			]
 			id: "30342C8B7475D983"
 			tasks: [{
 				id: "6832EA3E323E4182"
@@ -39,8 +43,9 @@
 			}]
 		}
 		{
-			x: -1.5d
+			x: -0.5d
 			y: 1.5d
+			dependencies: ["30342C8B7475D983"]
 			id: "21EE8AA0B6155DC5"
 			tasks: [{
 				id: "6E9E53F5E3DC95BC"
