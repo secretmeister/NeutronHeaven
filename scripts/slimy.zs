@@ -4,6 +4,8 @@ import crafttweaker.api.loot.modifier.CommonLootModifiers;
 
 recipes.remove(<item:tconstruct:earth_slime_dirt>);
 
+<tag:items:crafttweaker:pickadze>.add(<item:tconstruct:pickadze>);
+
 <recipetype:create:filling>.addRecipe("slimedirt",<item:tconstruct:earth_slime_dirt>, <item:minecraft:dirt>, <fluid:tconstruct:earth_slime>*1000);
 
 <recipetype:pneumaticcraft:pressure_chamber>.addJsonRecipe("skyslime",{
@@ -37,15 +39,16 @@ LycheeRecipeManager.addRecipe("handle", <recipetype:lychee:block_crushing>, new 
     .post([LycheePosts.anvilDamageChance(0.1),LycheePosts.dropItem(<item:tconstruct:tool_handle>.withTag({Material: "tconstruct:rock" as string}))]));
 
 LycheeRecipeManager.addRecipe("siftmyc", <recipetype:lychee:block_interacting>, new LycheeRecipeBuilder()
-    .itemIn(<item:tconstruct:pickadze>)
+    .itemIn(<tag:items:crafttweaker:pickadze>)
     .blockIn(<block:minecraft:mycelium>)
     .post([LycheePosts.placeBlock(<block:minecraft:air>),LycheePosts.random([LycheePosts.dropItem(<item:minecraft:red_mushroom>).withWeight(2),LycheePosts.dropItem(<item:minecraft:brown_mushroom>).withWeight(2),LycheePosts.placeBlock(<block:minecraft:air>).withWeight(5)], 2, 4),LycheePosts.damageItem(1)]));
 LycheeRecipeManager.addRecipe("siftdirt", <recipetype:lychee:block_interacting>, new LycheeRecipeBuilder()
-    .itemIn(<item:tconstruct:pickadze>)
-    .blockIn(<block:minecraft:dirt>)
-    .post([LycheePosts.placeBlock(<block:minecraft:air>),LycheePosts.random([LycheePosts.dropItem(<item:minecraft:beetroot_seeds>).withWeight(3),LycheePosts.dropItem(<item:minecraft:wheat_seeds>).withWeight(2),LycheePosts.dropItem(<item:minecraft:cocoa_beans>).withWeight(1),LycheePosts.placeBlock(<block:minecraft:air>).withWeight(3)], 2, 3),LycheePosts.damageItem(1)]));
+    .itemIn(<tag:items:crafttweaker:pickadze>)
+    .blockIn(<block:minecraft:dirt_path>)
+    .post([LycheePosts.placeBlock(<block:minecraft:air>),LycheePosts.random([LycheePosts.dropItem(<item:minecraft:beetroot_seeds>).withWeight(3),LycheePosts.dropItem(<item:minecraft:wheat_seeds>).withWeight(4),LycheePosts.dropItem(<item:minecraft:cocoa_beans>).withWeight(1),LycheePosts.placeBlock(<block:minecraft:air>).withWeight(2)], 2, 3),LycheePosts.damageItem(1)]));
 
 craftingTable.addShapeless("pickhead", <item:tconstruct:pick_head>.withTag({Material: "tconstruct:slimesteel" as string}),[<item:tconstruct:sledge_hammer>.anyDamage().transformDamage(5),<item:tconstruct:slimesteel_ingot>,<item:tconstruct:slimesteel_ingot>]);
+craftingTable.addShapeless("axehead", <item:tconstruct:small_axe_head>.withTag({Material: "tconstruct:slimesteel" as string}),[<item:tconstruct:sledge_hammer>.anyDamage().transformDamage(1),<item:tconstruct:pick_head>.withTag({Material: "tconstruct:slimesteel" as string})]);
 
 LycheeRecipeManager.addRecipe("thunder", <recipetype:lychee:item_burning>, new LycheeRecipeBuilder()
   .itemIn(<item:minecraft:blue_stained_glass>)

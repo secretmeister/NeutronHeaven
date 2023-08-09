@@ -86,7 +86,7 @@ LycheeRecipeManager.addRecipe("crushdirt", <recipetype:lychee:block_interacting>
 LycheeRecipeManager.addRecipe("crushclay", <recipetype:lychee:block_interacting>, new LycheeRecipeBuilder()
     .itemIn(<tag:items:crafttweaker:hammers>)
     .blockIn(<block:minecraft:clay>)
-    .post([LycheePosts.placeBlock(<block:minecraft:air>),LycheePosts.random([LycheePosts.dropItem(<item:minecraft:kelp>).withWeight(1),LycheePosts.dropItem(<item:minecraft:clay_ball>).withWeight(7),LycheePosts.placeBlock(<block:minecraft:air>).withWeight(2)], 2, 5),LycheePosts.damageItem(1)]));
+    .post([LycheePosts.placeBlock(<block:minecraft:air>),LycheePosts.random([LycheePosts.dropItem(<item:minecraft:kelp>).withWeight(4),LycheePosts.dropItem(<item:minecraft:clay_ball>).withWeight(7),LycheePosts.placeBlock(<block:minecraft:air>).withWeight(3)], 3, 6),LycheePosts.damageItem(1)]));
 
 
 LycheeRecipeManager.addRecipe("slime", <recipetype:lychee:block_crushing>, new LycheeRecipeBuilder()
@@ -107,7 +107,10 @@ LycheeRecipeManager.addRecipe("earlygoldplate", <recipetype:lychee:block_crushin
     .crushingFallingBlock(<tag:blocks:minecraft:anvil>)
     .post([LycheePosts.anvilDamageChance(0.3),LycheePosts.dropItem(<item:create:golden_sheet>).condition([LycheeConditions.chance(0.75)])]));
 
-
+LycheeRecipeManager.addRecipe("coal", <recipetype:lychee:item_burning>, new LycheeRecipeBuilder()
+    .itemIn(<item:minecraft:flint>)
+    .post(LycheePosts.dropItem(<item:minecraft:coal>))
+);
 
 
 

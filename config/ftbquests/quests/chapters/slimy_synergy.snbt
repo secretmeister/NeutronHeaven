@@ -177,10 +177,11 @@
 			}]
 		}
 		{
-			title: "Mushroom"
+			title: "Mushrooms"
+			icon: "botania:mycelium_seeds"
 			x: 2.0d
 			y: -4.0d
-			description: ["There is tell of spores which spread the mushroom's influence"]
+			description: [""]
 			dependencies: [
 				"71210FE62C24CCDE"
 				"192815939B1F0D99"
@@ -198,6 +199,11 @@
 					type: "item"
 					item: "minecraft:red_mushroom"
 				}
+				{
+					id: "2426552D55648E9C"
+					type: "item"
+					item: "botania:mycelium_seeds"
+				}
 			]
 		}
 		{
@@ -212,21 +218,42 @@
 			}]
 		}
 		{
+			title: "Slimesteel Tool Heads"
+			icon: {
+				id: "tconstruct:pick_head"
+				Count: 1b
+				tag: {
+					Material: "tconstruct:slimesteel"
+				}
+			}
 			x: 0.5d
 			y: -2.5d
 			dependencies: ["71210FE62C24CCDE"]
 			id: "27DA28702C374D05"
-			tasks: [{
-				id: "50046869C44037D0"
-				type: "item"
-				item: {
-					id: "tconstruct:pick_head"
-					Count: 1b
-					tag: {
-						Material: "tconstruct:slimesteel"
+			tasks: [
+				{
+					id: "50046869C44037D0"
+					type: "item"
+					item: {
+						id: "tconstruct:pick_head"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:slimesteel"
+						}
 					}
 				}
-			}]
+				{
+					id: "70A2AE6DE996D6E3"
+					type: "item"
+					item: {
+						id: "tconstruct:small_axe_head"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:slimesteel"
+						}
+					}
+				}
+			]
 		}
 		{
 			x: 2.0d
@@ -246,7 +273,7 @@
 			}]
 		}
 		{
-			title: "Pickadze"
+			title: "New Tools"
 			x: 1.5d
 			y: -2.5d
 			dependencies: [
@@ -255,70 +282,141 @@
 				"41F478375CFCE3F3"
 			]
 			id: "046DF423E57F6695"
-			tasks: [{
-				id: "276508CD7E646B82"
-				type: "item"
-				item: {
-					id: "tconstruct:pickadze"
-					Count: 1b
-					tag: {
-						tic_multipliers: {
-							"tconstruct:mining_speed": 0.75f
-							"tconstruct:attack_damage": 1.15f
-							"tconstruct:durability": 1.3f
-						}
-						tic_stats: {
-							"tconstruct:attack_speed": 1.3f
-							"tconstruct:mining_speed": 4.3312497f
-							"tconstruct:attack_damage": 2.3f
-							"tconstruct:harvest_tier": "minecraft:diamond"
-							"tconstruct:durability": 730.6f
-						}
-						tic_broken: 0b
-						tic_modifiers: [
-							{
-								name: "tconstruct:overslime"
-								level: 1s
+			tasks: [
+				{
+					id: "276508CD7E646B82"
+					type: "item"
+					item: {
+						id: "tconstruct:pickadze"
+						Count: 1b
+						tag: {
+							tic_multipliers: {
+								"tconstruct:mining_speed": 0.75f
+								"tconstruct:attack_damage": 1.15f
+								"tconstruct:durability": 1.3f
 							}
-							{
-								name: "tconstruct:bane_of_sssss"
-								level: 1s
+							tic_stats: {
+								"tconstruct:attack_speed": 1.3f
+								"tconstruct:mining_speed": 4.3312497f
+								"tconstruct:attack_damage": 2.3f
+								"tconstruct:harvest_tier": "minecraft:diamond"
+								"tconstruct:durability": 730.6f
 							}
-							{
-								name: "tconstruct:stonebound"
-								level: 1s
+							tic_broken: 0b
+							tic_modifiers: [
+								{
+									name: "tconstruct:overslime"
+									level: 1s
+								}
+								{
+									name: "tconstruct:bane_of_sssss"
+									level: 1s
+								}
+								{
+									name: "tconstruct:stonebound"
+									level: 1s
+								}
+								{
+									name: "tconstruct:dwarven"
+									level: 1s
+								}
+								{
+									name: "tconstruct:overcast"
+									level: 1s
+								}
+								{
+									name: "tconstruct:pathing"
+									level: 1s
+								}
+							]
+							tic_materials: [
+								"tconstruct:slimesteel"
+								"tconstruct:rock"
+								"tconstruct:copper"
+							]
+							Damage: 0
+							tic_volatile_data: {
+								"tconstruct:overslime_cap": 135
+								"tconstruct:overslime_friend": 1b
 							}
-							{
-								name: "tconstruct:dwarven"
-								level: 1s
+							tic_persistent_data: {
+								abilities: 1
+								upgrades: 3
 							}
-							{
-								name: "tconstruct:overcast"
-								level: 1s
-							}
-							{
-								name: "tconstruct:pathing"
-								level: 1s
-							}
-						]
-						tic_materials: [
-							"tconstruct:slimesteel"
-							"tconstruct:rock"
-							"tconstruct:copper"
-						]
-						Damage: 0
-						tic_volatile_data: {
-							"tconstruct:overslime_cap": 135
-							"tconstruct:overslime_friend": 1b
-						}
-						tic_persistent_data: {
-							abilities: 1
-							upgrades: 3
 						}
 					}
+					match_nbt: false
 				}
-				match_nbt: false
-			}]
+				{
+					id: "40A7C249987C02D0"
+					type: "item"
+					item: {
+						id: "tconstruct:mattock"
+						Count: 1b
+						tag: {
+							tic_multipliers: {
+								"tconstruct:mining_speed": 1.1f
+								"tconstruct:attack_damage": 1.1f
+								"tconstruct:durability": 1.25f
+							}
+							tic_stats: {
+								"tconstruct:attack_speed": 0.9f
+								"tconstruct:mining_speed": 6.3524995f
+								"tconstruct:attack_damage": 3.3000002f
+								"tconstruct:harvest_tier": "minecraft:diamond"
+								"tconstruct:durability": 702.5f
+							}
+							tic_broken: 0b
+							tic_modifiers: [
+								{
+									name: "tconstruct:overslime"
+									level: 2s
+								}
+								{
+									name: "tconstruct:sticky"
+									level: 1s
+								}
+								{
+									name: "tconstruct:stonebound"
+									level: 1s
+								}
+								{
+									name: "tconstruct:dwarven"
+									level: 1s
+								}
+								{
+									name: "tconstruct:overcast"
+									level: 1s
+								}
+								{
+									name: "tconstruct:tilling"
+									level: 1s
+								}
+							]
+							tic_upgrades: [{
+								name: "tconstruct:overslime"
+								level: 1s
+							}]
+							tic_materials: [
+								"tconstruct:slimesteel"
+								"tconstruct:rock"
+								"tconstruct:copper"
+							]
+							Damage: 0
+							tic_volatile_data: {
+								"tconstruct:overslime_cap": 130
+								"tconstruct:overslime_friend": 1b
+							}
+							tic_persistent_data: {
+								abilities: 1
+								upgrades: 3
+								"tconstruct:overslime": 0
+							}
+						}
+					}
+					match_nbt: false
+				}
+			]
 		}
 		{
 			x: 1.0d

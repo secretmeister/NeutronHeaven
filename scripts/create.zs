@@ -5,7 +5,7 @@ recipes.remove(<item:create:andesite_alloy>);
 
 <recipetype:create:item_application>.addRecipe("copcas", [<item:create:copper_casing>], <item:minecraft:polished_andesite>, <item:create:copper_sheet>, false);
 
-craftingTable.addShaped("spout", <item:create:spout>, [[<item:minecraft:air>,<item:create:andesite_alloy>,<item:minecraft:air>],[<item:minecraft:glass_pane>,<item:create:copper_casing>,<item:minecraft:glass_pane>],[<item:minecraft:air>,<item:tconstruct:round_plate>.withTag({Material: "tconstruct:copper" as string}),<item:minecraft:air>]]);
+craftingTable.addShaped("spout", <item:create:spout>, [[<item:minecraft:air>,<item:create:andesite_alloy>,<item:minecraft:air>],[<tag:items:forge:glass_panes>,<item:create:copper_casing>,<tag:items:forge:glass_panes>],[<item:minecraft:air>,<item:tconstruct:round_plate>.withTag({Material: "tconstruct:copper" as string}),<item:minecraft:air>]]);
 craftingTable.addShapeless("alloy",<item:create:andesite_alloy>, [<item:minecraft:andesite>,<item:create:zinc_nugget>,<item:minecraft:iron_nugget>,<item:minecraft:andesite>]);
 
 <recipetype:create:filling>.addRecipe("bettcopp",<item:create:crushed_raw_copper>, <item:minecraft:granite>, <fluid:tconstruct:seared_stone>*125);

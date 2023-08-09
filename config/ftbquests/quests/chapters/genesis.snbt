@@ -240,6 +240,18 @@
 				item: "minecraft:slime_ball"
 			}]
 		}
+		{
+			x: -1.5d
+			y: -0.5d
+			description: ["A good fuel source"]
+			dependencies: ["29844BB8562318DA"]
+			id: "7E30ED138F34B47F"
+			tasks: [{
+				id: "7F3A6D79E27729E1"
+				type: "item"
+				item: "minecraft:dried_kelp_block"
+			}]
+		}
 	]
 	quest_links: [ ]
 }
