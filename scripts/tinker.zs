@@ -24,6 +24,7 @@
   "result": "tconstruct:round_plate_red_sand_cast"
 });
 
+<recipetype:tconstruct:casting_table>.remove(<item:tconstruct:copper_nugget>);
 <recipetype:tconstruct:casting_table>.addJsonRecipe("scorched2", {
   "type": "tconstruct:casting_table",
   "cast": {
@@ -36,6 +37,19 @@
   },
   "result": "tconstruct:scorched_brick",
   "cooling_time": 200
+});
+<recipetype:tconstruct:casting_table>.addJsonRecipe("nugget", {
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "item": "tconstruct:nugget_cast"
+  },
+  "cast_consumed": false,
+  "fluid": {
+    "tag": "tconstruct:molten_copper",
+    "amount": 10
+  },
+  "result": "tconstruct:copper_nugget",
+  "cooling_time": 20
 });
 
 <recipetype:tconstruct:alloying>.addJsonRecipe("slimesteel2",{

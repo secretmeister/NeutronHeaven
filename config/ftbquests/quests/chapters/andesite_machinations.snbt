@@ -58,6 +58,7 @@
 		{
 			x: 4.0d
 			y: 1.0d
+			description: ["Faucets work wonders."]
 			dependencies: [
 				"456C705236261386"
 				"36C7D318C66C9ACC"
@@ -72,6 +73,7 @@
 		{
 			x: 4.0d
 			y: 0.0d
+			description: ["You should use tinkers instead"]
 			dependencies: ["456C705236261386"]
 			id: "50FB343AADA740CA"
 			tasks: [{
@@ -97,6 +99,7 @@
 		{
 			x: 2.0d
 			y: 1.0d
+			description: ["An alternate source of pressure"]
 			dependencies: ["71D543EAC26F0236"]
 			id: "05EF6F5041BD1D59"
 			tasks: [{

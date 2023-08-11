@@ -21,24 +21,19 @@ recipes.remove(<item:create:millstone>);
 <recipetype:botania:pure_daisy>.addRecipe("pureclay", <blockstate:minecraft:clay>, <blockstate:minecraft:sand>,  100);
 <recipetype:botania:pure_daisy>.addRecipe("purecoal", <blockstate:minecraft:coal_block>, <blockstate:minecraft:black_terracotta>, 200);
 
-<recipetype:botania:mana_infusion>.addRecipe("copprefining", <item:create:crushed_raw_copper>, <item:create:copper_nugget>*15, 100, <block:minecraft:polished_granite>);
-<recipetype:botania:mana_infusion>.addRecipe("ironrefining", <item:create:crushed_raw_iron>, <item:minecraft:iron_nugget>*15, 100, <block:minecraft:polished_andesite>);
-<recipetype:botania:mana_infusion>.addRecipe("zincrefining", <item:create:crushed_raw_zinc>, <item:create:zinc_nugget>*15, 100, <block:minecraft:polished_diorite>);
-<recipetype:botania:mana_infusion>.addRecipe("goldrefining", <item:create:crushed_raw_gold>, <item:minecraft:gold_nugget>*15, 100, <block:minecraft:red_sandstone>);
+<recipetype:botania:mana_infusion>.remove(<item:minecraft:melon_seeds>);
+
+<recipetype:botania:mana_infusion>.addRecipe("copprefining", <item:create:copper_nugget>*15, <item:create:crushed_raw_copper>, 100, <block:minecraft:polished_granite>);
+<recipetype:botania:mana_infusion>.addRecipe("ironrefining", <item:minecraft:iron_nugget>*15, <item:create:crushed_raw_iron>, 100, <block:minecraft:polished_andesite>);
+<recipetype:botania:mana_infusion>.addRecipe("zincrefining", <item:create:zinc_nugget>*15, <item:create:crushed_raw_zinc>, 100, <block:minecraft:polished_diorite>);
+<recipetype:botania:mana_infusion>.addRecipe("goldrefining", <item:minecraft:gold_nugget>*15, <item:create:crushed_raw_gold>, 100, <block:minecraft:red_sandstone>);
+<recipetype:botania:mana_infusion>.addRecipe("melonalch", <item:minecraft:melon_seeds>, <item:minecraft:beetroot_seeds>, 50, <block:botania:cell_block>);
 
 <recipetype:botania:runic_altar>.remove(<item:botania:rune_earth>);
-<recipetype:botania:runic_altar>.addJsonRecipe("earth",{
-  "type": "botania:runic_altar",
-  "output": 
-    {"item": "botania:rune_earth","count": 2},
-  "mana": 5200,
-  "ingredients": [
-    {"tag": "botania:mana_dusts"},
-    {"tag": "botania:manasteel_ingots"},
-    {"item": "minecraft:stone"},
-    {"item": "minecraft:coal_block"},
-    {"item": "minecraft:deepslate"}
-    ]});
+
+<recipetype:botania:runic_altar>.addRecipe("earth",<item:botania:rune_earth>, 5200, <tag:items:botania:mana_dusts>, <tag:items:botania:manasteel_ingots>, <item:minecraft:stone>, <item:minecraft:deepslate>, <item:minecraft:coal_block>);
+<recipetype:botania:runic_altar>.addRecipe("cactus",<item:minecraft:cactus>, 1000, <item:tconstruct:earth_congealed_slime>, <item:minecraft:wheat_seeds>, <item:botania:mana_powder>);
+
 
 <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("mycseed")
     .transitionTo(<item:minecraft:wheat_seeds>)

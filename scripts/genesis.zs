@@ -1,6 +1,7 @@
 import crafttweaker.api.util.math.BlockPos;
 import crafttweaker.api.events.CTEventManager;
 <tag:items:crafttweaker:hammers>.add(<item:tconstruct:sledge_hammer>);
+<tag:items:crafttweaker:hammerandexca>.add([<item:tconstruct:sledge_hammer>,<item:tconstruct:excavator>]);
 /*function hasDur() {
     if item.damage() != item.maxDamage() {
 
@@ -38,6 +39,8 @@ craftingTable.addShaped("cheest",<item:stonechest:chest_cobblestone>,[[<item:sto
 craftingTable.addShaped("craft",<item:crafting_on_a_stick:crafting_table>,[[<item:stonechest:part_diorite>,<item:stonechest:part_andesite>],[<item:stonechest:part_cobblestone>,<item:tconstruct:tough_handle>.withTag({Material: "tconstruct:rock" as string})]]);
 craftingTable.addShaped("blast_furnace",<item:minecraft:blast_furnace>,[[<item:minecraft:iron_ingot>,<item:create:iron_sheet>,<item:minecraft:iron_ingot>],[<item:minecraft:iron_ingot>,<item:minecraft:furnace>,<item:minecraft:iron_ingot>],[<item:minecraft:smooth_stone>,<item:minecraft:smooth_stone>,<item:minecraft:smooth_stone>]]);
 craftingTable.addShaped("anvil",<item:minecraft:anvil>,[[<item:create:andesite_alloy>,<item:create:andesite_alloy>,<item:create:andesite_alloy>],[<item:minecraft:air>,<item:pneumaticcraft:ingot_iron_compressed>,<item:minecraft:air>],[<item:pneumaticcraft:ingot_iron_compressed>,<item:pneumaticcraft:ingot_iron_compressed>,<item:pneumaticcraft:ingot_iron_compressed>]]);
+craftingTable.addShaped("exca", <item:tconstruct:excavator>.withTag({tic_multipliers: {"tconstruct:mining_speed": 0.3 as float, "tconstruct:attack_damage": 1.2 as float, "tconstruct:durability": 3.75 as float}, tic_stats: {"tconstruct:attack_speed": 1.0 as float, "tconstruct:mining_speed": 1.26 as float, "tconstruct:attack_damage": 3.0 as float, "tconstruct:harvest_tier": "minecraft:stone" as string, "tconstruct:durability": 435.0 as float}, tic_broken: 0 as byte, tic_modifiers: [{name: "tconstruct:knockback" as string, level: 2 as short}, {name: "tconstruct:stonebound" as string, level: 4 as short}, {name: "tconstruct:pathing" as string, level: 1 as short}], tic_materials: ["tconstruct:rock" as string, "tconstruct:rock" as string, "tconstruct:rock" as string, "tconstruct:rock" as string], tic_persistent_data: {abilities: 1 as int, upgrades: 2 as int}}),
+[[<item:tconstruct:large_plate>.withTag({Material: "tconstruct:rock" as string}),<item:tconstruct:large_plate>.withTag({Material: "tconstruct:rock" as string})],[<item:tconstruct:tough_handle>.withTag({Material: "tconstruct:rock" as string}),<item:tconstruct:tough_handle>.withTag({Material: "tconstruct:rock" as string})]]);
 
 
 furnace.removeByRegex("create:.*from_crushed");
@@ -48,25 +51,25 @@ furnace.addRecipe("crushzinc", <item:create:zinc_nugget>*6, <item:create:crushed
 
 
 LycheeRecipeManager.addRecipe("crushgrav", <recipetype:lychee:block_interacting>, new LycheeRecipeBuilder()
-    .itemIn(<tag:items:crafttweaker:hammers>)
+    .itemIn(<tag:items:crafttweaker:hammerandexca>)
     .blockIn(<block:minecraft:gravel>)
-    .post([LycheePosts.placeBlock(<block:minecraft:air>),LycheePosts.random([LycheePosts.dropItem(<item:minecraft:flint>).withWeight(2),LycheePosts.placeBlock(<block:minecraft:sand>).withWeight(18)]),LycheePosts.damageItem(1)]));
+    .post([LycheePosts.placeBlock(<block:minecraft:sand>),LycheePosts.random([LycheePosts.dropItem(<item:minecraft:flint>).withWeight(2),LycheePosts.placeBlock(<block:minecraft:sand>).withWeight(18)]),LycheePosts.damageItem(1)]));
 LycheeRecipeManager.addRecipe("crushcob", <recipetype:lychee:block_interacting>, new LycheeRecipeBuilder()
     .itemIn(<tag:items:crafttweaker:hammers>)
     .blockIn(<block:minecraft:cobblestone>)
-    .post([LycheePosts.placeBlock(<block:minecraft:air>),LycheePosts.random([LycheePosts.dropItem(<item:minecraft:coal>),LycheePosts.placeBlock(<block:minecraft:gravel>).withWeight(16)]),LycheePosts.damageItem(1)]));
+    .post([LycheePosts.placeBlock(<block:minecraft:gravel>),LycheePosts.random([LycheePosts.dropItem(<item:minecraft:coal>),LycheePosts.placeBlock(<block:minecraft:gravel>).withWeight(13)]),LycheePosts.damageItem(1)]));
 LycheeRecipeManager.addRecipe("crushsand", <recipetype:lychee:block_interacting>, new LycheeRecipeBuilder()
-    .itemIn(<tag:items:crafttweaker:hammers>)
+    .itemIn(<tag:items:crafttweaker:hammerandexca>)
     .blockIn(<block:minecraft:sand>)
     .post([LycheePosts.placeBlock(<block:minecraft:air>),LycheePosts.random([LycheePosts.dropItem(<item:minecraft:gunpowder>).withWeight(2),LycheePosts.dropItem(<item:minecraft:clay_ball>).withWeight(9),LycheePosts.placeBlock(<block:minecraft:air>).withWeight(21)]),LycheePosts.damageItem(1)]));
 LycheeRecipeManager.addRecipe("crushredsand", <recipetype:lychee:block_interacting>, new LycheeRecipeBuilder()
-    .itemIn(<tag:items:crafttweaker:hammers>)
+    .itemIn(<tag:items:crafttweaker:hammerandexca>)
     .blockIn(<block:minecraft:red_sand>)
     .post([LycheePosts.placeBlock(<block:minecraft:air>),LycheePosts.random([LycheePosts.dropItem(<item:minecraft:gunpowder>).withWeight(2),LycheePosts.dropItem(<item:create:crushed_raw_gold>),LycheePosts.dropItem(<item:minecraft:dead_bush>).withWeight(7),LycheePosts.placeBlock(<block:minecraft:air>).withWeight(33)]),LycheePosts.damageItem(1)]));
 LycheeRecipeManager.addRecipe("crushdior", <recipetype:lychee:block_interacting>, new LycheeRecipeBuilder()
     .itemIn(<tag:items:crafttweaker:hammers>)
     .blockIn(<block:minecraft:diorite>)
-    .post([LycheePosts.placeBlock(<block:minecraft:air>),LycheePosts.random([LycheePosts.dropItem(<item:minecraft:quartz>).withWeight(8),LycheePosts.dropItem(<item:create:crushed_raw_zinc>),LycheePosts.placeBlock(<block:minecraft:air>).withWeight(23)]),LycheePosts.damageItem(1)]));
+    .post([LycheePosts.placeBlock(<block:minecraft:air>),LycheePosts.random([LycheePosts.dropItem(<item:minecraft:quartz>).withWeight(3),LycheePosts.dropItem(<item:create:crushed_raw_zinc>),LycheePosts.placeBlock(<block:minecraft:air>).withWeight(11)]),LycheePosts.damageItem(1)]));
 LycheeRecipeManager.addRecipe("crushandes", <recipetype:lychee:block_interacting>, new LycheeRecipeBuilder()
     .itemIn(<tag:items:crafttweaker:hammers>)
     .blockIn(<block:minecraft:andesite>)
@@ -74,17 +77,17 @@ LycheeRecipeManager.addRecipe("crushandes", <recipetype:lychee:block_interacting
 LycheeRecipeManager.addRecipe("crushgran", <recipetype:lychee:block_interacting>, new LycheeRecipeBuilder()
     .itemIn(<tag:items:crafttweaker:hammers>)
     .blockIn(<block:minecraft:granite>)
-    .post([LycheePosts.placeBlock(<block:minecraft:air>),LycheePosts.random([LycheePosts.dropItem(<item:create:crushed_raw_copper>),LycheePosts.placeBlock(<block:minecraft:red_sand>).withWeight(4)]),LycheePosts.damageItem(1)]));
+    .post([LycheePosts.placeBlock(<block:minecraft:red_sand>),LycheePosts.random([LycheePosts.dropItem(<item:create:crushed_raw_copper>),LycheePosts.placeBlock(<block:minecraft:red_sand>).withWeight(4)]),LycheePosts.damageItem(1)]));
 LycheeRecipeManager.addRecipe("crushcoarsedirt", <recipetype:lychee:block_interacting>, new LycheeRecipeBuilder()
-    .itemIn(<tag:items:crafttweaker:hammers>)
+    .itemIn(<tag:items:crafttweaker:hammerandexca>)
     .blockIn(<block:minecraft:coarse_dirt>)
-    .post([LycheePosts.placeBlock(<block:minecraft:air>),LycheePosts.random([LycheePosts.dropItem(<item:minecraft:dead_bush>).withWeight(1),LycheePosts.placeBlock(<block:minecraft:air>).withWeight(2),LycheePosts.placeBlock(<block:minecraft:dirt>).withWeight(5)]),LycheePosts.damageItem(1)]));
+    .post([LycheePosts.placeBlock(<block:minecraft:dirt>),LycheePosts.random([LycheePosts.dropItem(<item:minecraft:dead_bush>).withWeight(1),LycheePosts.placeBlock(<block:minecraft:air>).withWeight(2),LycheePosts.placeBlock(<block:minecraft:dirt>).withWeight(5)]),LycheePosts.damageItem(1)]));
 LycheeRecipeManager.addRecipe("crushdirt", <recipetype:lychee:block_interacting>, new LycheeRecipeBuilder()
-    .itemIn(<tag:items:crafttweaker:hammers>)
+    .itemIn(<tag:items:crafttweaker:hammerandexca>)
     .blockIn(<block:minecraft:dirt>)
     .post([LycheePosts.placeBlock(<block:minecraft:air>),LycheePosts.random([LycheePosts.dropItem(<item:minecraft:wheat_seeds>).withWeight(4),LycheePosts.dropItem(<item:tconstruct:earth_slime_leaves>),LycheePosts.placeBlock(<block:minecraft:air>).withWeight(7)], 1, 2),LycheePosts.damageItem(1)]));
 LycheeRecipeManager.addRecipe("crushclay", <recipetype:lychee:block_interacting>, new LycheeRecipeBuilder()
-    .itemIn(<tag:items:crafttweaker:hammers>)
+    .itemIn(<tag:items:crafttweaker:hammerandexca>)
     .blockIn(<block:minecraft:clay>)
     .post([LycheePosts.placeBlock(<block:minecraft:air>),LycheePosts.random([LycheePosts.dropItem(<item:minecraft:kelp>).withWeight(4),LycheePosts.dropItem(<item:minecraft:clay_ball>).withWeight(7),LycheePosts.placeBlock(<block:minecraft:air>).withWeight(3)], 3, 6),LycheePosts.damageItem(1)]));
 

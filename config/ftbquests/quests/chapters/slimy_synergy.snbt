@@ -127,6 +127,7 @@
 		{
 			x: -2.0d
 			y: -1.5d
+			description: ["Dropping stuff on diorite can cause it to eject some rare minerals"]
 			dependencies: ["6C8CB54AB1A7A411"]
 			id: "4887A0F37F0FF05D"
 			tasks: [{

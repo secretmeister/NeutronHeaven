@@ -143,6 +143,7 @@
 		{
 			x: 1.5d
 			y: -0.5d
+			description: ["Required for an anvil, and also some other stuff"]
 			dependencies: ["24FC422FA3589D5D"]
 			id: "4C351B64DC9AB23F"
 			tasks: [{
@@ -190,6 +191,7 @@
 		{
 			x: 2.5d
 			y: -0.5d
+			description: ["Tnt is quite explosive, and it is recommended to do your explosions in a chamber of cobblestone around 7 blocks in diameter"]
 			dependencies: [
 				"24FC422FA3589D5D"
 				"20F69AAFD25882DE"
@@ -215,6 +217,7 @@
 		{
 			x: 0.5d
 			y: -0.5d
+			description: ["To tinkers you go!"]
 			dependencies: [
 				"29844BB8562318DA"
 				"1CAB9F50BBF644A6"
@@ -229,6 +232,7 @@
 		{
 			x: 3.5d
 			y: -0.5d
+			subtitle: "The start of the real journey"
 			dependencies: [
 				"5ACD90E637161C6D"
 				"31284DCE27BBC499"
