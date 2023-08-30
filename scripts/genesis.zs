@@ -2,18 +2,11 @@ import crafttweaker.api.util.math.BlockPos;
 import crafttweaker.api.events.CTEventManager;
 <tag:items:crafttweaker:hammers>.add(<item:tconstruct:sledge_hammer>);
 <tag:items:crafttweaker:hammerandexca>.add([<item:tconstruct:sledge_hammer>,<item:tconstruct:excavator>]);
-/*function hasDur() {
-    if item.damage() != item.maxDamage() {
-
-    } else {
-        return item
-    }
-}*/
 <tag:items:forge:chests/wooden>.add(<item:stonechest:chest_cobblestone>);
 <tag:items:crafttweaker:stone>.add(<tag:items:forge:stone>);
 <tag:items:crafttweaker:stone>.remove(<item:minecraft:polished_andesite>);
 
-
+recipes.remove(<item:minecraft:dispenser>);
 recipes.remove(<item:crafting_on_a_stick:crafting_table>);
 recipes.remove(<item:stonechest:chest_cobblestone>);
 recipes.remove(<item:minecraft:blast_furnace>);
@@ -28,6 +21,7 @@ craftingTable.addShapeless("coarse",<item:minecraft:coarse_dirt>, [<item:minecra
 craftingTable.addShapeless("gravfast",<item:minecraft:gravel>*8, [<item:minecraft:cobblestone>,<item:minecraft:cobblestone>,<item:minecraft:cobblestone>,<item:minecraft:cobblestone>,<item:minecraft:cobblestone>,<item:minecraft:cobblestone>,<item:minecraft:cobblestone>,<item:minecraft:cobblestone>,<item:tconstruct:sledge_hammer>.anyDamage().transformDamage(8)]);
 craftingTable.addShapeless("sandfast",<item:minecraft:sand>*8, [<item:minecraft:gravel>,<item:minecraft:gravel>,<item:minecraft:gravel>,<item:minecraft:gravel>,<item:minecraft:gravel>,<item:minecraft:gravel>,<item:minecraft:gravel>,<item:minecraft:gravel>,<item:tconstruct:sledge_hammer>.anyDamage().transformDamage(8)]);
 craftingTable.addShapeless("drip",<item:minecraft:dripstone_block>, [<item:minecraft:red_sand>,<item:minecraft:clay>]);
+craftingTable.addShapeless("disp",<item:minecraft:dispenser>, [<item:minecraft:dropper>,<item:minecraft:hopper>]);
 
 
 craftingTable.addShaped("hamhead",<item:tconstruct:hammer_head>.withTag({Material: "tconstruct:rock" as string}),[[<item:stonechest:part_cobblestone>,<item:stonechest:part_cobblestone>],[<item:stonechest:part_cobblestone>,<item:stonechest:part_cobblestone>]]);
@@ -48,6 +42,7 @@ furnace.addRecipe("crushiron", <item:minecraft:iron_nugget>*6, <item:create:crus
 furnace.addRecipe("crushgold", <item:minecraft:gold_nugget>*6, <item:create:crushed_raw_gold>, 0.1, 220);
 furnace.addRecipe("crushcopp", <item:create:copper_nugget>*6, <item:create:crushed_raw_copper>, 0.1, 220);
 furnace.addRecipe("crushzinc", <item:create:zinc_nugget>*6, <item:create:crushed_raw_zinc>, 0.1, 220);
+furnace.addRecipe("crushnick", <item:modularmaterials:nugget.nickel>*6, <item:create:crushed_raw_nickel>, 0.1, 220);
 
 
 LycheeRecipeManager.addRecipe("crushgrav", <recipetype:lychee:block_interacting>, new LycheeRecipeBuilder()

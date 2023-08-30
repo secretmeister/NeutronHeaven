@@ -1,0 +1,91 @@
+{
+	id: "73283712FC01F1A9"
+	group: "437B64C75C6F34C8"
+	order_index: 3
+	filename: "smelting_science"
+	title: "Smelting Science"
+	icon: {
+		id: "tconstruct:smeltery_controller"
+		Count: 1b
+		tag: {
+			texture: "tconstruct:seared_bricks"
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -2.0d
+			y: -1.0d
+			dependencies: [
+				"2EA1A468B0D52FFA"
+				"4D42C2AB06A255A5"
+			]
+			id: "5C704BE90DD3B83D"
+			tasks: [{
+				id: "572BF3BBCDF6606A"
+				type: "item"
+				item: "pneumaticcraft:biodiesel_bucket"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -1.0d
+			dependencies: ["5C704BE90DD3B83D"]
+			id: "23C93F4861D1EA7C"
+			tasks: [{
+				id: "4816592AD6E90ED7"
+				type: "item"
+				item: {
+					id: "tconstruct:smeltery_controller"
+					Count: 1b
+					tag: {
+						texture: "tconstruct:seared_bricks"
+					}
+				}
+			}]
+		}
+		{
+			x: -0.5d
+			y: 0.0d
+			dependencies: [
+				"23C93F4861D1EA7C"
+				"6DC44E10484B2BED"
+			]
+			id: "49E47BD55CFE7B59"
+			tasks: [{
+				id: "63BFD7204972BEE9"
+				type: "item"
+				item: "tconstruct:amethyst_bronze_ingot"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.0d
+			dependencies: [
+				"660BB3E3529D970A"
+				"1B1146A650021F90"
+				"72CE81EB18FBE5F2"
+				"5A280C05AB199477"
+			]
+			id: "6DC44E10484B2BED"
+			tasks: [{
+				id: "46AF9D0AB3B11095"
+				type: "item"
+				item: "minecraft:amethyst_shard"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 0.0d
+			dependencies: ["23C93F4861D1EA7C"]
+			id: "45E7B1FEC21C0ECC"
+			tasks: [{
+				id: "001B090844B3AA40"
+				type: "item"
+				item: "tconstruct:blood_slime_ball"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

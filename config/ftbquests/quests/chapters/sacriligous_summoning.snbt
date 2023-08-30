@@ -1,0 +1,119 @@
+{
+	id: "55D1BED09F37DC69"
+	group: "437B64C75C6F34C8"
+	order_index: 4
+	filename: "sacriligous_summoning"
+	title: "Sacriligous Summoning"
+	icon: "minecraft:skeleton_skull"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Bloody Beginning"
+			x: -2.0d
+			y: 1.0d
+			dependencies: [
+				"45E7B1FEC21C0ECC"
+				"72CE81EB18FBE5F2"
+			]
+			id: "5890246F3024D9DD"
+			tasks: [{
+				id: "5A735ACA57353760"
+				type: "item"
+				item: "tconstruct:blood_bucket"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -0.5d
+			dependencies: ["5890246F3024D9DD"]
+			id: "705A6767852B9FBF"
+			tasks: [{
+				id: "68FF74F06D218A53"
+				type: "item"
+				item: "minecraft:spider_eye"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -0.5d
+			dependencies: ["705A6767852B9FBF"]
+			id: "7A9BE30A9644F99A"
+			tasks: [{
+				id: "182361A12BD6CB30"
+				type: "item"
+				item: "minecraft:string"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 0.5d
+			dependencies: ["5890246F3024D9DD"]
+			id: "4C9D4BE73959A8AF"
+			tasks: [{
+				id: "09E69AAEB3578121"
+				type: "item"
+				item: "minecraft:gunpowder"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 2.5d
+			dependencies: ["5890246F3024D9DD"]
+			id: "0B3E60DAB67C948E"
+			tasks: [{
+				id: "3CC53D3DDF81EC86"
+				type: "item"
+				item: "tconstruct:necrotic_bone"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 2.5d
+			dependencies: ["0B3E60DAB67C948E"]
+			id: "107CD05C9CE45DBE"
+			tasks: [{
+				id: "6A4FFF6BD409C9BC"
+				type: "item"
+				item: "minecraft:wither_skeleton_skull"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 1.5d
+			dependencies: ["5890246F3024D9DD"]
+			id: "370F0E89E80234DA"
+			tasks: [{
+				id: "44756EACAD2595D1"
+				type: "item"
+				item: "minecraft:bone"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 1.0d
+			dependencies: [
+				"4C9D4BE73959A8AF"
+				"370F0E89E80234DA"
+			]
+			id: "37B45FB46A5FC631"
+			tasks: [{
+				id: "6C0252DF787A90AF"
+				type: "item"
+				item: "minecraft:skeleton_skull"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 1.0d
+			dependencies: ["37B45FB46A5FC631"]
+			id: "1736FF7BF7F3D2C9"
+			tasks: [{
+				id: "3349065EB28C8BCB"
+				type: "item"
+				item: "minecraft:milk_bucket"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

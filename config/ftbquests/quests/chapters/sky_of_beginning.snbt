@@ -242,7 +242,10 @@
 		{
 			x: -2.0d
 			y: 7.0d
-			subtitle: "Unfinished"
+			dependencies: [
+				"45E7B1FEC21C0ECC"
+				"4D42C2AB06A255A5"
+			]
 			id: "29E1F886D3B50A2A"
 			tasks: [{
 				id: "5B45CD84DDA5FEC5"
@@ -253,7 +256,7 @@
 		{
 			x: -3.5d
 			y: 5.5d
-			subtitle: "Not Yet Implemented"
+			dependencies: ["63C36487E18FBF96"]
 			id: "73DE3999221D25DA"
 			tasks: [{
 				id: "4A6A826C0EA08D98"
@@ -264,7 +267,7 @@
 		{
 			x: -6.5d
 			y: 5.5d
-			subtitle: "Not Finished"
+			dependencies: ["7A9BE30A9644F99A"]
 			id: "63C36487E18FBF96"
 			tasks: [{
 				id: "7AD8E4E9A3F73729"
@@ -275,7 +278,7 @@
 		{
 			x: -8.0d
 			y: 7.0d
-			subtitle: "Also Not Finished"
+			dependencies: ["28D38FDF31C2ADC3"]
 			id: "6224906F31FA2A4A"
 			tasks: [{
 				id: "4E7C3E15968FB6E0"
@@ -300,7 +303,7 @@
 		{
 			x: -3.5d
 			y: 8.5d
-			subtitle: "No Chance"
+			dependencies: ["45E7B1FEC21C0ECC"]
 			id: "43BA0605185EEDF0"
 			tasks: [{
 				id: "422151173022662B"
@@ -311,7 +314,6 @@
 		{
 			x: -6.5d
 			y: 8.5d
-			subtitle: "No Recipe"
 			dependencies: ["76B2E5503503D064"]
 			id: "194A44D04A80BDB6"
 			tasks: [{
@@ -373,13 +375,46 @@
 		}
 		{
 			x: -5.0d
-			y: 8.5d
+			y: 9.0d
 			dependencies: ["43BA0605185EEDF0"]
 			id: "76B2E5503503D064"
 			tasks: [{
 				id: "7F9A7296F612C803"
 				type: "item"
 				item: "botania:alchemy_catalyst"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 3.5d
+			dependencies: ["72CE81EB18FBE5F2"]
+			id: "5A280C05AB199477"
+			tasks: [{
+				id: "4FE81C961EEEF2A4"
+				type: "item"
+				item: "botania:quartz_lavender"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 9.5d
+			dependencies: ["76B2E5503503D064"]
+			id: "26FEB96A2E908253"
+			tasks: [{
+				id: "728B0204690FEDA9"
+				type: "item"
+				item: "minecraft:glowstone_dust"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 9.5d
+			dependencies: ["76B2E5503503D064"]
+			id: "4B002B9746BD37D5"
+			tasks: [{
+				id: "20238E80AA77B24A"
+				type: "item"
+				item: "minecraft:tuff"
 			}]
 		}
 	]

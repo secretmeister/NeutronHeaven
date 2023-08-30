@@ -1,0 +1,30 @@
+{
+	id: "229781964583152F"
+	group: "4F2C7F90A8B0D390"
+	order_index: 1
+	filename: "challenges"
+	title: "Challenges"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		title: "Steam Prodigy"
+		x: -5.5d
+		y: 1.0d
+		description: ["Create a steam powered factory before getting wood!"]
+		dependencies: [
+			"23696CD4F1516DA1"
+			"59F41B993B010AF0"
+			"0CD1D31C720D8760"
+			"274489E7A89845B8"
+		]
+		id: "773D23A442A22750"
+		tasks: [{
+			id: "4D6E88D5BF7A1BAF"
+			type: "advancement"
+			icon: "create:steam_engine"
+			advancement: "create:steam_engine"
+			criterion: ""
+		}]
+	}]
+	quest_links: [ ]
+}

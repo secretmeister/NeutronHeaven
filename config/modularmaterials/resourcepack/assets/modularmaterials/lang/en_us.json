@@ -1,0 +1,14 @@
+{
+  "item.modularmaterials.ingot.nickel": "Nickel Item",
+  "block.modularmaterials.ore.stone.nickel": "Nickel Ore",
+  "item.modularmaterials.nugget.nickel": "Nickel Nugget",
+  "item.modularmaterials.bucket.fluid.nickel": "Molten Molten Nickel Bucket",
+  "fluid.modularmaterials.fluid.nickel": "Molten Molten Nickel",
+  "block.modularmaterials.block.nickel": "Block of Nickel",
+  "block.modularmaterials.ore.deepslate.nickel": "Deepslate Nickel Ore",
+  "item.modularmaterials.ingot.cupronickel": "Cupronickel Ingot",
+  "item.modularmaterials.nugget.cupronickel": "Cupronickel Nugget",
+  "block.modularmaterials.block.cupronickel": "Block of Cupronickel",
+  "block.modularmaterials.ore.stone.cupronickel": "Cupronickel Ore",
+  "block.modularmaterials.ore.deepslate.cupronickel": "Deepslate Cupronickel Ore"
+}

@@ -26,14 +26,19 @@
 			invisible: true
 			id: "55D7C452A91BEA8D"
 			tasks: [{
-				id: "165FFFCF4A2C2BF1"
-				type: "item"
-				item: "tconstruct:stripped_greenheart_log"
+				id: "14892CA120D44659"
+				type: "observation"
+				title: "Create a Stripped Log"
+				icon: "tconstruct:stripped_greenheart_log"
+				timer: 0L
+				observe_type: 0
+				to_observe: "tconstruct:stripped_greenheart_log"
 			}]
 		}
 		{
 			x: 1.0d
 			y: 4.0d
+			dependencies: ["037C6A9E7331A19C"]
 			invisible: true
 			id: "6ACE93F44C470D62"
 			tasks: [{

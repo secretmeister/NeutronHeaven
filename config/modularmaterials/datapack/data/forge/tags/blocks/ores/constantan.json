@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "modularmaterials:ore.stone.cupronickel",
+    "modularmaterials:ore.deepslate.cupronickel"
+  ]
+}

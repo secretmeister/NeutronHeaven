@@ -57,7 +57,7 @@
 		}
 		{
 			x: 4.0d
-			y: 1.0d
+			y: 0.0d
 			description: ["Faucets work wonders."]
 			dependencies: [
 				"456C705236261386"
@@ -72,18 +72,6 @@
 		}
 		{
 			x: 4.0d
-			y: 0.0d
-			description: ["You should use tinkers instead"]
-			dependencies: ["456C705236261386"]
-			id: "50FB343AADA740CA"
-			tasks: [{
-				id: "187F95C0C45BB1D4"
-				type: "item"
-				item: "create:item_drain"
-			}]
-		}
-		{
-			x: 3.0d
 			y: 1.0d
 			dependencies: [
 				"456C705236261386"
@@ -110,6 +98,20 @@
 					Count: 1b
 					tag: { }
 				}
+			}]
+		}
+		{
+			x: 3.0d
+			y: 1.0d
+			dependencies: [
+				"71D543EAC26F0236"
+				"457DB2F28A9A447C"
+			]
+			id: "59F41B993B010AF0"
+			tasks: [{
+				id: "6E1368DBCFFDA826"
+				type: "item"
+				item: "create:fluid_tank"
 			}]
 		}
 	]

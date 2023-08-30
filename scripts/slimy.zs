@@ -57,12 +57,12 @@ craftingTable.addShapeless("axehead", <item:tconstruct:small_axe_head>.withTag({
 LycheeRecipeManager.addRecipe("thunder", <recipetype:lychee:item_burning>, new LycheeRecipeBuilder()
   .itemIn(<item:minecraft:blue_stained_glass>)
   .condition(LycheeConditions.weather("clear"))
-  .post([LycheePosts.executeCommand("weather thunder 600", true),LycheePosts.executeCommand("summon minecraft:lightning_bolt", true)])
+  .post([LycheePosts.executeCommand("weather thunder", true),LycheePosts.executeCommand("summon minecraft:lightning_bolt", true)])
   .comment("Summons the Rain"));
 
 LycheeRecipeManager.addRecipe("clear", <recipetype:lychee:item_burning>, new LycheeRecipeBuilder()
-  .itemIn(<item:minecraft:blue_stained_glass>)
-  .condition(LycheeConditions.weather("thunder"))
+  .itemIn(<item:minecraft:glass>)
+  .condition(LycheeConditions.not(LycheeConditions.weather("clear")))
   .post([LycheePosts.executeCommand("weather clear", true),LycheePosts.executeCommand("summon minecraft:lightning_bolt", true)])
   .comment("Stops the Rain"));
 

@@ -1,11 +1,13 @@
 recipes.remove(<item:create:copper_casing>);
 recipes.remove(<item:create:spout>);
 recipes.remove(<item:create:andesite_alloy>);
+recipes.remove(<item:create:fluid_tank>);
 <recipetype:create:filling>.remove(<item:minecraft:grass_block>);
 
 <recipetype:create:item_application>.addRecipe("copcas", [<item:create:copper_casing>], <item:minecraft:polished_andesite>, <item:create:copper_sheet>, false);
 
 craftingTable.addShaped("spout", <item:create:spout>, [[<item:minecraft:air>,<item:create:andesite_alloy>,<item:minecraft:air>],[<tag:items:forge:glass_panes>,<item:create:copper_casing>,<tag:items:forge:glass_panes>],[<item:minecraft:air>,<item:tconstruct:round_plate>.withTag({Material: "tconstruct:copper" as string}),<item:minecraft:air>]]);
+craftingTable.addShaped("tank", <item:create:fluid_tank>, [[<item:create:copper_sheet>],[<item:pneumaticcraft:small_tank>],[<item:create:copper_sheet>]]);
 craftingTable.addShapeless("alloy",<item:create:andesite_alloy>, [<item:minecraft:andesite>,<item:create:zinc_nugget>,<item:minecraft:iron_nugget>,<item:minecraft:andesite>]);
 
 <recipetype:create:filling>.addRecipe("bettcopp",<item:create:crushed_raw_copper>, <item:minecraft:granite>, <fluid:tconstruct:seared_stone>*125);
@@ -15,3 +17,8 @@ craftingTable.addShapeless("alloy",<item:create:andesite_alloy>, [<item:minecraf
 <recipetype:create:milling>.removeByInput(<item:minecraft:calcite>);
 
 <recipetype:create:milling>.addRecipe("calcite", [<item:minecraft:white_dye>%75], <item:minecraft:calcite>, 200);
+
+<recipetype:create:compacting>.addRecipe("amethy", <constant:create:heat_condition:none>, [<item:minecraft:amethyst_shard>], [<item:botania:lavender_quartz>, <item:tconstruct:earth_slime_crystal>], []);
+
+<recipetype:create:compacting>.addRecipe("feather", <constant:create:heat_condition:none>, [<item:minecraft:feather>*4], [<item:create:white_sail>], [<fluid:tconstruct:blood>*250]);
+<recipetype:create:compacting>.addRecipe("eye", <constant:create:heat_condition:none>, [<item:minecraft:spider_eye>], [<item:minecraft:poisonous_potato>, <item:minecraft:red_dye>], [<fluid:tconstruct:blood>*25]);

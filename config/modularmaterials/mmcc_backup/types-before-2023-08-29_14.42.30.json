@@ -1,0 +1,19 @@
+{
+  "example": {
+    "enabled": false,
+    "tagName": "type_1096875377",
+    "category": "ITEM",
+    "state": "SOLID",
+    "burnTimeMultiplier": 1.0,
+    "enchantPowerBonusMultiplier": 1.0,
+    "fireSpreadSpeedMultiplier": 1.0,
+    "flammabilityMultiplier": 1.0,
+    "jumpFactorMultiplier": 1.0,
+    "lightLevelMultiplier": 1.0,
+    "resistanceMultiplier": 1.0,
+    "speedFactorMultiplier": 1.0,
+    "hasTooltip": true,
+    "nameSyntax": "\u003cm\u003e Item",
+    "tags": []
+  }
+}

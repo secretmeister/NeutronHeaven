@@ -1,7 +1,7 @@
 {
 	id: "4F4DA479EEF923E7"
-	group: "437B64C75C6F34C8"
-	order_index: 4
+	group: "088D69D914535C04"
+	order_index: 0
 	filename: "avengers_agglomerate"
 	title: "Avengers, Agglomerate"
 	icon: "botania:terrasteel_ingot"
@@ -11,7 +11,14 @@
 	quests: [
 		{
 			x: -1.0d
-			y: -1.5d
+			y: -1.0d
+			dependencies: [
+				"74AA7B48781A88E8"
+				"6E0C1DFE3784B4C4"
+				"535B256EEBA8FCC3"
+				"09C9D61131C1E823"
+				"5646D6F069B8F165"
+			]
 			id: "2D270448FD08C7FA"
 			tasks: [{
 				id: "39673E6DF89BE736"
@@ -24,12 +31,10 @@
 			y: 0.0d
 			dependencies: [
 				"2D270448FD08C7FA"
-				"36C281CD720A3834"
-				"64E237652236F672"
 				"196D51BBCC32DEC1"
 				"643D2BA875AF17FC"
 				"6BEFAB1A472ABDF9"
-				"436ADF89B019C755"
+				"2F96F6E24CCD598E"
 			]
 			id: "225275D6A83495EC"
 			tasks: [{
@@ -39,8 +44,8 @@
 			}]
 		}
 		{
-			x: 0.5d
-			y: 0.0d
+			x: 0.0d
+			y: -0.5d
 			id: "196D51BBCC32DEC1"
 			tasks: [{
 				id: "24A8CCF329C7F597"
@@ -50,7 +55,7 @@
 		}
 		{
 			x: 0.0d
-			y: 1.0d
+			y: 0.5d
 			id: "6BEFAB1A472ABDF9"
 			tasks: [{
 				id: "4E8DD1ED220C58FD"
@@ -60,37 +65,7 @@
 		}
 		{
 			x: -2.0d
-			y: -1.0d
-			id: "36C281CD720A3834"
-			tasks: [{
-				id: "59F963EEC6B5516F"
-				type: "item"
-				item: "tconstruct:pig_iron_ingot"
-			}]
-		}
-		{
-			x: -2.5d
-			y: 0.0d
-			id: "436ADF89B019C755"
-			tasks: [{
-				id: "52D123C9BCBAEA20"
-				type: "item"
-				item: "minecraft:moss_block"
-			}]
-		}
-		{
-			x: 0.0d
-			y: -1.0d
-			id: "64E237652236F672"
-			tasks: [{
-				id: "67D6A91C77A408A5"
-				type: "item"
-				item: "minecraft:emerald"
-			}]
-		}
-		{
-			x: -2.0d
-			y: 1.0d
+			y: 0.5d
 			id: "643D2BA875AF17FC"
 			tasks: [{
 				id: "12E726426DEC7BB7"
@@ -99,14 +74,24 @@
 			}]
 		}
 		{
+			x: -2.0d
+			y: -0.5d
+			id: "2F96F6E24CCD598E"
+			tasks: [{
+				id: "3C0EE0B6136C2ACC"
+				type: "item"
+				item: "create:tree_fertilizer"
+			}]
+		}
+		{
 			x: -1.0d
 			y: 1.5d
 			dependencies: ["225275D6A83495EC"]
-			id: "721F878ACB7EA0DB"
+			id: "410231EB71A9934C"
 			tasks: [{
-				id: "25623FDE22C0219E"
+				id: "2D3A7A51258E380D"
 				type: "item"
-				item: "integrateddynamics:menril_sapling"
+				item: "minecraft:oak_sapling"
 			}]
 		}
 	]

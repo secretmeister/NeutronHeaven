@@ -1,0 +1,60 @@
+{
+  "ingot": {
+    "enabled": true,
+    "tagName": "ingots",
+    "category": "ITEM",
+    "state": "SOLID",
+    "burnTimeMultiplier": 1.0,
+    "enchantPowerBonusMultiplier": 1.0,
+    "fireSpreadSpeedMultiplier": 1.0,
+    "flammabilityMultiplier": 1.0,
+    "jumpFactorMultiplier": 1.0,
+    "lightLevelMultiplier": 1.0,
+    "resistanceMultiplier": 1.0,
+    "speedFactorMultiplier": 1.0,
+    "hasTooltip": false,
+    "nameSyntax": "\u003cm\u003e Ingot",
+    "tags": [
+      "forge:ingots",
+      "forge:ingots/\u003cm\u003e"
+    ]
+  },
+  "nugget": {
+    "enabled": true,
+    "tagName": "nuggets",
+    "category": "ITEM",
+    "state": "SOLID",
+    "burnTimeMultiplier": 1.0,
+    "enchantPowerBonusMultiplier": 1.0,
+    "fireSpreadSpeedMultiplier": 1.0,
+    "flammabilityMultiplier": 1.0,
+    "jumpFactorMultiplier": 1.0,
+    "lightLevelMultiplier": 1.0,
+    "resistanceMultiplier": 1.0,
+    "speedFactorMultiplier": 1.0,
+    "hasTooltip": false,
+    "nameSyntax": "\u003cm\u003e Nugget",
+    "tags": [
+      "forge:nuggets",
+      "forge:nuggets/\u003cm\u003e"
+    ]
+  },
+  "block": {
+    "enabled": true,
+    "tagName": "blocks",
+    "category": "BLOCK",
+    "state": "SOLID",
+    "burnTimeMultiplier": 1.0,
+    "enchantPowerBonusMultiplier": 1.0,
+    "fireSpreadSpeedMultiplier": 1.0,
+    "flammabilityMultiplier": 1.0,
+    "jumpFactorMultiplier": 1.0,
+    "lightLevelMultiplier": 1.0,
+    "resistanceMultiplier": 1.0,
+    "speedFactorMultiplier": 1.0,
+    "hasTooltip": false,
+    "nameSyntax": "Block of \u003cm\u003e",
+    "tags": ["forge:storage_blocks/\u003cm\u003e",
+    "forge:storage_blocks"]
+  }
+}

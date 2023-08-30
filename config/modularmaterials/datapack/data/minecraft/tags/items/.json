@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "modularmaterials:ingot.nickel",
+    "modularmaterials:nugget.nickel"
+  ]
+}
