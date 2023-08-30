@@ -109,35 +109,3 @@ LycheeRecipeManager.addRecipe("coal", <recipetype:lychee:item_burning>, new Lych
     .itemIn(<item:minecraft:flint>)
     .post(LycheePosts.dropItem(<item:minecraft:coal>))
 );
-
-
-
-<recipetype:integrateddynamics:squeezer>.addJsonRecipe("claywater", {
-  "type": "integrateddynamics:squeezer",
-  "item": "minecraft:clay",
-  "result": {
-    "fluid": {
-      "fluid": "minecraft:water","amount": 125}},});
-<recipetype:integrateddynamics:squeezer>.addJsonRecipe("gran", {
-  "type": "integrateddynamics:squeezer",
-  "item": "minecraft:granite",
-  "result": {"items": [{"item":  
-        {"item": "create:copper_nugget","count": 4}},
-        { "item": "create:copper_nugget","chance": 0.75}]},});
-
-
-<recipetype:integrateddynamics:mechanical_squeezer>.addJsonRecipe("claywater2", {
-  "type": "integrateddynamics:mechanical_squeezer",
-  "item": "minecraft:clay",
-  "result": {
-    "fluid": {
-      "fluid": "minecraft:water","amount": 250},
-    "items": [
-      {"item": {"item": "minecraft:clay_ball","chance": 0.5}}]}, "duration": 30});
-<recipetype:integrateddynamics:squeezer>.addJsonRecipe("gran2", {
-  "type": "integrateddynamics:squeezer",
-  "item": "minecraft:granite",
-  "result": {"items": [{"item":  
-        {"item": "create:copper_nugget","count": 6}},
-        { "item": "create:copper_nugget","chance": 0.9}]},});
-
