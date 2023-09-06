@@ -4,8 +4,172 @@
 	order_index: 2
 	filename: "plastic_procedure"
 	title: "Plastic Procedure"
+	icon: "pneumaticcraft:plastic"
+	always_invisible: true
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [ ]
+	quests: [
+		{
+			x: 0.0d
+			y: 0.5d
+			dependencies: ["410231EB71A9934C"]
+			id: "0695B7B301684E74"
+			tasks: [{
+				id: "2648EA854654A969"
+				type: "item"
+				item: "minecraft:charcoal"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 0.5d
+			dependencies: ["0695B7B301684E74"]
+			id: "3E2ECA2996708682"
+			tasks: [{
+				id: "696C83B94E771D0E"
+				type: "item"
+				item: "pneumaticcraft:plastic"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -0.5d
+			dependencies: ["3E2ECA2996708682"]
+			id: "09E44882D6616C61"
+			tasks: [{
+				id: "5FD454DC02F43FA6"
+				type: "item"
+				item: "pneumaticcraft:empty_pcb"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 1.5d
+			dependencies: [
+				"3E2ECA2996708682"
+				"098A0F487C180A6C"
+			]
+			id: "433BD6055A4F2256"
+			tasks: [{
+				id: "5D9EBB68F3E0BFE3"
+				type: "item"
+				item: "pneumaticcraft:uv_light_box"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 0.5d
+			dependencies: [
+				"24A4549D6E5F8523"
+				"09E44882D6616C61"
+				"433BD6055A4F2256"
+			]
+			id: "39B43E6E0CA20979"
+			tasks: [{
+				id: "2019CBC6B6C382C1"
+				type: "item"
+				item: "pneumaticcraft:unassembled_pcb"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.5d
+			dependencies: ["3E2ECA2996708682"]
+			id: "24A4549D6E5F8523"
+			tasks: [{
+				id: "461CC4017B1994D2"
+				type: "item"
+				item: "pneumaticcraft:etching_acid_bucket"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.5d
+			dependencies: ["39B43E6E0CA20979"]
+			id: "3D54A3AB0E42E4A9"
+			tasks: [{
+				id: "2CEBAEB3EFBC4AA0"
+				type: "item"
+				item: "pneumaticcraft:printed_circuit_board"
+			}]
+		}
+		{
+			title: "Assembly Line"
+			icon: "pneumaticcraft:assembly_laser"
+			x: 4.0d
+			y: 2.5d
+			dependencies: [
+				"3D54A3AB0E42E4A9"
+				"63488F489392EA0E"
+			]
+			id: "0EE833BFE91F5781"
+			tasks: [
+				{
+					id: "6470499B274E231D"
+					type: "item"
+					item: "pneumaticcraft:assembly_platform"
+				}
+				{
+					id: "1069AC3536C39A5A"
+					type: "item"
+					item: "pneumaticcraft:assembly_io_unit_import"
+				}
+				{
+					id: "00EA133EB0870E9E"
+					type: "item"
+					item: "pneumaticcraft:assembly_io_unit_export"
+				}
+				{
+					id: "1E59EC4322E599CC"
+					type: "item"
+					item: "pneumaticcraft:assembly_drill"
+				}
+				{
+					id: "03392666B1E0298F"
+					type: "item"
+					item: "pneumaticcraft:assembly_laser"
+				}
+				{
+					id: "4F858CD32280AE58"
+					type: "item"
+					item: "pneumaticcraft:assembly_controller"
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: 1.5d
+			description: ["It appears a lubricant factory would be beneficial"]
+			dependencies: ["3E2ECA2996708682"]
+			id: "274C695B5F782481"
+			tasks: [{
+				id: "062205FCF506D938"
+				type: "item"
+				item: "pneumaticcraft:amadron_tablet"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 1.5d
+			dependencies: ["274C695B5F782481"]
+			id: "098A0F487C180A6C"
+			tasks: [{
+				id: "58F214C3100973DD"
+				type: "item"
+				item: "pneumaticcraft:pcb_blueprint"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.5d
+			dependencies: ["274C695B5F782481"]
+			id: "63488F489392EA0E"
+			tasks: [{
+				id: "08200770FC1F44EA"
+				type: "item"
+				item: "pneumaticcraft:assembly_program_drill_laser"
+			}]
+		}
+	]
 	quest_links: [ ]
 }

@@ -11,6 +11,7 @@
 		{
 			x: 1.0d
 			y: 1.0d
+			subtitle: "Anvil also smash!"
 			dependencies: [
 				"4C351B64DC9AB23F"
 				"037C6A9E7331A19C"

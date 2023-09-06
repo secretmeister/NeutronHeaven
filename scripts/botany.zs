@@ -20,6 +20,7 @@ recipes.remove(<item:minecraft:brewing_stand>);
 });
 
 craftingTable.addShaped("brew",<item:minecraft:brewing_stand>,[[<item:minecraft:air>,<item:minecraft:golden_carrot>,<item:minecraft:air>],[<tag:items:forge:stone>,<tag:items:forge:stone>,<tag:items:forge:stone>]]);
+craftingTable.addShapeless("tree_fertilizer",<item:create:tree_fertilizer>,[<tag:items:minecraft:small_flowers>,<tag:items:minecraft:small_flowers>,<tag:items:forge:mushrooms>,<item:minecraft:bone_meal>]);
 
 <recipetype:botania:pure_daisy>.addRecipe("pureclay", <blockstate:minecraft:clay>, <blockstate:minecraft:sand>,  100);
 <recipetype:botania:pure_daisy>.addRecipe("purecoal", <blockstate:minecraft:coal_block>, <blockstate:minecraft:black_terracotta>, 200);
@@ -31,24 +32,26 @@ craftingTable.addShaped("brew",<item:minecraft:brewing_stand>,[[<item:minecraft:
 <recipetype:botania:mana_infusion>.remove(<item:minecraft:potato>);
 <recipetype:botania:mana_infusion>.remove(<item:minecraft:carrot>);
 
-<recipetype:botania:mana_infusion>.addRecipe("copprefining", <item:create:copper_nugget>*15, <item:create:crushed_raw_copper>, 100, <block:minecraft:polished_granite>);
-<recipetype:botania:mana_infusion>.addRecipe("nickrefining", <item:modularmaterials:nugget.nickel>*15, <item:create:crushed_raw_nickel>, 100, <block:create:polished_cut_tuff>);
-<recipetype:botania:mana_infusion>.addRecipe("ironrefining", <item:minecraft:iron_nugget>*15, <item:create:crushed_raw_iron>, 100, <block:minecraft:polished_andesite>);
-<recipetype:botania:mana_infusion>.addRecipe("zincrefining", <item:create:zinc_nugget>*15, <item:create:crushed_raw_zinc>, 100, <block:minecraft:polished_diorite>);
-<recipetype:botania:mana_infusion>.addRecipe("goldrefining", <item:minecraft:gold_nugget>*15, <item:create:crushed_raw_gold>, 100, <block:minecraft:red_sandstone>);
-<recipetype:botania:mana_infusion>.addRecipe("melonalch", <item:minecraft:melon_seeds>, <item:minecraft:beetroot_seeds>, 50, <block:botania:cell_block>);
-<recipetype:botania:mana_infusion>.addRecipe("pumpalch", <item:minecraft:pumpkin_seeds>, <item:minecraft:melon_seeds>, 50, <block:botania:cell_block>);
-<recipetype:botania:mana_infusion>.addRecipe("beetalch", <item:minecraft:beetroot_seeds>, <item:minecraft:pumpkin_seeds>, 50, <block:botania:cell_block>);
+<recipetype:botania:mana_infusion>.addRecipe("copprefining", <item:create:copper_nugget>*15, <item:create:crushed_raw_copper>, 300, <block:minecraft:polished_granite>);
+<recipetype:botania:mana_infusion>.addRecipe("nickrefining", <item:modularmaterials:nugget.nickel>*15, <item:create:crushed_raw_nickel>, 300, <block:create:polished_cut_tuff>);
+<recipetype:botania:mana_infusion>.addRecipe("ironrefining", <item:minecraft:iron_nugget>*15, <item:create:crushed_raw_iron>, 300, <block:minecraft:polished_andesite>);
+<recipetype:botania:mana_infusion>.addRecipe("zincrefining", <item:create:zinc_nugget>*15, <item:create:crushed_raw_zinc>, 300, <block:minecraft:polished_diorite>);
+<recipetype:botania:mana_infusion>.addRecipe("goldrefining", <item:minecraft:gold_nugget>*15, <item:create:crushed_raw_gold>, 300, <block:minecraft:red_sandstone>);
+<recipetype:botania:mana_infusion>.addRecipe("melonalch", <item:minecraft:melon_seeds>, <item:minecraft:beetroot_seeds>, 500, <block:botania:cell_block>);
+<recipetype:botania:mana_infusion>.addRecipe("pumpalch", <item:minecraft:pumpkin_seeds>, <item:minecraft:melon_seeds>, 500, <block:botania:cell_block>);
+<recipetype:botania:mana_infusion>.addRecipe("beetalch", <item:minecraft:beetroot_seeds>, <item:minecraft:pumpkin_seeds>, 500, <block:botania:cell_block>);
 
 <recipetype:botania:runic_altar>.remove(<item:botania:rune_earth>);
 
 <recipetype:botania:runic_altar>.addRecipe("earth",<item:botania:rune_earth>, 5200, <tag:items:botania:mana_dusts>, <tag:items:botania:manasteel_ingots>, <item:minecraft:stone>, <item:minecraft:deepslate>, <item:minecraft:coal_block>);
-<recipetype:botania:runic_altar>.addRecipe("cactus",<item:minecraft:cactus>, 1000, <item:tconstruct:earth_congealed_slime>, <item:minecraft:wheat_seeds>, <item:botania:mana_powder>);
-<recipetype:botania:runic_altar>.addRecipe("carrot",<item:minecraft:carrot>, 250, <item:minecraft:beetroot>, <item:create:copper_sheet>, <item:botania:mana_powder>);
-<recipetype:botania:runic_altar>.addRecipe("potato",<item:minecraft:potato>, 250, <item:minecraft:carrot>, <item:create:iron_sheet>, <item:botania:mana_powder>);
-<recipetype:botania:runic_altar>.addRecipe("beet",<item:minecraft:beetroot>, 250, <item:minecraft:potato>, <item:minecraft:redstone>, <item:botania:mana_powder>);
-<recipetype:botania:runic_altar>.addRecipe("sugarcane",<item:minecraft:sugar_cane>, 750, <item:minecraft:stick>,<item:minecraft:stick>,<item:minecraft:stick>, <item:pneumaticcraft:glycerol>, <item:botania:mana_powder>);
-<recipetype:botania:runic_altar>.addRecipe("enderpearl",<item:minecraft:ender_pearl>, 1000, <item:minecraft:dark_prismarine>,<item:tconstruct:blood_slime_ball>,<item:botania:mana_powder>);
+<recipetype:botania:runic_altar>.addRecipe("cactus",<item:minecraft:cactus>, 2000, <item:tconstruct:earth_congealed_slime>, <item:minecraft:wheat_seeds>, <item:botania:mana_powder>);
+<recipetype:botania:runic_altar>.addRecipe("carrot",<item:minecraft:carrot>, 1500, <item:minecraft:beetroot>, <item:create:copper_sheet>, <item:botania:mana_powder>);
+<recipetype:botania:runic_altar>.addRecipe("potato",<item:minecraft:potato>, 1500, <item:minecraft:carrot>, <item:create:iron_sheet>, <item:botania:mana_powder>);
+<recipetype:botania:runic_altar>.addRecipe("beet",<item:minecraft:beetroot>, 1500, <item:minecraft:potato>, <item:minecraft:redstone>, <item:botania:mana_powder>);
+<recipetype:botania:runic_altar>.addRecipe("sugarcane",<item:minecraft:sugar_cane>, 1250, <item:minecraft:stick>,<item:minecraft:stick>,<item:minecraft:stick>, <item:pneumaticcraft:glycerol>, <item:botania:mana_powder>);
+<recipetype:botania:runic_altar>.addRecipe("enderpearl",<item:minecraft:ender_pearl>, 6000, <item:minecraft:dark_prismarine>,<item:tconstruct:blood_slime_ball>,<item:botania:mana_powder>);
+
+<recipetype:botania:terra_plate>.addRecipe("tree", <item:minecraft:oak_sapling>, 10000, <item:minecraft:grass>, <item:minecraft:fern>, <item:minecraft:vine>, <item:create:tree_fertilizer>);
 
 <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("mycseed")
     .transitionTo(<item:minecraft:wheat_seeds>)

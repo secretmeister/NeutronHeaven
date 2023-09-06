@@ -4,8 +4,95 @@
 	order_index: 1
 	filename: "brass_bananza"
 	title: "Brass Bananza"
+	icon: "create:brass_casing"
+	always_invisible: true
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [ ]
+	quests: [
+		{
+			x: -2.5d
+			y: -1.5d
+			dependencies: ["621C0D9558D634A9"]
+			id: "72D283E8000EFF09"
+			tasks: [{
+				id: "75C93BE2246D54B4"
+				type: "item"
+				item: "create:blaze_burner"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -0.5d
+			dependencies: ["410231EB71A9934C"]
+			id: "3F54BBA7D5DD9940"
+			tasks: [{
+				id: "3E1226484D47FC6D"
+				type: "item"
+				item: "minecraft:oak_planks"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -1.5d
+			dependencies: ["3F54BBA7D5DD9940"]
+			id: "6EE256F5F9622093"
+			tasks: [{
+				id: "71EDC8C073147AC6"
+				type: "item"
+				item: "create:cogwheel"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -2.0d
+			dependencies: ["6EE256F5F9622093"]
+			id: "6136368AE02192BD"
+			tasks: [{
+				id: "3702D3A9812A2D5F"
+				type: "item"
+				item: "create:mechanical_mixer"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -0.5d
+			dependencies: [
+				"72D283E8000EFF09"
+				"6136368AE02192BD"
+			]
+			id: "6900FEC2B78B15C3"
+			tasks: [{
+				id: "754D5E4C72EE1DDF"
+				type: "item"
+				item: "create:brass_ingot"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -1.0d
+			dependencies: ["6900FEC2B78B15C3"]
+			id: "5A1E7F27D4F3AF5E"
+			tasks: [{
+				id: "5D8FF90C6FF168E3"
+				type: "item"
+				item: "create:deployer"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 0.0d
+			dependencies: [
+				"49E47BD55CFE7B59"
+				"6900FEC2B78B15C3"
+				"3F54BBA7D5DD9940"
+			]
+			id: "52327CF5BE1FFC0F"
+			tasks: [{
+				id: "7FD09CB5CD91FACD"
+				type: "item"
+				item: "create:mechanical_crafter"
+			}]
+		}
+	]
 	quest_links: [ ]
 }

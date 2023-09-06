@@ -79,6 +79,10 @@ LycheeRecipeManager.addRecipe("endslimecryst", <recipetype:lychee:block_interact
     .itemIn(<item:tconstruct:ender_slime_grass_seeds>)
     .blockIn(<block:tconstruct:ender_slime_crystal_block>)
     .post([LycheePosts.placeBlock(<block:tconstruct:budding_ender_slime_crystal>)]));
+LycheeRecipeManager.addRecipe("amethycryst", <recipetype:lychee:block_interacting>, new LycheeRecipeBuilder()
+    .itemIn(<item:botania:purple_mushroom>)
+    .blockIn(<block:minecraft:amethyst_block>)
+    .post([LycheePosts.placeBlock(<block:minecraft:budding_amethyst>)]));
 
 
 <block:tconstruct:greenheart_log>.addLootModifier(
@@ -96,4 +100,20 @@ LycheeRecipeManager.addRecipe("endslimecryst", <recipetype:lychee:block_interact
 <block:tconstruct:stripped_greenheart_wood>.addLootModifier(
     "strgreenheartntw",
     CommonLootModifiers.replaceWith(<item:tconstruct:stripped_greenheart_wood>, <item:tconstruct:earth_congealed_slime>)
+);
+<block:tconstruct:skyroot_log>.addLootModifier(
+    "skyheartnt",
+    CommonLootModifiers.replaceWith(<item:tconstruct:skyroot_log>, <item:tconstruct:sky_congealed_slime>)
+);
+<block:tconstruct:stripped_skyroot_log>.addLootModifier(
+    "strskyheartnt",
+    CommonLootModifiers.replaceWith(<item:tconstruct:stripped_skyroot_log>, <item:tconstruct:sky_congealed_slime>)
+);
+<block:tconstruct:skyroot_wood>.addLootModifier(
+    "skyheartntw",
+    CommonLootModifiers.replaceWith(<item:tconstruct:skyroot_wood>, <item:tconstruct:sky_congealed_slime>)
+);
+<block:tconstruct:stripped_skyroot_wood>.addLootModifier(
+    "strskyheartntw",
+    CommonLootModifiers.replaceWith(<item:tconstruct:stripped_skyroot_wood>, <item:tconstruct:sky_congealed_slime>)
 );

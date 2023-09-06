@@ -11,7 +11,7 @@
 	quests: [
 		{
 			x: -1.0d
-			y: -1.0d
+			y: -0.5d
 			dependencies: [
 				"74AA7B48781A88E8"
 				"6E0C1DFE3784B4C4"
@@ -28,14 +28,8 @@
 		}
 		{
 			x: -1.0d
-			y: 0.0d
-			dependencies: [
-				"2D270448FD08C7FA"
-				"196D51BBCC32DEC1"
-				"643D2BA875AF17FC"
-				"6BEFAB1A472ABDF9"
-				"2F96F6E24CCD598E"
-			]
+			y: 0.5d
+			dependencies: ["2D270448FD08C7FA"]
 			id: "225275D6A83495EC"
 			tasks: [{
 				id: "4217C787617BD8CD"
@@ -45,7 +39,8 @@
 		}
 		{
 			x: 0.0d
-			y: -0.5d
+			y: 1.0d
+			dependencies: ["76B2E5503503D064"]
 			id: "196D51BBCC32DEC1"
 			tasks: [{
 				id: "24A8CCF329C7F597"
@@ -55,7 +50,8 @@
 		}
 		{
 			x: 0.0d
-			y: 0.5d
+			y: 2.0d
+			dependencies: ["196D51BBCC32DEC1"]
 			id: "6BEFAB1A472ABDF9"
 			tasks: [{
 				id: "4E8DD1ED220C58FD"
@@ -65,7 +61,12 @@
 		}
 		{
 			x: -2.0d
-			y: 0.5d
+			y: 1.0d
+			description: ["Fishing is your friend"]
+			dependencies: [
+				"63C36487E18FBF96"
+				"76B2E5503503D064"
+			]
 			id: "643D2BA875AF17FC"
 			tasks: [{
 				id: "12E726426DEC7BB7"
@@ -75,7 +76,8 @@
 		}
 		{
 			x: -2.0d
-			y: -0.5d
+			y: 2.0d
+			dependencies: ["370F0E89E80234DA"]
 			id: "2F96F6E24CCD598E"
 			tasks: [{
 				id: "3C0EE0B6136C2ACC"
@@ -86,7 +88,13 @@
 		{
 			x: -1.0d
 			y: 1.5d
-			dependencies: ["225275D6A83495EC"]
+			dependencies: [
+				"225275D6A83495EC"
+				"196D51BBCC32DEC1"
+				"643D2BA875AF17FC"
+				"6BEFAB1A472ABDF9"
+				"2F96F6E24CCD598E"
+			]
 			id: "410231EB71A9934C"
 			tasks: [{
 				id: "2D3A7A51258E380D"

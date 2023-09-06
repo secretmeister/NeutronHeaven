@@ -27,6 +27,20 @@
 });
 
 <recipetype:tconstruct:casting_table>.remove(<item:tconstruct:copper_nugget>);
+/*
+<recipetype:tconstruct:casting_basin>.addJsonRecipe("blood", {
+  "type": "tconstruct:casting_basin",
+  "cast": {
+    "item": "tconstruct:sky_congealed_slime"
+  },
+  "cast_consumed": true,
+  "fluid": {
+    "tag": "tconstruct:blood",
+    "amount": 750
+  },
+  "result": "tconstruct:blood_congealed_slime",
+  "cooling_time": 150
+});*/
 <recipetype:tconstruct:casting_table>.addJsonRecipe("scorched2", {
   "type": "tconstruct:casting_table",
   "cast": {

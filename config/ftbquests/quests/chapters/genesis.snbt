@@ -38,6 +38,7 @@
 		{
 			x: -2.5d
 			y: -3.0d
+			subtitle: "Hammah smash cobble!"
 			dependencies: ["4D0586A728999E99"]
 			id: "031875BE79D6F923"
 			tasks: [{
@@ -88,6 +89,7 @@
 		{
 			x: -0.5d
 			y: -2.0d
+			description: ["It appears that different varieties of rock contain an assortment of useful materials"]
 			dependencies: ["7C73653F015E2D43"]
 			id: "172854BCDFC44230"
 			tasks: [{
@@ -143,7 +145,8 @@
 		{
 			x: 1.5d
 			y: -0.5d
-			description: ["Required for an anvil, and also some other stuff"]
+			subtitle: "Genericaly useful"
+			description: [""]
 			dependencies: ["24FC422FA3589D5D"]
 			id: "4C351B64DC9AB23F"
 			tasks: [{
@@ -191,6 +194,7 @@
 		{
 			x: 2.5d
 			y: -0.5d
+			subtitle: "Start of Compression"
 			description: ["Tnt is quite explosive, and it is recommended to do your explosions in a chamber of cobblestone around 7 blocks in diameter"]
 			dependencies: [
 				"24FC422FA3589D5D"
@@ -217,7 +221,8 @@
 		{
 			x: 0.5d
 			y: -0.5d
-			description: ["To tinkers you go!"]
+			subtitle: "The gateway to tinkers"
+			description: [""]
 			dependencies: [
 				"29844BB8562318DA"
 				"1CAB9F50BBF644A6"
@@ -245,8 +250,8 @@
 			}]
 		}
 		{
-			x: -1.5d
-			y: -0.5d
+			x: -2.5d
+			y: -1.0d
 			description: ["A good fuel source"]
 			dependencies: ["29844BB8562318DA"]
 			id: "7E30ED138F34B47F"

@@ -18,7 +18,11 @@ craftingTable.addShapeless("alloy",<item:create:andesite_alloy>, [<item:minecraf
 
 <recipetype:create:milling>.addRecipe("calcite", [<item:minecraft:white_dye>%75], <item:minecraft:calcite>, 200);
 
-<recipetype:create:compacting>.addRecipe("amethy", <constant:create:heat_condition:none>, [<item:minecraft:amethyst_shard>], [<item:botania:lavender_quartz>, <item:tconstruct:earth_slime_crystal>], []);
+<recipetype:create:compacting>.addRecipe("amethy", <constant:create:heat_condition:none>, [<item:minecraft:amethyst_block>], [<item:botania:lavender_quartz>, <item:tconstruct:earth_slime_crystal_block>], []);
 
 <recipetype:create:compacting>.addRecipe("feather", <constant:create:heat_condition:none>, [<item:minecraft:feather>*4], [<item:create:white_sail>], [<fluid:tconstruct:blood>*250]);
 <recipetype:create:compacting>.addRecipe("eye", <constant:create:heat_condition:none>, [<item:minecraft:spider_eye>], [<item:minecraft:poisonous_potato>, <item:minecraft:red_dye>], [<fluid:tconstruct:blood>*25]);
+
+<recipetype:create:emptying>.addRecipe("bone", <item:minecraft:bone>, <fluid:tconstruct:blood>*30,<item:minecraft:rotten_flesh>,  10);
+
+<recipetype:create:compacting>.addRecipe("necrot", <constant:create:heat_condition:heated>, [<item:tconstruct:necrotic_bone>*2, <item:minecraft:bone_meal>], [<item:minecraft:skeleton_skull>, <item:minecraft:bone>, <item:minecraft:charcoal>*5], [<fluid:tconstruct:liquid_soul>*100]);

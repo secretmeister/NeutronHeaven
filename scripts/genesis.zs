@@ -60,7 +60,7 @@ LycheeRecipeManager.addRecipe("crushsand", <recipetype:lychee:block_interacting>
 LycheeRecipeManager.addRecipe("crushredsand", <recipetype:lychee:block_interacting>, new LycheeRecipeBuilder()
     .itemIn(<tag:items:crafttweaker:hammerandexca>)
     .blockIn(<block:minecraft:red_sand>)
-    .post([LycheePosts.placeBlock(<block:minecraft:air>),LycheePosts.random([LycheePosts.dropItem(<item:minecraft:gunpowder>).withWeight(2),LycheePosts.dropItem(<item:create:crushed_raw_gold>),LycheePosts.dropItem(<item:minecraft:dead_bush>).withWeight(7),LycheePosts.placeBlock(<block:minecraft:air>).withWeight(33)]),LycheePosts.damageItem(1)]));
+    .post([LycheePosts.placeBlock(<block:minecraft:air>),LycheePosts.random([LycheePosts.dropItem(<item:minecraft:gunpowder>).withWeight(2),LycheePosts.dropItem(<item:create:crushed_raw_gold>),LycheePosts.dropItem(<item:minecraft:dead_bush>).withWeight(7),LycheePosts.placeBlock(<block:minecraft:air>).withWeight(15)]),LycheePosts.damageItem(1)]));
 LycheeRecipeManager.addRecipe("crushdior", <recipetype:lychee:block_interacting>, new LycheeRecipeBuilder()
     .itemIn(<tag:items:crafttweaker:hammers>)
     .blockIn(<block:minecraft:diorite>)
@@ -104,6 +104,10 @@ LycheeRecipeManager.addRecipe("earlygoldplate", <recipetype:lychee:block_crushin
     .itemIn(<item:minecraft:gold_ingot>)
     .crushingFallingBlock(<tag:blocks:minecraft:anvil>)
     .post([LycheePosts.anvilDamageChance(0.3),LycheePosts.dropItem(<item:create:golden_sheet>).condition([LycheeConditions.chance(0.75)])]));
+LycheeRecipeManager.addRecipe("redsandystone", <recipetype:lychee:block_crushing>, new LycheeRecipeBuilder()
+    .crushingFallingBlock(<block:minecraft:red_sand>)
+    .crushingLandingBlock(<block:minecraft:red_sandstone>)
+    .post([LycheePosts.dropItem(<item:create:crushed_raw_gold>).condition([LycheeConditions.chance(0.6),]),LycheePosts.preventDefault()]));
 
 LycheeRecipeManager.addRecipe("coal", <recipetype:lychee:item_burning>, new LycheeRecipeBuilder()
     .itemIn(<item:minecraft:flint>)

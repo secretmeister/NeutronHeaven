@@ -46,3 +46,20 @@
   "pressure": 2.5,
   "time": 100
 });
+
+<recipetype:pneumaticcraft:heat_properties>.addJsonRecipe("bloodauto",{
+  "type": "pneumaticcraft:heat_properties",
+  "block": "tconstruct:blood_fluid",
+  "temperature": 336,
+  "thermalResistance": 100,
+  "heatCapacity": 10000,
+  "transformCold": {
+    "block": "tconstruct:blood_slime"
+  },
+  "transformHot": {
+    "block": "minecraft:air"
+  },
+  "transformColdFlowing": {
+    "block": "tconstruct:blood_congealed_slime"
+  },
+});

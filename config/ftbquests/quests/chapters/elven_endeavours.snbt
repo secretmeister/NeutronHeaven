@@ -1,16 +1,21 @@
 {
 	id: "008AE26D4B898A6F"
 	group: "088D69D914535C04"
-	order_index: 5
+	order_index: 4
 	filename: "elven_endeavours"
 	title: "Elven Endeavours"
+	icon: "botania:elementium_ingot"
 	always_invisible: true
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: -2.5d
+			x: -2.0d
 			y: -0.5d
+			dependencies: [
+				"0064B3E23969AFF5"
+				"26FEB96A2E908253"
+			]
 			id: "1AFFC3C05CFFF1B1"
 			tasks: [{
 				id: "3932647CEE679096"
@@ -44,13 +49,53 @@
 			}]
 		}
 		{
-			x: -0.5d
+			x: -1.0d
 			y: -0.5d
+			dependencies: [
+				"225275D6A83495EC"
+				"72BC7445A6526995"
+			]
 			id: "35EF2CEC5A769A34"
 			tasks: [{
 				id: "6A035FBB312FFC62"
 				type: "item"
 				item: "botania:natura_pylon"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -1.5d
+			dependencies: ["621C0D9558D634A9"]
+			id: "72BC7445A6526995"
+			tasks: [{
+				id: "1C070769402FFC7F"
+				type: "item"
+				item: "minecraft:blaze_powder"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -2.5d
+			dependencies: [
+				"370F0E89E80234DA"
+				"7A9BE30A9644F99A"
+			]
+			id: "621C0D9558D634A9"
+			tasks: [{
+				id: "3BC91FE149113E0F"
+				type: "item"
+				item: "botania:fel_pumpkin"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -2.5d
+			dependencies: ["74AA7B48781A88E8"]
+			id: "29A2BC2A488E0D84"
+			tasks: [{
+				id: "3B4B5BBEC57656E8"
+				type: "item"
+				item: "botania:lens_weight"
 			}]
 		}
 	]

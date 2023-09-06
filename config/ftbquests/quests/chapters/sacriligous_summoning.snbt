@@ -12,6 +12,7 @@
 			title: "Bloody Beginning"
 			x: -2.0d
 			y: 1.0d
+			subtitle: "Blood and mana powder seem to have the power to create life"
 			dependencies: [
 				"45E7B1FEC21C0ECC"
 				"72CE81EB18FBE5F2"
@@ -24,7 +25,8 @@
 			}]
 		}
 		{
-			x: -0.5d
+			title: "Eight Legged Terror"
+			x: 0.0d
 			y: -0.5d
 			dependencies: ["5890246F3024D9DD"]
 			id: "705A6767852B9FBF"
@@ -35,7 +37,7 @@
 			}]
 		}
 		{
-			x: 0.5d
+			x: 1.0d
 			y: -0.5d
 			dependencies: ["705A6767852B9FBF"]
 			id: "7A9BE30A9644F99A"
@@ -46,8 +48,9 @@
 			}]
 		}
 		{
+			title: "Stalker of the Night"
 			x: -0.5d
-			y: 0.5d
+			y: 1.5d
 			dependencies: ["5890246F3024D9DD"]
 			id: "4C9D4BE73959A8AF"
 			tasks: [{
@@ -57,9 +60,13 @@
 			}]
 		}
 		{
-			x: -0.5d
-			y: 2.5d
-			dependencies: ["5890246F3024D9DD"]
+			title: "Scorched Bones"
+			x: 0.0d
+			y: 0.5d
+			dependencies: [
+				"5890246F3024D9DD"
+				"37B45FB46A5FC631"
+			]
 			id: "0B3E60DAB67C948E"
 			tasks: [{
 				id: "3CC53D3DDF81EC86"
@@ -68,8 +75,8 @@
 			}]
 		}
 		{
-			x: 0.5d
-			y: 2.5d
+			x: 1.0d
+			y: 0.5d
 			dependencies: ["0B3E60DAB67C948E"]
 			id: "107CD05C9CE45DBE"
 			tasks: [{
@@ -79,9 +86,13 @@
 			}]
 		}
 		{
-			x: -0.5d
-			y: 1.5d
-			dependencies: ["5890246F3024D9DD"]
+			title: "Awakened Bones"
+			x: -1.0d
+			y: 2.5d
+			dependencies: [
+				"5890246F3024D9DD"
+				"1F1E1F810C1F01EC"
+			]
 			id: "370F0E89E80234DA"
 			tasks: [{
 				id: "44756EACAD2595D1"
@@ -91,7 +102,7 @@
 		}
 		{
 			x: 0.5d
-			y: 1.0d
+			y: 1.5d
 			dependencies: [
 				"4C9D4BE73959A8AF"
 				"370F0E89E80234DA"
@@ -104,14 +115,102 @@
 			}]
 		}
 		{
-			x: 1.5d
-			y: 1.0d
+			x: 0.5d
+			y: 2.5d
 			dependencies: ["37B45FB46A5FC631"]
 			id: "1736FF7BF7F3D2C9"
 			tasks: [{
 				id: "3349065EB28C8BCB"
 				type: "item"
 				item: "minecraft:milk_bucket"
+			}]
+		}
+		{
+			title: "Protectors of Gold"
+			icon: {
+				id: "minecraft:golden_helmet"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -3.5d
+			y: 1.5d
+			dependencies: ["5890246F3024D9DD"]
+			id: "167331368E62BE44"
+			tasks: [
+				{
+					id: "57835F48AE605DE7"
+					type: "item"
+					item: {
+						id: "minecraft:golden_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6EBA1CC9D498B045"
+					type: "item"
+					item: "minecraft:cracked_polished_blackstone_bricks"
+				}
+			]
+		}
+		{
+			title: "Venomous Species"
+			x: -4.0d
+			y: -0.5d
+			dependencies: [
+				"5890246F3024D9DD"
+				"705A6767852B9FBF"
+			]
+			id: "05CF9DF884D4DDBF"
+			tasks: [{
+				id: "3A478FF09FD10C83"
+				type: "item"
+				item: "tconstruct:venom_bottle"
+			}]
+		}
+		{
+			title: "Gaurdians of the Deep"
+			x: -4.0d
+			y: 0.5d
+			dependencies: ["5890246F3024D9DD"]
+			id: "0387616BE0A44428"
+			tasks: [{
+				id: "6F8226C9F691C171"
+				type: "item"
+				item: "minecraft:prismarine_shard"
+			}]
+		}
+		{
+			title: "Risen from the Grave"
+			x: -3.0d
+			y: 2.5d
+			dependencies: [
+				"5890246F3024D9DD"
+				"167331368E62BE44"
+			]
+			id: "1F1E1F810C1F01EC"
+			tasks: [{
+				id: "1F54C2E7168DB975"
+				type: "item"
+				item: "minecraft:rotten_flesh"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 3.0d
+			dependencies: [
+				"5890246F3024D9DD"
+				"72BC7445A6526995"
+			]
+			id: "541C82B9FA82674B"
+			tasks: [{
+				id: "5FE38E233B39ACE8"
+				type: "item"
+				item: "minecraft:blaze_rod"
 			}]
 		}
 	]

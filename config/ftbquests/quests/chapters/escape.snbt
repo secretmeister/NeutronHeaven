@@ -1,0 +1,21 @@
+{
+	id: "78AFF9CB2C0356E6"
+	group: "4EA63CB758056C53"
+	order_index: 0
+	filename: "escape"
+	title: "Escape"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		x: 0.5d
+		y: 1.5d
+		dependencies: ["21EE8AA0B6155DC5"]
+		id: "4E73F75C93242D6F"
+		tasks: [{
+			id: "16DF5EEB673DCAC3"
+			type: "item"
+			item: "minecraft:end_portal_frame"
+		}]
+	}]
+	quest_links: [ ]
+}
