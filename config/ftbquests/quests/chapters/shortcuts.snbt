@@ -4,6 +4,7 @@
 	order_index: 0
 	filename: "shortcuts"
 	title: "Shortcuts"
+	icon: "pneumaticcraft:salmon_tempura"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [

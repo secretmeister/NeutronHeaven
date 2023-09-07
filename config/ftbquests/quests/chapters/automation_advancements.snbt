@@ -1,0 +1,175 @@
+{
+	id: "6DEFE7DC9F58E708"
+	group: "4F2C7F90A8B0D390"
+	order_index: 2
+	filename: "automation_advancements"
+	title: "Automation Advancements"
+	icon: "craftingautomat:autocrafter"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -1.5d
+			y: 0.5d
+			dependencies: ["7E30ED138F34B47F"]
+			id: "7ADD3D1ECCC43B48"
+			tasks: [{
+				id: "73C4B201E021C2A4"
+				type: "item"
+				item: "create:belt_connector"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 2.5d
+			dependencies: ["4C351B64DC9AB23F"]
+			id: "2030C8CB20B3E802"
+			tasks: [{
+				id: "613E7B6AA7F41C15"
+				type: "item"
+				item: "create:chute"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 2.5d
+			dependencies: [
+				"2030C8CB20B3E802"
+				"018B31565D1C0B45"
+			]
+			id: "51270397D7675AED"
+			tasks: [{
+				id: "27E5296F6C0546CC"
+				type: "item"
+				item: "create:smart_chute"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 1.5d
+			dependencies: [
+				"4C351B64DC9AB23F"
+				"7E30ED138F34B47F"
+			]
+			id: "27CDC76B5AE59ABD"
+			tasks: [{
+				id: "6485509766D0604D"
+				type: "item"
+				item: "create:andesite_funnel"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 1.5d
+			dependencies: [
+				"27CDC76B5AE59ABD"
+				"018B31565D1C0B45"
+			]
+			id: "3223E2CAFCCD9BD8"
+			tasks: [{
+				id: "4EF550F15EB3E726"
+				type: "item"
+				item: "create:brass_funnel"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 2.5d
+			dependencies: ["6224906F31FA2A4A"]
+			id: "018B31565D1C0B45"
+			tasks: [{
+				id: "427555E324D58EAD"
+				type: "item"
+				item: "create:electron_tube"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 1.5d
+			dependencies: [
+				"5A0C5186D79252F3"
+				"4887A0F37F0FF05D"
+			]
+			id: "1378CBB9821082B6"
+			tasks: [{
+				id: "55C6129DE7613A28"
+				type: "item"
+				item: "craftingautomat:autocrafter"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 0.5d
+			dependencies: ["24FC422FA3589D5D"]
+			id: "51FC25CAD864D058"
+			tasks: [{
+				id: "2F268CEDAF2F0B5C"
+				type: "item"
+				item: "minecraft:hopper"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 0.5d
+			dependencies: ["23696CD4F1516DA1"]
+			id: "3FA3BE83E4DCB30E"
+			tasks: [{
+				id: "7894DDCDEE888E4A"
+				type: "item"
+				item: "minecraft:comparator"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 2.5d
+			dependencies: [
+				"018B31565D1C0B45"
+				"291C546C0E6262C9"
+			]
+			id: "545DEFC8F9E076C2"
+			tasks: [{
+				id: "43D13217501D610D"
+				type: "item"
+				item: "create:deployer"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 1.5d
+			dependencies: ["23696CD4F1516DA1"]
+			id: "3CCB945AD22B24EF"
+			tasks: [{
+				id: "0EC2A8E13447E44B"
+				type: "item"
+				item: "minecraft:observer"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 0.5d
+			dependencies: ["410231EB71A9934C"]
+			id: "2671B4A26B2C59C5"
+			tasks: [{
+				id: "3ABF95F511088E49"
+				type: "item"
+				item: "minecraft:sticky_piston"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 1.5d
+			dependencies: [
+				"018B31565D1C0B45"
+				"72D283E8000EFF09"
+				"3F54BBA7D5DD9940"
+			]
+			id: "1E9BF5F178D9B928"
+			tasks: [{
+				id: "1EC5D1E1BE54C184"
+				type: "item"
+				item: "create:mechanical_crafter"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

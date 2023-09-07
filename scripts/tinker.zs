@@ -90,6 +90,24 @@
   },
   "temperature": 800
 });
+<recipetype:tconstruct:alloying>.addJsonRecipe("earlbrass",{
+  "type": "tconstruct:alloy",
+  "inputs": [
+    {
+      "tag": "forge:molten_zinc",
+      "amount": 90
+    },
+    {
+      "tag": "forge:molten_copper",
+      "amount": 90
+    }
+  ],
+  "result": {
+    "fluid": "tconstruct:molten_brass",
+    "amount": 90
+  },
+  "temperature": 850
+});
 
 <recipetype:tconstruct:melting>.addJsonRecipe("bettiron",{
   "type": "tconstruct:melting",

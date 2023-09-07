@@ -10,9 +10,13 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: -2.5d
-			y: -1.5d
-			dependencies: ["621C0D9558D634A9"]
+			x: -2.0d
+			y: -0.5d
+			dependencies: [
+				"621C0D9558D634A9"
+				"0B3E60DAB67C948E"
+				"4CD891FC7855B393"
+			]
 			id: "72D283E8000EFF09"
 			tasks: [{
 				id: "75C93BE2246D54B4"
@@ -21,7 +25,7 @@
 			}]
 		}
 		{
-			x: -0.5d
+			x: -1.0d
 			y: -0.5d
 			dependencies: ["410231EB71A9934C"]
 			id: "3F54BBA7D5DD9940"
@@ -44,7 +48,7 @@
 		}
 		{
 			x: -1.5d
-			y: -2.0d
+			y: -1.5d
 			dependencies: ["6EE256F5F9622093"]
 			id: "6136368AE02192BD"
 			tasks: [{
@@ -55,42 +59,78 @@
 		}
 		{
 			x: -2.5d
-			y: -0.5d
+			y: -1.5d
 			dependencies: [
-				"72D283E8000EFF09"
 				"6136368AE02192BD"
+				"72D283E8000EFF09"
+				"1736FF7BF7F3D2C9"
 			]
-			id: "6900FEC2B78B15C3"
+			id: "3151B93FEFF4CAF7"
 			tasks: [{
-				id: "754D5E4C72EE1DDF"
+				id: "147E80A4C41F3F10"
 				type: "item"
-				item: "create:brass_ingot"
+				item: "create:chocolate_bucket"
 			}]
 		}
 		{
-			x: -1.5d
-			y: -1.0d
-			dependencies: ["6900FEC2B78B15C3"]
-			id: "5A1E7F27D4F3AF5E"
-			tasks: [{
-				id: "5D8FF90C6FF168E3"
-				type: "item"
-				item: "create:deployer"
-			}]
-		}
-		{
-			x: -1.5d
-			y: 0.0d
+			x: -3.5d
+			y: -1.5d
 			dependencies: [
-				"49E47BD55CFE7B59"
-				"6900FEC2B78B15C3"
-				"3F54BBA7D5DD9940"
+				"3151B93FEFF4CAF7"
+				"2BF693C71FB5D563"
 			]
-			id: "52327CF5BE1FFC0F"
+			id: "576350C6CBC26B18"
 			tasks: [{
-				id: "7FD09CB5CD91FACD"
+				id: "623C4C7237630CEF"
+				type: "item"
+				item: "create:blaze_cake"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -0.5d
+			dependencies: ["576350C6CBC26B18"]
+			id: "359084F31FECE788"
+			tasks: [{
+				id: "0DD931ECCF15BA07"
+				type: "item"
+				item: "minecraft:lava_bucket"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -2.5d
+			dependencies: ["6EE256F5F9622093"]
+			id: "1DB99AD8E3173071"
+			tasks: [{
+				id: "3AFE59E7DBAF3459"
 				type: "item"
 				item: "create:mechanical_crafter"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -2.5d
+			dependencies: ["1DB99AD8E3173071"]
+			id: "320F61ECB6184B17"
+			tasks: [{
+				id: "3BAD0CE2BC9A89DC"
+				type: "item"
+				item: "create:crushing_wheel"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -2.5d
+			dependencies: [
+				"320F61ECB6184B17"
+				"4CD891FC7855B393"
+			]
+			id: "2BF693C71FB5D563"
+			tasks: [{
+				id: "597560FF072224CF"
+				type: "item"
+				item: "create:cinder_flour"
 			}]
 		}
 	]

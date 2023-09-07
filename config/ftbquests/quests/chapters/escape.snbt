@@ -4,18 +4,79 @@
 	order_index: 0
 	filename: "escape"
 	title: "Escape"
+	icon: "minecraft:end_portal_frame"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [{
-		x: 0.5d
-		y: 1.5d
-		dependencies: ["21EE8AA0B6155DC5"]
-		id: "4E73F75C93242D6F"
-		tasks: [{
-			id: "16DF5EEB673DCAC3"
-			type: "item"
-			item: "minecraft:end_portal_frame"
-		}]
-	}]
+	quests: [
+		{
+			x: 2.0d
+			y: 1.5d
+			dependencies: [
+				"5CA8795ADC19C35F"
+				"7F6561C8B7604FDA"
+				"357E4FD0DD637FB7"
+				"37A3F64927AA048E"
+			]
+			id: "2AD7945A039954B4"
+			tasks: [{
+				id: "3C4AF427B10730CB"
+				type: "item"
+				item: "dimpaintings:end_painting"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 2.5d
+			dependencies: ["506CAF8B30737892"]
+			id: "37A3F64927AA048E"
+			tasks: [{
+				id: "6A2BF35FD548CB02"
+				type: "item"
+				item: "minecraft:end_stone_bricks"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 2.5d
+			dependencies: [
+				"1F7EBF926915C3CB"
+				"6B9205D34E47758D"
+			]
+			id: "5CA8795ADC19C35F"
+			tasks: [{
+				id: "6F382ECC16F665F0"
+				type: "item"
+				item: "minecraft:end_crystal"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 0.5d
+			dependencies: ["7195936D817C85FD"]
+			id: "357E4FD0DD637FB7"
+			tasks: [{
+				id: "5DF165B0ED50961B"
+				type: "item"
+				item: "tconstruct:ender_cake"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 0.5d
+			dependencies: ["3AC26CCDC6847B66"]
+			id: "7F6561C8B7604FDA"
+			tasks: [{
+				id: "6749D32764ED310D"
+				type: "item"
+				item: {
+					id: "minecraft:elytra"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+	]
 	quest_links: [ ]
 }

@@ -170,7 +170,11 @@
 			icon: "botania:mycelium_seeds"
 			x: 2.0d
 			y: -4.0d
-			description: [""]
+			subtitle: "Creating mushrooms unlocks botanic progression"
+			description: [
+				""
+				"Spores can be applied to dirt"
+			]
 			dependencies: [
 				"71210FE62C24CCDE"
 				"192815939B1F0D99"
@@ -194,6 +198,11 @@
 					item: "botania:mycelium_seeds"
 				}
 			]
+			rewards: [{
+				id: "1766E1A0006AF3A5"
+				type: "item"
+				item: "botania:lexicon"
+			}]
 		}
 		{
 			x: 2.5d

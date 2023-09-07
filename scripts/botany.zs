@@ -11,6 +11,7 @@
 
 recipes.remove(<item:create:millstone>);
 recipes.remove(<item:minecraft:brewing_stand>);
+recipes.remove(<item:botania:glimmering_livingwood_log>);
 
 <recipetype:botania:pure_daisy>.addJsonRecipe("livingwood2",{
   "type": "botania:state_copying_pure_daisy",
@@ -49,9 +50,10 @@ craftingTable.addShapeless("tree_fertilizer",<item:create:tree_fertilizer>,[<tag
 <recipetype:botania:runic_altar>.addRecipe("potato",<item:minecraft:potato>, 1500, <item:minecraft:carrot>, <item:create:iron_sheet>, <item:botania:mana_powder>);
 <recipetype:botania:runic_altar>.addRecipe("beet",<item:minecraft:beetroot>, 1500, <item:minecraft:potato>, <item:minecraft:redstone>, <item:botania:mana_powder>);
 <recipetype:botania:runic_altar>.addRecipe("sugarcane",<item:minecraft:sugar_cane>, 1250, <item:minecraft:stick>,<item:minecraft:stick>,<item:minecraft:stick>, <item:pneumaticcraft:glycerol>, <item:botania:mana_powder>);
-<recipetype:botania:runic_altar>.addRecipe("enderpearl",<item:minecraft:ender_pearl>, 6000, <item:minecraft:dark_prismarine>,<item:tconstruct:blood_slime_ball>,<item:botania:mana_powder>);
+<recipetype:botania:runic_altar>.addRecipe("enderpearl",<item:minecraft:ender_pearl>, 3000, <item:minecraft:dark_prismarine>,<item:tconstruct:blood_slime_ball>,<item:botania:mana_powder>);
+<recipetype:botania:runic_altar>.addRecipe("egg",<item:minecraft:egg>, 6000, <item:minecraft:feather>,<item:tconstruct:blood_slime_ball>,<item:botania:mana_powder>);
 
-<recipetype:botania:terra_plate>.addRecipe("tree", <item:minecraft:oak_sapling>, 10000, <item:minecraft:grass>, <item:minecraft:fern>, <item:minecraft:vine>, <item:create:tree_fertilizer>);
+<recipetype:botania:terra_plate>.addRecipe("tree", <item:minecraft:oak_sapling>, 10000, <item:minecraft:grass>, <item:minecraft:fern>, <item:minecraft:vine>, <item:create:tree_fertilizer>, <item:botania:terrasteel_nugget>);
 
 <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("mycseed")
     .transitionTo(<item:minecraft:wheat_seeds>)
@@ -93,11 +95,21 @@ craftingTable.addShapeless("tree_fertilizer",<item:create:tree_fertilizer>,[<tag
   "results": [
     {"item": "create:millstone"}]});
 
-/*
+LycheeRecipeManager.addRecipe("glimmer", <recipetype:lychee:block_crushing>, new LycheeRecipeBuilder()
+    .crushingFallingBlock(<block:minecraft:glowstone>)
+    .crushingLandingBlock(<block:botania:livingwood>)
+    .post([LycheePosts.placeBlock(<block:botania:glimmering_livingwood_log>)]));
+LycheeRecipeManager.addRecipe("chorus", <recipetype:lychee:block_crushing>, new LycheeRecipeBuilder()
+    .crushingFallingBlock(<block:minecraft:end_stone>)
+    .itemIn(<item:minecraft:apple>)
+    .post([LycheePosts.dropItem(<item:minecraft:chorus_fruit>),LycheePosts.preventDefault()]));
+LycheeRecipeManager.addRecipe("endsl", <recipetype:lychee:block_crushing>, new LycheeRecipeBuilder()
+    .crushingFallingBlock(<block:minecraft:slime_block>)
+    .crushingLandingBlock(<block:minecraft:chorus_flower>)
+    .post([LycheePosts.placeBlock(<block:tconstruct:ender_congealed_slime>),LycheePosts.preventDefault()]));
 
-LycheeRecipeManager.addRecipe("carrot", <recipetype:lychee:block_interacting>, new LycheeRecipeBuilder()
-    .itemIn(<item:create:copper_nugget>)
-    .blockIn(<blockstate:minecraft:beetroots:age=3>)
-    .post(LycheePosts.placeBlock(<blockstate:minecraft:beetroots:age=3>)));
-*/
+<recipetype:botania:orechid_ignem>.registerOreWeight("cobalt", <blockstate:tconstruct:cobalt_ore>, <block:minecraft:netherrack>, 2000);
+
+<recipetype:botania:orechid>.registerOreWeight("sandstone", <blockstate:minecraft:sand>, <block:minecraft:sandstone>, 200);
+<recipetype:botania:orechid>.registerOreWeight("endstone", <blockstate:minecraft:end_stone>, <block:minecraft:sandstone>, 1);
 

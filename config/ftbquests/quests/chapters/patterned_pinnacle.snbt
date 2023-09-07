@@ -11,7 +11,7 @@
 	quests: [
 		{
 			x: -1.0d
-			y: 0.0d
+			y: 0.5d
 			dependencies: ["541C82B9FA82674B"]
 			id: "29908794978EC186"
 			tasks: [{
@@ -21,14 +21,112 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: 0.0d
+			x: 1.0d
+			y: 2.0d
 			dependencies: ["410231EB71A9934C"]
 			id: "149570307E8D8CA4"
 			tasks: [{
 				id: "30395B220C0D37DC"
 				type: "item"
 				item: "tconstruct:pattern"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.0d
+			dependencies: [
+				"29908794978EC186"
+				"4CD891FC7855B393"
+				"68134A78504E28A0"
+			]
+			id: "2777A3D3753D7DC7"
+			tasks: [{
+				id: "37C9D40DEBACC7EA"
+				type: "item"
+				item: "minecraft:netherite_ingot"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 0.5d
+			dependencies: [
+				"4CD891FC7855B393"
+				"68134A78504E28A0"
+			]
+			id: "18647F66F62346C5"
+			tasks: [{
+				id: "2E21B59C3CF2CFAF"
+				type: "item"
+				item: "tconstruct:cobalt_ingot"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 0.0d
+			dependencies: ["72BC7445A6526995"]
+			id: "4CD891FC7855B393"
+			tasks: [{
+				id: "6B214CF4424EDD2A"
+				type: "item"
+				item: "minecraft:netherrack"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.0d
+			dependencies: [
+				"29908794978EC186"
+				"18647F66F62346C5"
+			]
+			id: "74B5BD012FA6813D"
+			tasks: [{
+				id: "2DB89E26ABD998CA"
+				type: "item"
+				item: "tconstruct:queens_slime_ingot"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.0d
+			dependencies: [
+				"29908794978EC186"
+				"18647F66F62346C5"
+			]
+			id: "59044A7FAE46871D"
+			tasks: [{
+				id: "3C2CD95C7F280178"
+				type: "item"
+				item: "tconstruct:hepatizon_ingot"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -1.0d
+			dependencies: [
+				"18647F66F62346C5"
+				"68134A78504E28A0"
+				"4CD891FC7855B393"
+			]
+			id: "337DE8C0A0421EA1"
+			tasks: [{
+				id: "16A1DDC58FEFC74E"
+				type: "item"
+				item: "tconstruct:manyullyn_ingot"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.5d
+			dependencies: [
+				"359084F31FECE788"
+				"337DE8C0A0421EA1"
+				"59044A7FAE46871D"
+			]
+			id: "6B9205D34E47758D"
+			tasks: [{
+				id: "6988643B9BA92357"
+				type: "item"
+				item: "minecraft:crying_obsidian"
 			}]
 		}
 	]
