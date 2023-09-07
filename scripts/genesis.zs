@@ -44,7 +44,6 @@ furnace.addRecipe("crushiron", <item:minecraft:iron_nugget>*6, <item:create:crus
 furnace.addRecipe("crushgold", <item:minecraft:gold_nugget>*6, <item:create:crushed_raw_gold>, 0.1, 220);
 furnace.addRecipe("crushcopp", <item:create:copper_nugget>*6, <item:create:crushed_raw_copper>, 0.1, 220);
 furnace.addRecipe("crushzinc", <item:create:zinc_nugget>*6, <item:create:crushed_raw_zinc>, 0.1, 220);
-furnace.addRecipe("crushnick", <item:modularmaterials:nugget.nickel>*6, <item:create:crushed_raw_nickel>, 0.1, 220);
 
 
 LycheeRecipeManager.addRecipe("crushgrav", <recipetype:lychee:block_interacting>, new LycheeRecipeBuilder()

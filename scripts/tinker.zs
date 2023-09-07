@@ -1,9 +1,7 @@
 <recipetype:tconstruct:alloying>.removeByName("tconstruct:smeltery/alloys/molten_slimesteel");
 <recipetype:tconstruct:alloying>.removeByName("tconstruct:smeltery/alloys/molten_brass");
 <recipetype:tconstruct:casting_basin>.removeByName("tconstruct:smeltery/casting/slime/earth/dirt");
-<recipetype:tconstruct:melting>.removeByName("tconstruct:smeltery/melting/metal/nickel/nugget");
 
-<tag:fluids:forge:molten_nickel>.add(<fluid:tconstruct:molten_nickel>);
 
 <recipetype:tconstruct:molding_table>.addJsonRecipe("roundplatesand",{
   "type": "tconstruct:molding_table",
@@ -120,30 +118,6 @@
   },
   "temperature": 500,
   "time": 200
-});
-<recipetype:tconstruct:melting>.addJsonRecipe("crushednick",{
-  "type": "tconstruct:melting",
-  "ingredient": {
-    "item": "create:crushed_raw_nickel"
-  },
-  "result": {
-    "fluid": "tconstruct:molten_nickel",
-    "amount": 120
-  },
-  "temperature": 920,
-  "time": 300
-});
-<recipetype:tconstruct:melting>.addJsonRecipe("nicknug",{
-  "type": "tconstruct:melting",
-  "ingredient": {
-    "item": "modularmaterials:nugget.nickel"
-  },
-  "result": {
-    "fluid": "tconstruct:molten_nickel",
-    "amount": 10
-  },
-  "temperature": 900,
-  "time": 100
 });
 <recipetype:tconstruct:melting>.addJsonRecipe("crushediron",{
   "type": "tconstruct:melting",

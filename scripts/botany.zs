@@ -34,7 +34,6 @@ craftingTable.addShapeless("tree_fertilizer",<item:create:tree_fertilizer>,[<tag
 <recipetype:botania:mana_infusion>.remove(<item:minecraft:carrot>);
 
 <recipetype:botania:mana_infusion>.addRecipe("copprefining", <item:create:copper_nugget>*15, <item:create:crushed_raw_copper>, 300, <block:minecraft:polished_granite>);
-<recipetype:botania:mana_infusion>.addRecipe("nickrefining", <item:modularmaterials:nugget.nickel>*15, <item:create:crushed_raw_nickel>, 300, <block:create:polished_cut_tuff>);
 <recipetype:botania:mana_infusion>.addRecipe("ironrefining", <item:minecraft:iron_nugget>*15, <item:create:crushed_raw_iron>, 300, <block:minecraft:polished_andesite>);
 <recipetype:botania:mana_infusion>.addRecipe("zincrefining", <item:create:zinc_nugget>*15, <item:create:crushed_raw_zinc>, 300, <block:minecraft:polished_diorite>);
 <recipetype:botania:mana_infusion>.addRecipe("goldrefining", <item:minecraft:gold_nugget>*15, <item:create:crushed_raw_gold>, 300, <block:minecraft:red_sandstone>);
