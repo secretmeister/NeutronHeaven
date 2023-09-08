@@ -14,6 +14,7 @@ recipes.remove(<item:minecraft:anvil>);
 recipes.remove(<item:minecraft:flint_and_steel>);
 recipes.remove(<item:angelblockrenewed:angel_block>);
 recipes.remove(<item:craftingautomat:autocrafter>);
+recipes.removeByRegex("pipez:.*_pipe.*");
 
 craftingTable.addShapeless("cobble",<item:minecraft:cobblestone>*4, [<item:minecraft:cobblestone>]);
 craftingTable.addShapeless("ange",<item:angelblockrenewed:angel_block>, [<item:tconstruct:sledge_hammer>.anyDamage().transformDamage(1),<item:stonechest:part_cobblestone>,<item:minecraft:cobblestone>,<item:tconstruct:large_plate>.withTag({Material: "tconstruct:rock" as string})]);
@@ -109,8 +110,22 @@ LycheeRecipeManager.addRecipe("redsandystone", <recipetype:lychee:block_crushing
     .crushingFallingBlock(<block:minecraft:red_sand>)
     .crushingLandingBlock(<block:minecraft:red_sandstone>)
     .post([LycheePosts.dropItem(<item:create:crushed_raw_gold>).condition([LycheeConditions.chance(0.6),]),LycheePosts.preventDefault()]));
+LycheeRecipeManager.addRecipe("redst", <recipetype:lychee:block_crushing>, new LycheeRecipeBuilder()
+    .itemIn(<item:minecraft:redstone_block>)
+    .crushingFallingBlock(<tag:blocks:minecraft:anvil>)
+    .crushingLandingBlock(<block:minecraft:stone>)
+    .post([LycheePosts.anvilDamageChance(1),LycheePosts.placeBlock(<block:minecraft:redstone_ore>)]));
+LycheeRecipeManager.addRecipe("redst2", <recipetype:lychee:block_crushing>, new LycheeRecipeBuilder()
+    .crushingFallingBlock(<block:minecraft:sand>)
+    .crushingLandingBlock(<block:minecraft:redstone_ore>)
+    .post([LycheePosts.dropItem(<item:minecraft:redstone>).condition([LycheeConditions.chance(0.9)]),LycheePosts.placeBlock(<block:minecraft:stone>).condition([LycheeConditions.chance(0.02)]),LycheePosts.preventDefault()]));
 
 LycheeRecipeManager.addRecipe("coal", <recipetype:lychee:item_burning>, new LycheeRecipeBuilder()
     .itemIn(<item:minecraft:flint>)
     .post(LycheePosts.dropItem(<item:minecraft:coal>))
 );
+
+craftingTable.addShaped("pipei",<item:pipez:item_pipe>*16,[[<item:tconstruct:amethyst_bronze_ingot>,<item:tconstruct:amethyst_bronze_ingot>,<item:tconstruct:amethyst_bronze_ingot>],[<item:minecraft:dropper>,<item:minecraft:redstone>,<item:minecraft:dropper>],[<item:tconstruct:amethyst_bronze_ingot>,<item:tconstruct:amethyst_bronze_ingot>,<item:tconstruct:amethyst_bronze_ingot>]]);
+craftingTable.addShaped("pipef",<item:pipez:fluid_pipe>*16,[[<item:tconstruct:amethyst_bronze_ingot>,<item:tconstruct:amethyst_bronze_ingot>,<item:tconstruct:amethyst_bronze_ingot>],[<item:minecraft:bucket>,<item:minecraft:redstone>,<item:minecraft:bucket>],[<item:tconstruct:amethyst_bronze_ingot>,<item:tconstruct:amethyst_bronze_ingot>,<item:tconstruct:amethyst_bronze_ingot>]]);
+craftingTable.addShaped("pipee",<item:pipez:energy_pipe>*16,[[<item:tconstruct:amethyst_bronze_ingot>,<item:tconstruct:amethyst_bronze_ingot>,<item:tconstruct:amethyst_bronze_ingot>],[<item:minecraft:redstone_block>,<item:minecraft:redstone>,<item:minecraft:redstone_block>],[<item:tconstruct:amethyst_bronze_ingot>,<item:tconstruct:amethyst_bronze_ingot>,<item:tconstruct:amethyst_bronze_ingot>]]);
+craftingTable.addShaped("pipeu",<item:pipez:universal_pipe>*4,[[<item:pipez:item_pipe>,<item:pipez:fluid_pipe>,<item:pipez:energy_pipe>],[<item:tconstruct:amethyst_bronze_ingot>,<item:minecraft:redstone_block>,<item:tconstruct:amethyst_bronze_ingot>],[<item:pipez:item_pipe>,<item:pipez:fluid_pipe>,<item:pipez:energy_pipe>]]);

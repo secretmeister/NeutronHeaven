@@ -13,6 +13,7 @@
 			icon: "pneumaticcraft:pressure_chamber_valve"
 			x: 0.5d
 			y: 0.5d
+			description: ["Special block have to be in the center of sides, glass to see inside is recommended"]
 			dependencies: [
 				"037C6A9E7331A19C"
 				"295D222683F0174C"
@@ -37,6 +38,17 @@
 					item: "pneumaticcraft:pressure_chamber_valve"
 				}
 			]
+			rewards: [{
+				id: "31C7E7AD372C2CC6"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "pneumaticcraft:book"
+					}
+				}
+			}]
 		}
 		{
 			x: 1.5d
@@ -74,6 +86,7 @@
 		{
 			x: 2.5d
 			y: 1.5d
+			subtitle: "Can preform a wide variety of recipes"
 			dependencies: ["457DB2F28A9A447C"]
 			id: "6C97B793DD1F7215"
 			tasks: [{
@@ -85,6 +98,8 @@
 		{
 			x: 0.5d
 			y: 1.5d
+			subtitle: "Ooo shiny"
+			description: ["(Not needed for a long while)"]
 			dependencies: ["1B1146A650021F90"]
 			id: "6EA8648EB67181A7"
 			tasks: [{

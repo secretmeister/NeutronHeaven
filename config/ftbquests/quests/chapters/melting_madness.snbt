@@ -12,6 +12,8 @@
 			icon: "tconstruct:seared_melter"
 			x: 0.5d
 			y: 0.5d
+			subtitle: "Molten Metallurgy"
+			description: ["Crushed ores yield more, also opens up an easier source of iron"]
 			dependencies: ["5F78FB2A53E1932D"]
 			id: "0909F7157C567D58"
 			tasks: [
@@ -41,6 +43,7 @@
 			title: "Sand Round Plate Cast"
 			x: 1.5d
 			y: 0.0d
+			description: ["Feel free to delay on this, it will not be used for a while"]
 			dependencies: ["0909F7157C567D58"]
 			id: "7919A18254CEE578"
 			tasks: [{
@@ -52,6 +55,7 @@
 		{
 			x: 2.5d
 			y: 0.5d
+			description: ["Used in liquid dispensers"]
 			dependencies: ["7919A18254CEE578"]
 			id: "36C7D318C66C9ACC"
 			tasks: [{

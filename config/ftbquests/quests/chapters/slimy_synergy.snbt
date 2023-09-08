@@ -9,7 +9,7 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: -2.0d
+			x: -1.5d
 			y: -4.0d
 			dependencies: [
 				"650FF8F8F3DA9C06"
@@ -22,9 +22,14 @@
 				type: "item"
 				item: "tconstruct:sky_slime_ball"
 			}]
+			rewards: [{
+				id: "03E910F044B0CF47"
+				type: "item"
+				item: "tconstruct:budding_earth_slime_crystal"
+			}]
 		}
 		{
-			x: 0.0d
+			x: 0.5d
 			y: -4.0d
 			dependencies: [
 				"535FF2C776D23901"
@@ -35,6 +40,12 @@
 				id: "6A51954E2E705469"
 				type: "item"
 				item: "tconstruct:slimesteel_ingot"
+			}]
+			rewards: [{
+				id: "0F01C9807422DF38"
+				type: "item"
+				item: "tconstruct:sky_slime_crystal"
+				count: 4
 			}]
 		}
 		{
@@ -64,7 +75,7 @@
 			}]
 		}
 		{
-			x: -4.5d
+			x: -4.0d
 			y: -2.5d
 			dependencies: ["3EC80E2120E24ADA"]
 			id: "04C49E6C439DF14C"
@@ -77,7 +88,7 @@
 		{
 			title: "Pressure Chamber"
 			icon: "pneumaticcraft:pressure_chamber_wall"
-			x: -2.5d
+			x: -2.0d
 			y: -2.5d
 			dependencies: ["1B1146A650021F90"]
 			id: "650FF8F8F3DA9C06"
@@ -88,7 +99,7 @@
 			}]
 		}
 		{
-			x: -0.5d
+			x: 0.0d
 			y: -2.5d
 			dependencies: ["1988CC578B98690C"]
 			id: "1FD5E5AC1B09F3CE"
@@ -114,7 +125,7 @@
 			}]
 		}
 		{
-			x: -3.5d
+			x: -3.0d
 			y: -2.5d
 			dependencies: ["6F59F0653A09FA8F"]
 			id: "04036B57D522636E"
@@ -127,7 +138,11 @@
 		{
 			x: -2.0d
 			y: -1.5d
-			description: ["Dropping stuff on diorite can cause it to eject some rare minerals"]
+			subtitle: "+ quartz"
+			description: [
+				"Dropping stuff on diorite can cause it to eject some minerals, cheaper materials seem to eject cheaper stuff though"
+				"Blue glass, when burned, summons a torrential downpour"
+			]
 			dependencies: ["6C8CB54AB1A7A411"]
 			id: "4887A0F37F0FF05D"
 			tasks: [{
@@ -148,10 +163,10 @@
 			}]
 		}
 		{
-			x: -1.5d
+			x: -1.0d
 			y: -2.5d
 			description: [
-				"Burning blue glass might toggle the weather"
+				""
 				"Lightning takes a while, it is recommended to create many harness stations"
 			]
 			dependencies: [
@@ -168,7 +183,7 @@
 		{
 			title: "Mushrooms"
 			icon: "botania:mycelium_seeds"
-			x: 2.0d
+			x: 2.5d
 			y: -4.0d
 			subtitle: "Creating mushrooms unlocks botanic progression"
 			description: [
@@ -205,7 +220,7 @@
 			}]
 		}
 		{
-			x: 2.5d
+			x: 3.0d
 			y: -2.5d
 			dependencies: ["6C97B793DD1F7215"]
 			id: "192815939B1F0D99"
@@ -224,7 +239,7 @@
 					Material: "tconstruct:slimesteel"
 				}
 			}
-			x: 0.5d
+			x: 1.0d
 			y: -2.5d
 			dependencies: ["71210FE62C24CCDE"]
 			id: "27DA28702C374D05"
@@ -272,7 +287,7 @@
 		}
 		{
 			title: "New Tools"
-			x: 1.5d
+			x: 2.0d
 			y: -2.5d
 			dependencies: [
 				"0AAF53D8A5E0C1E4"
@@ -417,56 +432,57 @@
 			]
 		}
 		{
-			x: 1.0d
-			y: -1.5d
-			dependencies: ["5F78FB2A53E1932D"]
-			id: "274489E7A89845B8"
-			tasks: [{
-				id: "08937E003778D4E8"
-				type: "item"
-				item: {
-					id: "tconstruct:flint_and_brick"
-					Count: 1b
-					tag: {
-						tic_stats: {
-							"tconstruct:durability": 100.0f
-						}
-						tic_broken: 0b
-						Damage: 0
-						tic_modifiers: [
-							{
-								name: "tconstruct:fiery"
-								level: 1s
-							}
-							{
-								name: "tconstruct:scorching"
-								level: 1s
-							}
-							{
-								name: "tconstruct:firestarter"
-								level: 1s
-							}
-						]
-						tic_persistent_data: {
-							upgrades: 1
-						}
-					}
-				}
-			}]
-		}
-		{
-			x: -4.0d
+			x: -3.5d
 			y: -4.0d
 			dependencies: [
 				"04C49E6C439DF14C"
 				"04036B57D522636E"
 				"2E7AA8DC7F4A93D0"
+				"0909F7157C567D58"
 			]
 			id: "19518A85318783FF"
 			tasks: [{
 				id: "5C67867D41A8D892"
 				type: "item"
 				item: "tconstruct:earth_slime_crystal"
+			}]
+			rewards: [{
+				id: "14E06CDE438D4A14"
+				type: "item"
+				item: "minecraft:coarse_dirt"
+				count: 16
+			}]
+		}
+		{
+			x: -1.5d
+			y: -0.5d
+			description: ["Collected via cauldrons, can be used in create washing"]
+			dependencies: [
+				"4887A0F37F0FF05D"
+				"7464615230CFD315"
+			]
+			dependency_requirement: "one_completed"
+			id: "57BC98F4EFBC35D0"
+			tasks: [{
+				id: "38DF5EA10CE4130A"
+				type: "item"
+				item: "minecraft:water_bucket"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -0.5d
+			subtitle: "Very useful for automation!"
+			dependencies: [
+				"57BC98F4EFBC35D0"
+				"3B95669457605DA9"
+			]
+			dependency_requirement: "one_completed"
+			id: "23696CD4F1516DA1"
+			tasks: [{
+				id: "7BF127D3B50EE93B"
+				type: "item"
+				item: "minecraft:redstone"
 			}]
 		}
 	]

@@ -26,6 +26,7 @@
 		{
 			x: 2.0d
 			y: 0.0d
+			subtitle: "Anvils are heavy enough to compact metals"
 			dependencies: ["31284DCE27BBC499"]
 			id: "71D543EAC26F0236"
 			tasks: [{
@@ -37,6 +38,7 @@
 		{
 			x: 1.0d
 			y: 0.0d
+			description: ["For belts, mostly"]
 			dependencies: ["71D543EAC26F0236"]
 			id: "3B13E43B384FE405"
 			tasks: [{
@@ -74,6 +76,8 @@
 		{
 			x: 4.0d
 			y: 1.0d
+			subtitle: "Blowing air since 2023"
+			description: ["Can be used to modify materials when combined with stuff in front"]
 			dependencies: [
 				"456C705236261386"
 				"295D222683F0174C"

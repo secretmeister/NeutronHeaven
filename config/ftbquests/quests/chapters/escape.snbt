@@ -11,6 +11,7 @@
 		{
 			x: 2.0d
 			y: 1.5d
+			description: ["The Final Challenge, each thing requiring quite a bit of crafting"]
 			dependencies: [
 				"5CA8795ADC19C35F"
 				"7F6561C8B7604FDA"
@@ -22,6 +23,14 @@
 				id: "3C4AF427B10730CB"
 				type: "item"
 				item: "dimpaintings:end_painting"
+			}]
+			rewards: [{
+				id: "3B18D9DCCDA4A91A"
+				type: "toast"
+				title: "Congratulations, you beat the pack!"
+				icon: "minecraft:end_stone"
+				auto: "enabled"
+				description: ""
 			}]
 		}
 		{

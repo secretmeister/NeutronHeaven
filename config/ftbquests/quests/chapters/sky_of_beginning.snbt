@@ -22,6 +22,7 @@
 		{
 			x: -6.0d
 			y: 0.0d
+			description: ["From now on, documentation will be more sparse, but the quests will be more direct, remember you can check quests dependencies by clicking the arrow in the top left"]
 			dependencies: [
 				"4F545A6BD04F9808"
 				"57BC98F4EFBC35D0"
@@ -32,17 +33,6 @@
 				id: "3EFC76EEFF3414FA"
 				type: "item"
 				item: "botania:pure_daisy"
-			}]
-		}
-		{
-			x: -6.0d
-			y: 1.0d
-			dependencies: ["4887A0F37F0FF05D"]
-			id: "57BC98F4EFBC35D0"
-			tasks: [{
-				id: "38DF5EA10CE4130A"
-				type: "item"
-				item: "minecraft:water_bucket"
 			}]
 		}
 		{
@@ -356,21 +346,6 @@
 				id: "459B20CF8DAA3A7F"
 				type: "item"
 				item: "minecraft:basalt"
-			}]
-		}
-		{
-			x: -6.0d
-			y: 2.0d
-			dependencies: [
-				"57BC98F4EFBC35D0"
-				"7464615230CFD315"
-			]
-			dependency_requirement: "one_completed"
-			id: "23696CD4F1516DA1"
-			tasks: [{
-				id: "7BF127D3B50EE93B"
-				type: "item"
-				item: "minecraft:redstone"
 			}]
 		}
 		{

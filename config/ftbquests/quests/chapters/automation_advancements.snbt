@@ -11,6 +11,7 @@
 		{
 			x: -1.5d
 			y: 0.5d
+			subtitle: "Simple item translocation"
 			dependencies: ["7E30ED138F34B47F"]
 			id: "7ADD3D1ECCC43B48"
 			tasks: [{
@@ -22,6 +23,7 @@
 		{
 			x: -4.5d
 			y: 2.5d
+			subtitle: "Pulls items from above, pushes to bottom"
 			dependencies: ["4C351B64DC9AB23F"]
 			id: "2030C8CB20B3E802"
 			tasks: [{
@@ -33,6 +35,7 @@
 		{
 			x: -3.5d
 			y: 2.5d
+			subtitle: "Can be filtered and counted"
 			dependencies: [
 				"2030C8CB20B3E802"
 				"018B31565D1C0B45"
@@ -47,6 +50,7 @@
 		{
 			x: -4.0d
 			y: 1.5d
+			subtitle: "Very simple item extracting"
 			dependencies: [
 				"4C351B64DC9AB23F"
 				"7E30ED138F34B47F"
@@ -61,6 +65,7 @@
 		{
 			x: -3.0d
 			y: 1.5d
+			subtitle: "Can now be filtered and counted"
 			dependencies: [
 				"27CDC76B5AE59ABD"
 				"018B31565D1C0B45"
@@ -75,7 +80,11 @@
 		{
 			x: -2.5d
 			y: 2.5d
-			dependencies: ["6224906F31FA2A4A"]
+			subtitle: "Gateway to Complexity"
+			dependencies: [
+				"6224906F31FA2A4A"
+				"23696CD4F1516DA1"
+			]
 			id: "018B31565D1C0B45"
 			tasks: [{
 				id: "427555E324D58EAD"
@@ -86,6 +95,7 @@
 		{
 			x: -1.0d
 			y: 1.5d
+			subtitle: "Autocrafting at it's... strangest"
 			dependencies: [
 				"5A0C5186D79252F3"
 				"4887A0F37F0FF05D"
@@ -100,6 +110,7 @@
 		{
 			x: -2.5d
 			y: 0.5d
+			subtitle: "Simple item transfer"
 			dependencies: ["24FC422FA3589D5D"]
 			id: "51FC25CAD864D058"
 			tasks: [{
@@ -122,9 +133,11 @@
 		{
 			x: -1.5d
 			y: 2.5d
+			subtitle: "Advanced item placing"
 			dependencies: [
 				"018B31565D1C0B45"
 				"291C546C0E6262C9"
+				"24A297A149F48F9F"
 			]
 			id: "545DEFC8F9E076C2"
 			tasks: [{
@@ -136,6 +149,7 @@
 		{
 			x: -5.0d
 			y: 1.5d
+			subtitle: "Useful for clocks, or detecting change in block state"
 			dependencies: ["23696CD4F1516DA1"]
 			id: "3CCB945AD22B24EF"
 			tasks: [{
@@ -147,6 +161,7 @@
 		{
 			x: -4.5d
 			y: 0.5d
+			subtitle: "Generically useful redstone component"
 			dependencies: ["410231EB71A9934C"]
 			id: "2671B4A26B2C59C5"
 			tasks: [{
@@ -158,6 +173,7 @@
 		{
 			x: -2.0d
 			y: 1.5d
+			subtitle: "Advanced autocrafting"
 			dependencies: [
 				"018B31565D1C0B45"
 				"72D283E8000EFF09"
@@ -168,6 +184,77 @@
 				id: "1EC5D1E1BE54C184"
 				type: "item"
 				item: "create:mechanical_crafter"
+			}]
+		}
+		{
+			x: -5.5d
+			y: 2.5d
+			subtitle: "Can now place blocks!"
+			dependencies: ["23696CD4F1516DA1"]
+			id: "2E509088611E9B33"
+			tasks: [{
+				id: "191721C52FA42E5B"
+				type: "item"
+				item: "minecraft:dispenser"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 1.5d
+			subtitle: "Simple item pipe, has some peculiar transfer rules"
+			dependencies: ["1CAB9F50BBF644A6"]
+			id: "49998670181DB223"
+			tasks: [{
+				id: "55632605AB843D81"
+				type: "item"
+				item: "quark:pipe"
+			}]
+		}
+		{
+			title: "Pipez"
+			icon: "pipez:item_pipe"
+			x: -5.5d
+			y: 0.5d
+			subtitle: "\"Easy\" item transfer"
+			dependencies: ["49E47BD55CFE7B59"]
+			id: "3DD8C16BBF9896D4"
+			tasks: [
+				{
+					id: "027F223212BF9DB3"
+					type: "item"
+					item: "pipez:item_pipe"
+				}
+				{
+					id: "3BCD119DDB9CEEEB"
+					type: "item"
+					item: "pipez:fluid_pipe"
+				}
+				{
+					id: "4C81CD99B2B5B821"
+					type: "item"
+					item: "pipez:energy_pipe"
+				}
+				{
+					id: "4EA4B58C7259DC2D"
+					type: "item"
+					item: "pipez:wrench"
+				}
+			]
+		}
+		{
+			x: -3.5d
+			y: 4.0d
+			subtitle: "The way to automate redstone. Look into blocks of the stuff"
+			dependencies: ["23696CD4F1516DA1"]
+			id: "6DEBD5320736049C"
+			tasks: [{
+				id: "6DB16AED4426DDAE"
+				type: "observation"
+				title: "Redstone Ore"
+				icon: "minecraft:redstone_ore"
+				timer: 0L
+				observe_type: 0
+				to_observe: "minecraft:redstone_ore"
 			}]
 		}
 	]

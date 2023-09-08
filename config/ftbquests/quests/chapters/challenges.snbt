@@ -4,27 +4,53 @@
 	order_index: 1
 	filename: "challenges"
 	title: "Challenges"
+	icon: "create:steam_engine"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [{
-		title: "Steam Prodigy"
-		x: -5.5d
-		y: 1.0d
-		description: ["Create a steam powered factory before getting wood!"]
-		dependencies: [
-			"23696CD4F1516DA1"
-			"59F41B993B010AF0"
-			"0CD1D31C720D8760"
-			"274489E7A89845B8"
-		]
-		id: "773D23A442A22750"
-		tasks: [{
-			id: "4D6E88D5BF7A1BAF"
-			type: "advancement"
-			icon: "create:steam_engine"
-			advancement: "create:steam_engine"
-			criterion: ""
-		}]
-	}]
+	quests: [
+		{
+			title: "Steam Prodigy"
+			x: -5.5d
+			y: 1.0d
+			description: ["Create a steam powered factory before getting wood!"]
+			dependencies: [
+				"23696CD4F1516DA1"
+				"59F41B993B010AF0"
+				"0CD1D31C720D8760"
+				"274489E7A89845B8"
+			]
+			id: "773D23A442A22750"
+			tasks: [{
+				id: "4D6E88D5BF7A1BAF"
+				type: "advancement"
+				icon: "create:steam_engine"
+				advancement: "create:steam_engine"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Redstone Factory"
+			icon: "minecraft:redstone_ore"
+			x: -3.5d
+			y: 1.0d
+			description: ["Fully automate the production of redstone"]
+			dependencies: ["6DEBD5320736049C"]
+			id: "1651984D3194524A"
+			tasks: [
+				{
+					id: "6817EEDFE59EC001"
+					type: "item"
+					item: "minecraft:redstone_block"
+					count: 16L
+					consume_items: true
+				}
+				{
+					id: "390F9363B72CB36A"
+					type: "checkmark"
+					title: "Automated?"
+				}
+			]
+		}
+	]
 	quest_links: [ ]
 }

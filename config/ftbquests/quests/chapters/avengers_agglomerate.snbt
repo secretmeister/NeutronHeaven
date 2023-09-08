@@ -5,7 +5,6 @@
 	filename: "avengers_agglomerate"
 	title: "Avengers, Agglomerate"
 	icon: "botania:terrasteel_ingot"
-	always_invisible: true
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -88,6 +87,7 @@
 		{
 			x: -1.0d
 			y: 1.5d
+			subtitle: "Finally, wood!"
 			dependencies: [
 				"225275D6A83495EC"
 				"196D51BBCC32DEC1"

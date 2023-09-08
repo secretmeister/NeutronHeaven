@@ -5,7 +5,6 @@
 	filename: "patterned_pinnacle"
 	title: "Tinkers Triumph"
 	icon: "minecraft:netherite_block"
-	always_invisible: true
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -18,17 +17,6 @@
 				id: "341BBD70AB858526"
 				type: "item"
 				item: "tconstruct:blazing_blood_bucket"
-			}]
-		}
-		{
-			x: 1.0d
-			y: 2.0d
-			dependencies: ["410231EB71A9934C"]
-			id: "149570307E8D8CA4"
-			tasks: [{
-				id: "30395B220C0D37DC"
-				type: "item"
-				item: "tconstruct:pattern"
 			}]
 		}
 		{

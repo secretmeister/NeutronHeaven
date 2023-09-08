@@ -9,10 +9,10 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: -2.5d
-			y: -2.0d
+			x: -3.0d
+			y: -4.0d
 			description: [
-				"This book seems to have an emergrency feature that provides endless cobblestone"
+				"This book seems to have an emergency feature that provides endless cobblestone"
 				"And this dimension allows you to break it into four parts, the same as the whole"
 			]
 			id: "4D0586A728999E99"
@@ -39,6 +39,7 @@
 			x: -2.5d
 			y: -3.0d
 			subtitle: "Hammah smash cobble!"
+			description: ["The sledge hammer has a wide variety of things it can smash by right clicking in world"]
 			dependencies: ["4D0586A728999E99"]
 			id: "031875BE79D6F923"
 			tasks: [{
@@ -89,8 +90,9 @@
 		{
 			x: -0.5d
 			y: -2.0d
-			description: ["It appears that different varieties of rock contain an assortment of useful materials"]
-			dependencies: ["7C73653F015E2D43"]
+			subtitle: "Diorite's cousin"
+			description: ["It appears that different varieties of rock contain an assortment of useful materials, including iron, copper, gold and zinc"]
+			dependencies: ["061223D3CA68ECA8"]
 			id: "172854BCDFC44230"
 			tasks: [{
 				id: "53119AD3A6F69825"
@@ -101,6 +103,7 @@
 		{
 			x: 0.5d
 			y: -2.5d
+			description: ["There are some qol recipes for gravel and sand using this"]
 			dependencies: ["172854BCDFC44230"]
 			id: "5A0C5186D79252F3"
 			tasks: [{
@@ -110,7 +113,7 @@
 			}]
 		}
 		{
-			x: 1.0d
+			x: 0.5d
 			y: -1.5d
 			dependencies: ["5A0C5186D79252F3"]
 			id: "1CAB9F50BBF644A6"
@@ -121,7 +124,7 @@
 			}]
 		}
 		{
-			x: 2.0d
+			x: 1.5d
 			y: -1.5d
 			dependencies: ["1CAB9F50BBF644A6"]
 			id: "24FC422FA3589D5D"
@@ -134,7 +137,7 @@
 		{
 			x: -1.0d
 			y: -4.0d
-			dependencies: ["7C73653F015E2D43"]
+			dependencies: ["061223D3CA68ECA8"]
 			id: "3C6D3B1CC8DA0171"
 			tasks: [{
 				id: "6E0C565D59179443"
@@ -143,8 +146,8 @@
 			}]
 		}
 		{
-			x: 1.5d
-			y: -0.5d
+			x: 1.0d
+			y: 0.0d
 			subtitle: "Genericaly useful"
 			description: [""]
 			dependencies: ["24FC422FA3589D5D"]
@@ -154,9 +157,15 @@
 				type: "item"
 				item: "create:andesite_alloy"
 			}]
+			rewards: [{
+				id: "3BB77AE7D9B6A7FC"
+				type: "item"
+				item: "minecraft:andesite"
+				count: 64
+			}]
 		}
 		{
-			x: 3.5d
+			x: 0.0d
 			y: -4.0d
 			dependencies: ["3C6D3B1CC8DA0171"]
 			id: "5ACD90E637161C6D"
@@ -169,7 +178,8 @@
 		{
 			x: -0.5d
 			y: -3.0d
-			dependencies: ["7C73653F015E2D43"]
+			description: ["Sand contains small quantities"]
+			dependencies: ["061223D3CA68ECA8"]
 			id: "3AC26F7400AB3086"
 			tasks: [{
 				id: "3F30DC78A6F19CF0"
@@ -178,11 +188,12 @@
 			}]
 		}
 		{
-			x: 2.5d
-			y: -3.0d
+			x: 3.0d
+			y: -3.5d
 			dependencies: [
 				"5A0C5186D79252F3"
 				"3AC26F7400AB3086"
+				"274489E7A89845B8"
 			]
 			id: "20F69AAFD25882DE"
 			tasks: [{
@@ -192,8 +203,8 @@
 			}]
 		}
 		{
-			x: 2.5d
-			y: -0.5d
+			x: 3.0d
+			y: 0.0d
 			subtitle: "Start of Compression"
 			description: ["Tnt is quite explosive, and it is recommended to do your explosions in a chamber of cobblestone around 7 blocks in diameter"]
 			dependencies: [
@@ -206,11 +217,17 @@
 				type: "item"
 				item: "pneumaticcraft:ingot_iron_compressed"
 			}]
+			rewards: [{
+				id: "6B50127186C9FDDE"
+				type: "item"
+				item: "minecraft:iron_ingot"
+				count: 8
+			}]
 		}
 		{
 			x: -1.5d
-			y: -1.5d
-			dependencies: ["7C73653F015E2D43"]
+			y: -1.0d
+			dependencies: ["061223D3CA68ECA8"]
 			id: "29844BB8562318DA"
 			tasks: [{
 				id: "3D36AF0FEB86BF28"
@@ -219,8 +236,8 @@
 			}]
 		}
 		{
-			x: 0.5d
-			y: -0.5d
+			x: -1.0d
+			y: 0.0d
 			subtitle: "The gateway to tinkers"
 			description: [""]
 			dependencies: [
@@ -233,32 +250,165 @@
 				type: "item"
 				item: "tconstruct:seared_brick"
 			}]
+			rewards: [{
+				id: "3637EE29CF4D9282"
+				type: "item"
+				item: "minecraft:clay"
+				count: 16
+			}]
 		}
 		{
-			x: 3.5d
-			y: -0.5d
+			x: 1.5d
+			y: -5.0d
 			subtitle: "The start of the real journey"
 			dependencies: [
 				"5ACD90E637161C6D"
 				"31284DCE27BBC499"
 			]
+			size: 1.25d
 			id: "2E7AA8DC7F4A93D0"
 			tasks: [{
 				id: "1FC09C50C14899AB"
 				type: "item"
 				item: "minecraft:slime_ball"
 			}]
+			rewards: [{
+				id: "1E9F53B4D2929F39"
+				type: "item"
+				item: {
+					id: "tconstruct:sledge_hammer"
+					Count: 1b
+					tag: {
+						tic_multipliers: {
+							"tconstruct:mining_speed": 0.4f
+							"tconstruct:attack_damage": 1.35f
+							"tconstruct:durability": 4.0f
+						}
+						tic_stats: {
+							"tconstruct:attack_speed": 0.75f
+							"tconstruct:mining_speed": 2.4f
+							"tconstruct:attack_damage": 6.75f
+							"tconstruct:harvest_tier": "minecraft:iron"
+							"tconstruct:durability": 1100.0f
+						}
+						tic_broken: 0b
+						tic_modifiers: [
+							{
+								name: "tconstruct:smite"
+								level: 2s
+							}
+							{
+								name: "tconstruct:magnetic"
+								level: 4s
+							}
+						]
+						tic_materials: [
+							"tconstruct:iron"
+							"tconstruct:iron"
+							"tconstruct:iron"
+							"tconstruct:iron"
+						]
+						Damage: 0
+						tic_persistent_data: {
+							abilities: 1
+							upgrades: 2
+						}
+					}
+				}
+			}]
 		}
 		{
-			x: -2.5d
-			y: -1.0d
-			description: ["A good fuel source"]
-			dependencies: ["29844BB8562318DA"]
+			x: -2.0d
+			y: -2.0d
+			description: ["A good fuel source, and useful for simple automation"]
+			dependencies: ["061223D3CA68ECA8"]
 			id: "7E30ED138F34B47F"
 			tasks: [{
 				id: "7F3A6D79E27729E1"
 				type: "item"
 				item: "minecraft:dried_kelp_block"
+			}]
+		}
+		{
+			title: "Basic Resources"
+			icon: "minecraft:gravel"
+			x: -1.5d
+			y: -3.0d
+			description: ["Hammering these gives some very useful items"]
+			dependencies: [
+				"7C73653F015E2D43"
+				"031875BE79D6F923"
+			]
+			id: "061223D3CA68ECA8"
+			tasks: [
+				{
+					id: "5D8CA1EF4AAE445C"
+					type: "item"
+					item: "minecraft:sand"
+				}
+				{
+					id: "268D210ED081D24E"
+					type: "item"
+					item: "minecraft:gravel"
+				}
+				{
+					id: "0D28BBFCD5DA2F1E"
+					type: "item"
+					item: "minecraft:clay_ball"
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: -2.5d
+			dependencies: ["24FC422FA3589D5D"]
+			id: "274489E7A89845B8"
+			tasks: [{
+				id: "436ED65D77B2AD40"
+				type: "item"
+				item: {
+					id: "minecraft:flint_and_steel"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 2.5d
+			y: -1.5d
+			subtitle: "Really good miscellaneous item storage"
+			dependencies: ["24FC422FA3589D5D"]
+			id: "2ADAE743902DDB1D"
+			tasks: [{
+				id: "17ADD4FC5D6883A4"
+				type: "item"
+				item: "quark:crate"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -5.0d
+			subtitle: "Spam crouch to grow faster!"
+			dependencies: ["3C6D3B1CC8DA0171"]
+			id: "748EDD1B9E3C9347"
+			tasks: [{
+				id: "6209A0CC2ACF0F39"
+				type: "item"
+				item: "minecraft:wheat_seeds"
+			}]
+		}
+		{
+			title: "Getting hungry?"
+			x: -2.5d
+			y: -5.0d
+			dependencies: ["748EDD1B9E3C9347"]
+			id: "458DA307660E81FC"
+			tasks: [{
+				id: "6253FF1303F356A7"
+				type: "item"
+				item: "minecraft:bread"
 			}]
 		}
 	]
