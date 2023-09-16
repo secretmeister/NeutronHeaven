@@ -364,13 +364,34 @@
 			dependencies: ["24FC422FA3589D5D"]
 			id: "274489E7A89845B8"
 			tasks: [{
-				id: "436ED65D77B2AD40"
+				id: "1FB3FDE0CB8FB26D"
 				type: "item"
 				item: {
-					id: "minecraft:flint_and_steel"
+					id: "tconstruct:flint_and_brick"
 					Count: 1b
 					tag: {
+						tic_stats: {
+							"tconstruct:durability": 100.0f
+						}
+						tic_broken: 0b
 						Damage: 0
+						tic_modifiers: [
+							{
+								name: "tconstruct:fiery"
+								level: 1s
+							}
+							{
+								name: "tconstruct:scorching"
+								level: 1s
+							}
+							{
+								name: "tconstruct:firestarter"
+								level: 1s
+							}
+						]
+						tic_persistent_data: {
+							upgrades: 1
+						}
 					}
 				}
 			}]

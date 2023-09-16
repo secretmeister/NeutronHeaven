@@ -9,7 +9,7 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: -1.5d
+			x: -3.5d
 			y: 0.5d
 			subtitle: "Simple item translocation"
 			dependencies: ["7E30ED138F34B47F"]
@@ -93,9 +93,10 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: 1.5d
+			x: -2.5d
+			y: 0.5d
 			subtitle: "Autocrafting at it's... strangest"
+			description: ["Define a recipe in its grid, and then input items in any face other than its output one. Any redstone signal will attempt to craft one recipe using its internal storage, and eject the result into the facing inventory. Comparators measure how many copies it could craft"]
 			dependencies: [
 				"5A0C5186D79252F3"
 				"4887A0F37F0FF05D"
@@ -108,8 +109,8 @@
 			}]
 		}
 		{
-			x: -2.5d
-			y: 0.5d
+			x: -6.0d
+			y: 1.5d
 			subtitle: "Simple item transfer"
 			dependencies: ["24FC422FA3589D5D"]
 			id: "51FC25CAD864D058"
@@ -120,8 +121,9 @@
 			}]
 		}
 		{
-			x: -3.5d
+			x: -5.5d
 			y: 0.5d
+			subtitle: "Overflow Detector"
 			dependencies: ["23696CD4F1516DA1"]
 			id: "3FA3BE83E4DCB30E"
 			tasks: [{
@@ -131,9 +133,9 @@
 			}]
 		}
 		{
-			x: -1.5d
-			y: 2.5d
-			subtitle: "Advanced item placing"
+			x: -2.0d
+			y: 1.5d
+			subtitle: "Advanced block placing"
 			dependencies: [
 				"018B31565D1C0B45"
 				"291C546C0E6262C9"
@@ -171,8 +173,8 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: 1.5d
+			x: -1.5d
+			y: 2.5d
 			subtitle: "Advanced autocrafting"
 			dependencies: [
 				"018B31565D1C0B45"
@@ -199,8 +201,8 @@
 			}]
 		}
 		{
-			x: -6.0d
-			y: 1.5d
+			x: -1.5d
+			y: 0.5d
 			subtitle: "Simple item pipe, has some peculiar transfer rules"
 			dependencies: ["1CAB9F50BBF644A6"]
 			id: "49998670181DB223"
@@ -213,8 +215,8 @@
 		{
 			title: "Pipez"
 			icon: "pipez:item_pipe"
-			x: -5.5d
-			y: 0.5d
+			x: -1.0d
+			y: 1.5d
 			subtitle: "\"Easy\" item transfer"
 			dependencies: ["49E47BD55CFE7B59"]
 			id: "3DD8C16BBF9896D4"
@@ -242,7 +244,7 @@
 			]
 		}
 		{
-			x: -3.5d
+			x: -2.5d
 			y: 4.0d
 			subtitle: "The way to automate redstone. Look into blocks of the stuff"
 			dependencies: ["23696CD4F1516DA1"]
@@ -255,6 +257,84 @@
 				timer: 0L
 				observe_type: 0
 				to_observe: "minecraft:redstone_ore"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 0.5d
+			subtitle: "Remote Hopper"
+			dependencies: ["535B256EEBA8FCC3"]
+			id: "4F59294BA8A08449"
+			tasks: [{
+				id: "30B6D325C8360144"
+				type: "item"
+				item: "botania:hopperhock"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 2.5d
+			subtitle: "Ranged Placer"
+			dependencies: [
+				"6E0C1DFE3784B4C4"
+				"370F0E89E80234DA"
+			]
+			id: "2DA3D31420B4B5E1"
+			tasks: [{
+				id: "71099A74F0BBA5D3"
+				type: "item"
+				item: "botania:rannuncarpus"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 1.5d
+			subtitle: "Item Blower"
+			dependencies: [
+				"535B256EEBA8FCC3"
+				"370F0E89E80234DA"
+			]
+			id: "3DE03AD503FD11AB"
+			tasks: [{
+				id: "06BE1504C6A1D432"
+				type: "item"
+				item: "botania:daffomill"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.5d
+			subtitle: "Block Breaker"
+			dependencies: ["72CE81EB18FBE5F2"]
+			id: "51BB2A8A7B584C59"
+			tasks: [{
+				id: "442833442FCFE20C"
+				type: "item"
+				item: "botania:lens_mine"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 0.5d
+			subtitle: "Advanced Crafter"
+			dependencies: ["30342C8B7475D983"]
+			id: "5DEA218C6968600A"
+			tasks: [{
+				id: "66D68AE940EFBFE8"
+				type: "item"
+				item: "botania:crafty_crate"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 2.5d
+			subtitle: "Firestarter"
+			dependencies: ["72BC7445A6526995"]
+			id: "1A994D9327A410B2"
+			tasks: [{
+				id: "5C5B28498CA4AFCF"
+				type: "item"
+				item: "botania:lens_fire"
 			}]
 		}
 	]

@@ -117,3 +117,6 @@ LycheeRecipeManager.addRecipe("amethycryst", <recipetype:lychee:block_interactin
     "strskyheartntw",
     CommonLootModifiers.replaceWith(<item:tconstruct:stripped_skyroot_wood>, <item:tconstruct:sky_congealed_slime>)
 );
+
+
+
