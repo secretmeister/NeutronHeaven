@@ -1,5 +1,4 @@
 # NeutronHeaven
-A minecraft modpack, where you start out falling in an endless void.
+This is the official github repository for the Neutron Heaven modpack. Please use the issues tab for major issues. The setup files are there for people installing the pack directly from the github, instead of from Curseforge.
 
-
-Run setup .whatever to get mods
+A modpack where you start out falling in an endless void.
