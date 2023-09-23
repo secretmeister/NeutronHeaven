@@ -1,0 +1,101 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.screens.worldselection.CreateWorldScreen
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=3451511%
+  orientation = mid-centered
+  x = -155
+  action = movebutton
+  y = -41
+}
+
+customization {
+  identifier = %id=345185%
+  orientation = mid-centered
+  x = -155
+  action = movebutton
+  y = -7
+}
+
+customization {
+  identifier = %id=345185%
+  action = setbuttondescription
+  description = These are already set! Please don't change.
+}
+
+customization {
+  identifier = %id=505185%
+  orientation = mid-centered
+  x = 5
+  action = movebutton
+  y = -7
+}
+
+customization {
+  identifier = %id=505185%
+  action = setbuttondescription
+  description = You shouldn't mess with these.
+}
+
+customization {
+  identifier = %id=345100%
+  orientation = mid-centered
+  x = -155
+  action = movebutton
+  y = -92
+}
+
+customization {
+  identifier = %id=3451001%
+  orientation = mid-centered
+  x = -155
+  action = movebutton
+  y = -92
+}
+
+customization {
+  identifier = %id=345151%
+  orientation = mid-centered
+  x = -155
+  action = movebutton
+  y = -41
+}
+
+customization {
+  identifier = %id=3451851%
+  orientation = mid-centered
+  x = -155
+  action = movebutton
+  y = -7
+}
+
+customization {
+  identifier = %id=345972%
+  action = setbuttondescription
+  description = Begin the pack!
+}
+
+customization {
+  identifier = %id=505151%
+  action = setbuttondescription
+  description = These are here for a reason!
+}
+
+customization {
+  identifier = %id=50510011%
+  action = setbuttondescription
+  description = Please don't change.
+}
+

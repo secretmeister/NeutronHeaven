@@ -1,0 +1,190 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.screens.TitleScreen
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  path = fancymenu_data/titlebackground.png
+  action = texturizebackground
+}
+
+customization {
+  keepaspectratio = true
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_copyright_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  orientation = bottom-centered
+  x = -101
+  action = movebutton
+  y = -71
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_accessibility_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=376322%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  orientation = bottom-centered
+  x = 0
+  action = movebutton
+  y = -49
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  width = 99
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  orientation = bottom-centered
+  x = -101
+  action = movebutton
+  y = -27
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  width = 200
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  orientation = bottom-centered
+  x = -101
+  action = movebutton
+  y = -93
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  orientation = bottom-centered
+  x = -101
+  action = movebutton
+  y = -49
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  width = 99
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_realms_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=376346%
+  action = hidebutton
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 267
+  width = 268
+  action = deep_customization_element:title_screen_forge_top
+  actionid = c151a150-6195-4374-96fa-4b31866f5c401695258098440
+  y = 4
+  height = 19
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 2
+  width = 108
+  action = deep_customization_element:title_screen_branding
+  actionid = 2af479a8-7cce-4a85-99b2-71cc11ea55ca1695258098447
+  y = 298
+  height = 40
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 355
+  width = 228
+  action = deep_customization_element:title_screen_forge_copyright
+  actionid = e7ae8e42-2efe-4648-9b3f-328f720dde7a1695258098447
+  y = 311
+  height = 9
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 504
+  width = 13
+  action = deep_customization_element:title_screen_realms_notification
+  actionid = 8e481bc2-07b9-49de-a6c1-454be77e035c1695258098447
+  y = 206
+  height = 13
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 155
+  width = 274
+  action = deep_customization_element:title_screen_logo
+  actionid = 295e2ab0-bf12-4b55-bef4-cc34562b48d11695258098448
+  y = 30
+  height = 52
+}
+
+customization {
+  orientation = original
+  splash_color = #ffff00
+  hidden = true
+  x = 0
+  width = 60
+  splash_rotation = -20
+  action = deep_customization_element:title_screen_splash
+  actionid = a1a717de-24c1-45ea-b6bc-a414711473fc1695258098448
+  y = 0
+  height = 30
+}
+
+customization {
+  path = fancymenu_data/titlecard.png
+  orientation = top-centered
+  x = -108
+  width = 209
+  action = addtexture
+  actionid = 8642eef4-5ed8-49f0-9604-e09e537cbc6d1695348983330
+  y = 9
+  height = 81
+}
+

@@ -125,25 +125,9 @@ key_key.journeymap.fullscreen.south:key.keyboard.down
 key_key.journeymap.fullscreen.east:key.keyboard.right
 key_key.journeymap.fullscreen.west:key.keyboard.left
 key_key.journeymap.fullscreen.disable_buttons:key.keyboard.h
+key_Reload Menu | CTRL + ALT + :key.keyboard.r
+key_Toggle Customization Overlay | CTRL + ALT + :key.keyboard.c
 key_key.ftbteams.open_gui:key.keyboard.unknown
-key_key.wands.wand_invert:key.keyboard.i
-key_key.wands.toggle_stair_slab:key.keyboard.period
-key_key.wands.n_dec:key.keyboard.down
-key_key.wands.wand_undo:key.keyboard.u
-key_key.wands.wand_action:key.keyboard.h
-key_key.wands.inc_sel_block:key.keyboard.z
-key_key.wands.n_inc:key.keyboard.up
-key_key.wands.wand_orientation:key.keyboard.x
-key_key.wands.m_dec:key.keyboard.left
-key_key.wands.wand_palette_mode:key.keyboard.p
-key_key.wands.area_diagonal_spread:key.keyboard.comma
-key_key.wands.palette_menu:key.keyboard.j
-key_key.wands.m_inc:key.keyboard.right
-key_key.wands.wand_rotate:key.keyboard.r
-key_key.wands.clear_wand:key.keyboard.c
-key_key.wands.wand_fill_circle:key.keyboard.k
-key_key.wands.wand_mode:key.keyboard.v
-key_key.wands.wand_menu:key.keyboard.y
 key_key.jei.toggleOverlay:key.keyboard.o:CONTROL
 key_key.jei.focusSearch:key.keyboard.f:CONTROL
 key_key.jei.previousPage:key.keyboard.unknown
@@ -198,12 +182,15 @@ key_pneumaticcraft.chestplate.launcher:key.keyboard.c:CONTROL
 key_pneumaticcraft.boots.jet_boots:key.keyboard.space
 key_pneumaticcraft.armor.upgrade.compressedcreativity.mechanical_visor:key.keyboard.unknown
 key_key.ftbultimine:key.keyboard.grave.accent
-key_quark.keybind.sort_player:key.keyboard.unknown
-key_quark.keybind.sort_container:key.keyboard.unknown
 key_key.ftbquests.quests:key.keyboard.l
+key_quark.keybind.lock_rotation:key.keyboard.k
+key_quark.keybind.autorun:key.keyboard.unknown
+key_quark.keybind.back:key.mouse.4
 key_quark.keybind.transfer_insert:key.keyboard.unknown
 key_quark.keybind.transfer_extract:key.keyboard.unknown
 key_quark.keybind.shift_lock:key.keyboard.unknown
+key_quark.keybind.sort_player:key.keyboard.unknown
+key_quark.keybind.sort_container:key.keyboard.unknown
 key_quark.emote.no:key.keyboard.unknown
 key_quark.emote.yes:key.keyboard.unknown
 key_quark.emote.wave:key.keyboard.unknown
@@ -223,10 +210,7 @@ key_quark.keybind.patreon_emote.jet:key.keyboard.unknown
 key_quark.keybind.patreon_emote.exorcist:key.keyboard.unknown
 key_quark.keybind.patreon_emote.zombie:key.keyboard.unknown
 key_quark.keybind.change_hotbar:key.keyboard.z
-key_quark.keybind.autorun:key.keyboard.unknown
-key_quark.keybind.lock_rotation:key.keyboard.k
 key_quark.keybind.camera_mode:key.keyboard.f12
-key_quark.keybind.back:key.mouse.4
 key_pneumaticcraft.armor.upgrade.core_components:key.keyboard.unknown
 key_pneumaticcraft.armor.upgrade.block_tracker:key.keyboard.unknown
 key_pneumaticcraft.armor.upgrade.entity_tracker:key.keyboard.unknown
