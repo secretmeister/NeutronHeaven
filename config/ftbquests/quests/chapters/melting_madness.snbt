@@ -43,7 +43,7 @@
 			title: "Sand Round Plate Cast"
 			x: 1.5d
 			y: 0.0d
-			description: ["Feel free to delay on this, it will not be used for a while"]
+			description: ["First, make a sand round plate cast, and then make the golden one after that"]
 			dependencies: ["0909F7157C567D58"]
 			id: "7919A18254CEE578"
 			tasks: [{

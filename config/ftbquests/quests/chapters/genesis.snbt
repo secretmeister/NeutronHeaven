@@ -114,7 +114,7 @@
 		}
 		{
 			x: 0.5d
-			y: -1.5d
+			y: -1.0d
 			dependencies: ["5A0C5186D79252F3"]
 			id: "1CAB9F50BBF644A6"
 			tasks: [{
@@ -226,7 +226,7 @@
 		}
 		{
 			x: -1.5d
-			y: -1.0d
+			y: -2.0d
 			dependencies: ["061223D3CA68ECA8"]
 			id: "29844BB8562318DA"
 			tasks: [{
@@ -236,7 +236,7 @@
 			}]
 		}
 		{
-			x: -1.0d
+			x: -1.5d
 			y: 0.0d
 			subtitle: "The gateway to tinkers"
 			description: [""]
@@ -318,7 +318,7 @@
 			}]
 		}
 		{
-			x: -2.0d
+			x: -2.5d
 			y: -2.0d
 			description: ["A good fuel source, and useful for simple automation"]
 			dependencies: ["061223D3CA68ECA8"]
@@ -359,9 +359,9 @@
 			]
 		}
 		{
-			x: 2.0d
-			y: -2.5d
-			dependencies: ["24FC422FA3589D5D"]
+			x: -1.0d
+			y: -1.0d
+			dependencies: ["5F78FB2A53E1932D"]
 			id: "274489E7A89845B8"
 			tasks: [{
 				id: "1FB3FDE0CB8FB26D"
@@ -394,18 +394,6 @@
 						}
 					}
 				}
-			}]
-		}
-		{
-			x: 2.5d
-			y: -1.5d
-			subtitle: "Really good miscellaneous item storage"
-			dependencies: ["24FC422FA3589D5D"]
-			id: "2ADAE743902DDB1D"
-			tasks: [{
-				id: "17ADD4FC5D6883A4"
-				type: "item"
-				item: "quark:crate"
 			}]
 		}
 		{
