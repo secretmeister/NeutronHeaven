@@ -11,9 +11,10 @@
 		{
 			x: -3.0d
 			y: -4.0d
+			subtitle: "Please read quest descriptions"
 			description: [
 				"This book seems to have an emergency feature that provides endless cobblestone"
-				"And this dimension allows you to break it into four parts, the same as the whole"
+				"You notice you can craft one cobble into four, an easy shortcut"
 			]
 			id: "4D0586A728999E99"
 			tasks: [{

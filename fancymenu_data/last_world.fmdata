@@ -1,7 +1,7 @@
 type = last_world
 
 last_world {
-  is_server = true
-  world = %fancymenu_dummy_address%:25565
+  is_server = false
+  world = C:/Users/kailo/curseforge/minecraft/Instances/Neutron Heaven/saves/New World (2)
 }
 

@@ -6,10 +6,12 @@ recipes.remove(<item:create:brass_casing>);
 recipes.remove(<item:create:blaze_cake_base>);
 recipes.remove(<item:create:belt_connector>);
 recipes.remove(<item:create:blaze_cake>);
+recipes.remove(<item:create:encased_chain_drive>);
 <recipetype:create:filling>.remove(<item:minecraft:grass_block>);
 
 <recipetype:create:item_application>.addRecipe("copcas", [<item:create:copper_casing>], <item:minecraft:polished_andesite>, <item:create:copper_sheet>, false);
 
+craftingTable.addShaped("encasedchaindrive", <item:create:encased_chain_drive>*16, [[<item:create:andesite_casing>,<item:minecraft:iron_ingot>],[<item:minecraft:iron_ingot>,<item:minecraft:iron_ingot>]]);
 craftingTable.addShaped("spout", <item:create:spout>, [[<item:minecraft:air>,<item:create:andesite_alloy>,<item:minecraft:air>],[<tag:items:forge:glass_panes>,<item:create:copper_casing>,<tag:items:forge:glass_panes>],[<item:minecraft:air>,<item:tconstruct:round_plate>.withTag({Material: "tconstruct:copper" as string}),<item:minecraft:air>]]);
 craftingTable.addShaped("belt", <item:create:belt_connector>*8, [[<item:minecraft:dried_kelp>,<item:minecraft:dried_kelp>,<item:minecraft:dried_kelp>],[<item:minecraft:dried_kelp>,<item:minecraft:dried_kelp>,<item:minecraft:dried_kelp>]]);
 craftingTable.addShaped("tank", <item:create:fluid_tank>, [[<item:create:copper_sheet>],[<item:pneumaticcraft:small_tank>],[<item:create:copper_sheet>]]);
