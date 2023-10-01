@@ -50,9 +50,11 @@ furnace.addRecipe("crushzinc", <item:create:zinc_nugget>*6, <item:create:crushed
 LycheeRecipeManager.addRecipe("crushgrav", <recipetype:lychee:block_interacting>, new LycheeRecipeBuilder()
     .itemIn(<tag:items:crafttweaker:hammerandexca>)
     .blockIn(<block:minecraft:gravel>)
+    .setHideInJEI(true)
     .post([LycheePosts.placeBlock(<block:minecraft:sand>),LycheePosts.random([LycheePosts.dropItem(<item:minecraft:flint>).withWeight(2),LycheePosts.placeBlock(<block:minecraft:sand>).withWeight(18)]),LycheePosts.damageItem(1)]));
 LycheeRecipeManager.addRecipe("crushcob", <recipetype:lychee:block_interacting>, new LycheeRecipeBuilder()
     .itemIn(<tag:items:crafttweaker:hammers>)
+    .setHideInJEI(true)
     .blockIn(<block:minecraft:cobblestone>)
     .post([LycheePosts.placeBlock(<block:minecraft:gravel>),LycheePosts.random([LycheePosts.dropItem(<item:minecraft:coal>),LycheePosts.placeBlock(<block:minecraft:gravel>).withWeight(13)]),LycheePosts.damageItem(1)]));
 LycheeRecipeManager.addRecipe("crushsand", <recipetype:lychee:block_interacting>, new LycheeRecipeBuilder()
@@ -74,10 +76,12 @@ LycheeRecipeManager.addRecipe("crushandes", <recipetype:lychee:block_interacting
 LycheeRecipeManager.addRecipe("crushgran", <recipetype:lychee:block_interacting>, new LycheeRecipeBuilder()
     .itemIn(<tag:items:crafttweaker:hammers>)
     .blockIn(<block:minecraft:granite>)
+    .setHideInJEI(true)
     .post([LycheePosts.placeBlock(<block:minecraft:red_sand>),LycheePosts.random([LycheePosts.dropItem(<item:create:crushed_raw_copper>),LycheePosts.placeBlock(<block:minecraft:red_sand>).withWeight(4)]),LycheePosts.damageItem(1)]));
 LycheeRecipeManager.addRecipe("crushcoarsedirt", <recipetype:lychee:block_interacting>, new LycheeRecipeBuilder()
     .itemIn(<tag:items:crafttweaker:hammerandexca>)
     .blockIn(<block:minecraft:coarse_dirt>)
+    .setHideInJEI(true)
     .post([LycheePosts.placeBlock(<block:minecraft:dirt>),LycheePosts.random([LycheePosts.dropItem(<item:minecraft:dead_bush>).withWeight(1),LycheePosts.placeBlock(<block:minecraft:air>).withWeight(2),LycheePosts.placeBlock(<block:minecraft:dirt>).withWeight(5)]),LycheePosts.damageItem(1)]));
 LycheeRecipeManager.addRecipe("crushdirt", <recipetype:lychee:block_interacting>, new LycheeRecipeBuilder()
     .itemIn(<tag:items:crafttweaker:hammerandexca>)
@@ -114,16 +118,14 @@ LycheeRecipeManager.addRecipe("redst", <recipetype:lychee:block_crushing>, new L
     .itemIn(<item:minecraft:redstone_block>)
     .crushingFallingBlock(<tag:blocks:minecraft:anvil>)
     .crushingLandingBlock(<block:minecraft:stone>)
+    .setHideInJEI(true)
     .post([LycheePosts.anvilDamageChance(1),LycheePosts.placeBlock(<block:minecraft:redstone_ore>)]));
 LycheeRecipeManager.addRecipe("redst2", <recipetype:lychee:block_crushing>, new LycheeRecipeBuilder()
     .crushingFallingBlock(<block:minecraft:sand>)
     .crushingLandingBlock(<block:minecraft:redstone_ore>)
     .post([LycheePosts.dropItem(<item:minecraft:redstone>).condition([LycheeConditions.chance(0.9)]),LycheePosts.placeBlock(<block:minecraft:stone>).condition([LycheeConditions.chance(0.02)]),LycheePosts.preventDefault()]));
 
-LycheeRecipeManager.addRecipe("coal", <recipetype:lychee:item_burning>, new LycheeRecipeBuilder()
-    .itemIn(<item:minecraft:flint>)
-    .post(LycheePosts.dropItem(<item:minecraft:coal>))
-);
+
 
 craftingTable.addShaped("pipei",<item:pipez:item_pipe>*16,[[<item:tconstruct:amethyst_bronze_ingot>,<item:tconstruct:amethyst_bronze_ingot>,<item:tconstruct:amethyst_bronze_ingot>],[<item:minecraft:dropper>,<item:minecraft:redstone>,<item:minecraft:dropper>],[<item:tconstruct:amethyst_bronze_ingot>,<item:tconstruct:amethyst_bronze_ingot>,<item:tconstruct:amethyst_bronze_ingot>]]);
 craftingTable.addShaped("pipef",<item:pipez:fluid_pipe>*16,[[<item:tconstruct:amethyst_bronze_ingot>,<item:tconstruct:amethyst_bronze_ingot>,<item:tconstruct:amethyst_bronze_ingot>],[<item:minecraft:bucket>,<item:minecraft:redstone>,<item:minecraft:bucket>],[<item:tconstruct:amethyst_bronze_ingot>,<item:tconstruct:amethyst_bronze_ingot>,<item:tconstruct:amethyst_bronze_ingot>]]);

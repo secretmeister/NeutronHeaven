@@ -97,6 +97,7 @@ craftingTable.addShapeless("tree_fertilizer",<item:create:tree_fertilizer>,[<tag
 LycheeRecipeManager.addRecipe("glimmer", <recipetype:lychee:block_crushing>, new LycheeRecipeBuilder()
     .crushingFallingBlock(<block:minecraft:glowstone>)
     .crushingLandingBlock(<block:botania:livingwood>)
+    .setHideInJEI(true)
     .post([LycheePosts.placeBlock(<block:botania:glimmering_livingwood_log>)]));
 LycheeRecipeManager.addRecipe("chorus", <recipetype:lychee:block_crushing>, new LycheeRecipeBuilder()
     .crushingFallingBlock(<block:minecraft:end_stone>)
@@ -105,6 +106,7 @@ LycheeRecipeManager.addRecipe("chorus", <recipetype:lychee:block_crushing>, new 
 LycheeRecipeManager.addRecipe("endsl", <recipetype:lychee:block_crushing>, new LycheeRecipeBuilder()
     .crushingFallingBlock(<block:minecraft:slime_block>)
     .crushingLandingBlock(<block:minecraft:chorus_flower>)
+    .setHideInJEI(true)
     .post([LycheePosts.placeBlock(<block:tconstruct:ender_congealed_slime>),LycheePosts.preventDefault()]));
 
 <recipetype:botania:orechid_ignem>.registerOreWeight("cobalt", <blockstate:tconstruct:cobalt_ore>, <block:minecraft:netherrack>, 2000);

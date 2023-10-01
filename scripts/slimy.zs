@@ -22,6 +22,7 @@ recipes.remove(<item:tconstruct:earth_slime_dirt>);
 
 LycheeRecipeManager.addRecipe("soulsand", <recipetype:lychee:lightning_channeling>, new LycheeRecipeBuilder()
     .post([LycheePosts.placeBlock(<block:tconstruct:soul_glass>, new BlockPos(0, -2, 0)).condition([LycheeConditions.block(<block:minecraft:glass>, new BlockPos(0, -2, 0))]),LycheePosts.executeCommand("weather thunder 150", true).condition([LycheeConditions.chance(0.3)])])
+    .setHideInJEI(true)
     .comment("Scares the glass below into soul glass")
 );
 
@@ -54,34 +55,49 @@ LycheeRecipeManager.addRecipe("siftdirt", <recipetype:lychee:block_interacting>,
 craftingTable.addShapeless("pickhead", <item:tconstruct:pick_head>.withTag({Material: "tconstruct:slimesteel" as string}),[<item:tconstruct:sledge_hammer>.anyDamage().transformDamage(5),<item:tconstruct:slimesteel_ingot>,<item:tconstruct:slimesteel_ingot>]);
 craftingTable.addShapeless("axehead", <item:tconstruct:small_axe_head>.withTag({Material: "tconstruct:slimesteel" as string}),[<item:tconstruct:sledge_hammer>.anyDamage().transformDamage(1),<item:tconstruct:pick_head>.withTag({Material: "tconstruct:slimesteel" as string})]);
 
-LycheeRecipeManager.addRecipe("thunder", <recipetype:lychee:item_burning>, new LycheeRecipeBuilder()
-  .itemIn(<item:minecraft:blue_stained_glass>)
-  .condition(LycheeConditions.weather("clear"))
-  .post([LycheePosts.executeCommand("weather thunder", true),LycheePosts.executeCommand("summon minecraft:lightning_bolt", true)])
-  .comment("Summons the Rain"));
+LycheeRecipeManager.addRecipe("thegodsgrace", <recipetype:lychee:item_burning>, new LycheeRecipeBuilder()
+  .itemIn(<item:minecraft:diamond>)
+  .condition(LycheeConditions.block(<block:minecraft:dark_prismarine>, new BlockPos(0, -1, 0)))
+  .setHideInJEI(true)
+  .post([LycheePosts.executeCommand("weather thunder", true),LycheePosts.executeCommand("summon minecraft:lightning_bolt"),LycheePosts.executeCommand("summon minecraft:trident ~ ~30 ~ {\"pickup\":1}")]));
 
-LycheeRecipeManager.addRecipe("clear", <recipetype:lychee:item_burning>, new LycheeRecipeBuilder()
-  .itemIn(<item:minecraft:glass>)
-  .condition(LycheeConditions.not(LycheeConditions.weather("clear")))
-  .post([LycheePosts.executeCommand("weather clear", true),LycheePosts.executeCommand("summon minecraft:lightning_bolt", true)])
-  .comment("Stops the Rain"));
 
+<recipetype:tconstruct:casting_table>.addJsonRecipe("tridentchanneling", {
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "item": "minecraft:trident"
+  },
+  "cast_consumed": true,
+  "fluid": {
+    "tag": "tconstruct:molten_copper",
+    "amount": 270
+  },
+  "result": {
+  	"item":"minecraft:trident",
+  	"nbt":"{\"Enchantments\":[{\"id\": \"minecraft:channeling\", \"lvl\": 1}] }"
+    },
+  "cooling_time": 300
+});
 
 LycheeRecipeManager.addRecipe("earthslimecryst", <recipetype:lychee:block_interacting>, new LycheeRecipeBuilder()
     .itemIn(<item:minecraft:wheat_seeds>)
     .blockIn(<block:tconstruct:earth_slime_crystal_block>)
+    .setHideInJEI(true)
     .post([LycheePosts.placeBlock(<block:tconstruct:budding_earth_slime_crystal>)]));
 LycheeRecipeManager.addRecipe("skyslimecryst", <recipetype:lychee:block_interacting>, new LycheeRecipeBuilder()
     .itemIn(<item:botania:infused_seeds>)
     .blockIn(<block:tconstruct:sky_slime_crystal_block>)
+    .setHideInJEI(true)
     .post([LycheePosts.placeBlock(<block:tconstruct:budding_sky_slime_crystal>)]));
 LycheeRecipeManager.addRecipe("endslimecryst", <recipetype:lychee:block_interacting>, new LycheeRecipeBuilder()
     .itemIn(<item:tconstruct:ender_slime_grass_seeds>)
     .blockIn(<block:tconstruct:ender_slime_crystal_block>)
+    .setHideInJEI(true)
     .post([LycheePosts.placeBlock(<block:tconstruct:budding_ender_slime_crystal>)]));
 LycheeRecipeManager.addRecipe("amethycryst", <recipetype:lychee:block_interacting>, new LycheeRecipeBuilder()
     .itemIn(<item:botania:purple_mushroom>)
     .blockIn(<block:minecraft:amethyst_block>)
+    .setHideInJEI(true)
     .post([LycheePosts.placeBlock(<block:minecraft:budding_amethyst>)]));
 
 

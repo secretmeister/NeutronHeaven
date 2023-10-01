@@ -47,36 +47,6 @@
 		}
 		{
 			x: -0.5d
-			y: 0.0d
-			dependencies: [
-				"23C93F4861D1EA7C"
-				"6DC44E10484B2BED"
-			]
-			id: "49E47BD55CFE7B59"
-			tasks: [{
-				id: "63BFD7204972BEE9"
-				type: "item"
-				item: "tconstruct:amethyst_bronze_ingot"
-			}]
-		}
-		{
-			x: -1.5d
-			y: 0.0d
-			dependencies: [
-				"660BB3E3529D970A"
-				"1B1146A650021F90"
-				"72CE81EB18FBE5F2"
-				"5A280C05AB199477"
-			]
-			id: "6DC44E10484B2BED"
-			tasks: [{
-				id: "46AF9D0AB3B11095"
-				type: "item"
-				item: "minecraft:amethyst_shard"
-			}]
-		}
-		{
-			x: -0.5d
 			y: -2.0d
 			dependencies: ["23C93F4861D1EA7C"]
 			id: "45E7B1FEC21C0ECC"

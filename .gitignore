@@ -29,6 +29,7 @@ config/modularmaterials/mmcc_backup
 patchouli_data.json
 schematics/e.nbt
 schematics/uploaded/secretmeister/e.nbt
-patchouli_data.json
 fancymenu_data/last_world.fmdata
 options.txt
+schematics
+config/jei/world

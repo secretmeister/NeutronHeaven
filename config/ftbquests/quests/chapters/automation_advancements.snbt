@@ -201,8 +201,8 @@
 			}]
 		}
 		{
-			x: -1.5d
-			y: 0.5d
+			x: -1.0d
+			y: 1.5d
 			subtitle: "Simple item pipe, has some peculiar transfer rules"
 			dependencies: ["1CAB9F50BBF644A6"]
 			id: "49998670181DB223"
@@ -215,8 +215,8 @@
 		{
 			title: "Pipez"
 			icon: "pipez:item_pipe"
-			x: -1.0d
-			y: 1.5d
+			x: -1.5d
+			y: 0.5d
 			subtitle: "\"Easy\" item transfer"
 			dependencies: ["49E47BD55CFE7B59"]
 			id: "3DD8C16BBF9896D4"
@@ -335,6 +335,47 @@
 				id: "5C5B28498CA4AFCF"
 				type: "item"
 				item: "botania:lens_fire"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -1.0d
+			dependencies: ["72CE81EB18FBE5F2"]
+			id: "5A280C05AB199477"
+			tasks: [{
+				id: "4FE81C961EEEF2A4"
+				type: "item"
+				item: "botania:quartz_lavender"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -1.0d
+			dependencies: [
+				"23C93F4861D1EA7C"
+				"6DC44E10484B2BED"
+			]
+			id: "49E47BD55CFE7B59"
+			tasks: [{
+				id: "63BFD7204972BEE9"
+				type: "item"
+				item: "tconstruct:amethyst_bronze_ingot"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -1.5d
+			dependencies: [
+				"660BB3E3529D970A"
+				"1B1146A650021F90"
+				"72CE81EB18FBE5F2"
+				"5A280C05AB199477"
+			]
+			id: "6DC44E10484B2BED"
+			tasks: [{
+				id: "46AF9D0AB3B11095"
+				type: "item"
+				item: "minecraft:amethyst_shard"
 			}]
 		}
 	]

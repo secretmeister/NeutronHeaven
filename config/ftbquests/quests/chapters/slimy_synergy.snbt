@@ -136,13 +136,10 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: -1.5d
+			x: -1.5d
+			y: -0.5d
 			subtitle: "+ quartz"
-			description: [
-				"Dropping stuff on diorite can cause it to eject some minerals, cheaper materials seem to eject cheaper stuff though"
-				"Blue glass, when burned, summons a torrential downpour"
-			]
+			description: ["Dropping stuff on diorite can cause it to eject some minerals, cheaper materials seem to eject cheaper stuff though"]
 			dependencies: ["6C8CB54AB1A7A411"]
 			id: "4887A0F37F0FF05D"
 			tasks: [{
@@ -152,7 +149,7 @@
 			}]
 		}
 		{
-			x: -1.0d
+			x: -2.0d
 			y: -1.5d
 			dependencies: ["5A0C5186D79252F3"]
 			id: "49902A8191A56842"
@@ -171,7 +168,7 @@
 			]
 			dependencies: [
 				"49902A8191A56842"
-				"4887A0F37F0FF05D"
+				"19F4A4B8BEA72EB4"
 			]
 			id: "0CD1D31C720D8760"
 			tasks: [{
@@ -454,7 +451,7 @@
 			}]
 		}
 		{
-			x: -1.5d
+			x: -2.5d
 			y: -0.5d
 			description: ["Collected via cauldrons, can be used in create washing"]
 			dependencies: [
@@ -470,7 +467,7 @@
 			}]
 		}
 		{
-			x: -2.5d
+			x: -3.5d
 			y: -0.5d
 			subtitle: "Very useful for automation!"
 			dependencies: [
@@ -483,6 +480,38 @@
 				id: "7BF127D3B50EE93B"
 				type: "item"
 				item: "minecraft:redstone"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -0.5d
+			dependencies: ["4887A0F37F0FF05D"]
+			id: "34A0818318A22549"
+			tasks: [{
+				id: "6F295FA04BEE9038"
+				type: "item"
+				item: "minecraft:dark_prismarine"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -1.5d
+			dependencies: ["34A0818318A22549"]
+			id: "19F4A4B8BEA72EB4"
+			tasks: [{
+				id: "07DD0AC424BC92C4"
+				type: "item"
+				item: {
+					id: "minecraft:trident"
+					Count: 1b
+					tag: {
+						Damage: 0
+						Enchantments: [{
+							lvl: 1s
+							id: "minecraft:channeling"
+						}]
+					}
+				}
 			}]
 		}
 	]

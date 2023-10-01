@@ -360,17 +360,6 @@
 			}]
 		}
 		{
-			x: -4.0d
-			y: 3.5d
-			dependencies: ["72CE81EB18FBE5F2"]
-			id: "5A280C05AB199477"
-			tasks: [{
-				id: "4FE81C961EEEF2A4"
-				type: "item"
-				item: "botania:quartz_lavender"
-			}]
-		}
-		{
 			x: -6.0d
 			y: 9.5d
 			dependencies: ["76B2E5503503D064"]
