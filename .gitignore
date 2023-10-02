@@ -1,14 +1,9 @@
 
 .curseclient
-journeymap/config/5.9/journeymap.webmap.config
-journeymap/data/sp
-journeymap/icon
-journeymap/journeymap.log
-journeymap/server
+journeymap
 /logs
 usernamecache.json
 usercache.json
-saves/Playtest
 **/*.jar
 !InstanceSync*.jar
 **/*.jar.disabled
@@ -18,14 +13,8 @@ saves/Playtest
 /downloads
 /resourcepacks
 /crash-reports
-.curseclient
-/journeymap/config/5.9
 saves
-config/jei/world/local/Playtest/bookmarks.ini
-config/modularmaterials/mmcc_backup
 patchouli_data.json
-schematics/e.nbt
-schematics/uploaded/secretmeister/e.nbt
 schematics
 config/jei/world
 fancymenu_data/last_world.fmdata
