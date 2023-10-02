@@ -1,6 +1,5 @@
 
 .curseclient
-*.png
 journeymap/config/5.9/journeymap.webmap.config
 journeymap/data/sp
 journeymap/icon
@@ -21,16 +20,12 @@ saves/Playtest
 /crash-reports
 .curseclient
 /journeymap/config/5.9
-options.txt
 saves
 config/jei/world/local/Playtest/bookmarks.ini
-options.txt
 config/modularmaterials/mmcc_backup
 patchouli_data.json
 schematics/e.nbt
 schematics/uploaded/secretmeister/e.nbt
-fancymenu_data/last_world.fmdata
-options.txt
 schematics
 config/jei/world
 fancymenu_data/last_world.fmdata
