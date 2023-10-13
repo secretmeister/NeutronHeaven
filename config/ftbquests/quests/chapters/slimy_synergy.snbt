@@ -22,11 +22,6 @@
 				type: "item"
 				item: "tconstruct:sky_slime_ball"
 			}]
-			rewards: [{
-				id: "03E910F044B0CF47"
-				type: "item"
-				item: "tconstruct:budding_earth_slime_crystal"
-			}]
 		}
 		{
 			x: 0.5d
@@ -40,12 +35,6 @@
 				id: "6A51954E2E705469"
 				type: "item"
 				item: "tconstruct:slimesteel_ingot"
-			}]
-			rewards: [{
-				id: "0F01C9807422DF38"
-				type: "item"
-				item: "tconstruct:sky_slime_crystal"
-				count: 4
 			}]
 		}
 		{
@@ -136,7 +125,7 @@
 			}]
 		}
 		{
-			x: -1.5d
+			x: -3.0d
 			y: -0.5d
 			subtitle: "+ quartz"
 			description: ["Dropping stuff on diorite can cause it to eject some minerals, cheaper materials seem to eject cheaper stuff though"]
@@ -266,7 +255,7 @@
 			]
 		}
 		{
-			x: 2.0d
+			x: 1.0d
 			y: -1.5d
 			dependencies: ["31284DCE27BBC499"]
 			id: "41F478375CFCE3F3"
@@ -443,20 +432,14 @@
 				type: "item"
 				item: "tconstruct:earth_slime_crystal"
 			}]
-			rewards: [{
-				id: "14E06CDE438D4A14"
-				type: "item"
-				item: "minecraft:coarse_dirt"
-				count: 16
-			}]
 		}
 		{
-			x: -2.5d
+			x: -1.0d
 			y: -0.5d
 			description: ["Collected via cauldrons, can be used in create washing"]
 			dependencies: [
-				"4887A0F37F0FF05D"
 				"7464615230CFD315"
+				"34A0818318A22549"
 			]
 			dependency_requirement: "one_completed"
 			id: "57BC98F4EFBC35D0"
@@ -467,7 +450,7 @@
 			}]
 		}
 		{
-			x: -3.5d
+			x: 0.0d
 			y: -0.5d
 			subtitle: "Very useful for automation!"
 			dependencies: [
@@ -483,14 +466,14 @@
 			}]
 		}
 		{
-			x: -0.5d
+			x: -2.0d
 			y: -0.5d
 			dependencies: ["4887A0F37F0FF05D"]
 			id: "34A0818318A22549"
 			tasks: [{
-				id: "6F295FA04BEE9038"
+				id: "0D58782EA583A2EF"
 				type: "item"
-				item: "minecraft:dark_prismarine"
+				item: "minecraft:blue_terracotta"
 			}]
 		}
 		{

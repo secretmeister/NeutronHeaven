@@ -57,7 +57,7 @@ craftingTable.addShapeless("axehead", <item:tconstruct:small_axe_head>.withTag({
 
 LycheeRecipeManager.addRecipe("thegodsgrace", <recipetype:lychee:item_burning>, new LycheeRecipeBuilder()
   .itemIn(<item:minecraft:diamond>)
-  .condition(LycheeConditions.block(<block:minecraft:dark_prismarine>, new BlockPos(0, -1, 0)))
+  .condition(LycheeConditions.block(<block:minecraft:blue_terracotta>, new BlockPos(0, -1, 0)))
   .setHideInJEI(true)
   .post([LycheePosts.executeCommand("weather thunder", true),LycheePosts.executeCommand("summon minecraft:lightning_bolt"),LycheePosts.executeCommand("summon minecraft:trident ~ ~30 ~ {\"pickup\":1}")]));
 

@@ -62,6 +62,6 @@ LycheeRecipeManager.addRecipe("soulsandf", <recipetype:lychee:lightning_channeli
 LycheeRecipeManager.addRecipe("thegodsgracef", <recipetype:lychee:item_burning>, new LycheeRecipeBuilder()
   .itemIn(<item:minecraft:diamond>)
   .setGhost(true)
-  .post([LycheePosts.dropItem(<item:minecraft:dark_prismarine>).condition(LycheeConditions.chance(1).description("Requires a dark prismarine below the fire")),LycheePosts.dropItem(<item:minecraft:trident>).condition(LycheeConditions.chance(1).description("The gods' gift."))])
-  .comment("If you burn a valuable item atop a block of deep sea green, the gods will grant you a boon."));
+  .post([LycheePosts.dropItem(<item:minecraft:blue_terracotta>).condition(LycheeConditions.chance(1).description("Requires blue terracotta below the fire")),LycheePosts.dropItem(<item:minecraft:trident>).condition(LycheeConditions.chance(1).description("The gods' gift."))])
+  .comment("If you burn a valuable item atop a block of sky blue, the gods will grant you a boon."));
 

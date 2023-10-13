@@ -158,12 +158,6 @@
 				type: "item"
 				item: "create:andesite_alloy"
 			}]
-			rewards: [{
-				id: "3BB77AE7D9B6A7FC"
-				type: "item"
-				item: "minecraft:andesite"
-				count: 64
-			}]
 		}
 		{
 			x: 0.0d
@@ -218,12 +212,6 @@
 				type: "item"
 				item: "pneumaticcraft:ingot_iron_compressed"
 			}]
-			rewards: [{
-				id: "6B50127186C9FDDE"
-				type: "item"
-				item: "minecraft:iron_ingot"
-				count: 8
-			}]
 		}
 		{
 			x: -1.5d
@@ -251,12 +239,6 @@
 				type: "item"
 				item: "tconstruct:seared_brick"
 			}]
-			rewards: [{
-				id: "3637EE29CF4D9282"
-				type: "item"
-				item: "minecraft:clay"
-				count: 16
-			}]
 		}
 		{
 			x: 1.5d
@@ -272,50 +254,6 @@
 				id: "1FC09C50C14899AB"
 				type: "item"
 				item: "minecraft:slime_ball"
-			}]
-			rewards: [{
-				id: "1E9F53B4D2929F39"
-				type: "item"
-				item: {
-					id: "tconstruct:sledge_hammer"
-					Count: 1b
-					tag: {
-						tic_multipliers: {
-							"tconstruct:mining_speed": 0.4f
-							"tconstruct:attack_damage": 1.35f
-							"tconstruct:durability": 4.0f
-						}
-						tic_stats: {
-							"tconstruct:attack_speed": 0.75f
-							"tconstruct:mining_speed": 2.4f
-							"tconstruct:attack_damage": 6.75f
-							"tconstruct:harvest_tier": "minecraft:iron"
-							"tconstruct:durability": 1100.0f
-						}
-						tic_broken: 0b
-						tic_modifiers: [
-							{
-								name: "tconstruct:smite"
-								level: 2s
-							}
-							{
-								name: "tconstruct:magnetic"
-								level: 4s
-							}
-						]
-						tic_materials: [
-							"tconstruct:iron"
-							"tconstruct:iron"
-							"tconstruct:iron"
-							"tconstruct:iron"
-						]
-						Damage: 0
-						tic_persistent_data: {
-							abilities: 1
-							upgrades: 2
-						}
-					}
-				}
 			}]
 		}
 		{
