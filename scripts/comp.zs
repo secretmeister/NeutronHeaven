@@ -16,7 +16,7 @@
   "type": "pneumaticcraft:pressure_chamber",
   "inputs": [
     {
-      "item": "botania:quartz_mana"
+      "item": "botania:quartz_elven"
     },
     {
       "item": "minecraft:purple_dye"

@@ -12,6 +12,7 @@
 recipes.remove(<item:create:millstone>);
 recipes.remove(<item:minecraft:brewing_stand>);
 recipes.remove(<item:botania:glimmering_livingwood_log>);
+recipes.remove(<item:botania:quartz_lavender>);
 
 <recipetype:botania:pure_daisy>.addJsonRecipe("livingwood2",{
   "type": "botania:state_copying_pure_daisy",
