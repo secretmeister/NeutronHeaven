@@ -33,27 +33,27 @@ LycheeRecipeManager.addRecipe("glimmerf", <recipetype:lychee:block_crushing>, ne
     .crushingFallingBlock(<block:minecraft:glowstone>)
     .crushingLandingBlock(<block:botania:livingwood>)
     .setGhost(true)
-    .post([LycheePosts.dropItem(<item:botania:glimmering_livingwood_log>).condition([LycheeConditions.chance(0.5).description("Awaken the dormany crystals")])]));
+    .post([LycheePosts.dropItem(<item:botania:glimmering_livingwood_log>).condition([LycheeConditions.chance(0.5).description("Infuse the wood with glowing dust")])]));
     LycheeRecipeManager.addRecipe("earthslimecrystf", <recipetype:lychee:block_interacting>, new LycheeRecipeBuilder()
     .itemIn(<item:minecraft:wheat_seeds>)
     .blockIn(<block:tconstruct:earth_slime_crystal_block>)
     .setGhost(true)
-    .post([LycheePosts.dropItem(<item:tconstruct:budding_earth_slime_crystal>).condition([LycheeConditions.chance(0.5).description("Awaken the dormany crystals")])]));
+    .post([LycheePosts.dropItem(<item:tconstruct:budding_earth_slime_crystal>).condition([LycheeConditions.chance(0.5).description("Awaken the dormant crystals")])]));
 LycheeRecipeManager.addRecipe("skyslimecrystf", <recipetype:lychee:block_interacting>, new LycheeRecipeBuilder()
     .itemIn(<item:botania:infused_seeds>)
     .blockIn(<block:tconstruct:sky_slime_crystal_block>)
     .setGhost(true)
-    .post([LycheePosts.dropItem(<item:tconstruct:budding_sky_slime_crystal>).condition([LycheeConditions.chance(0.5).description("Awaken the dormany crystals")])]));
+    .post([LycheePosts.dropItem(<item:tconstruct:budding_sky_slime_crystal>).condition([LycheeConditions.chance(0.5).description("Awaken the dormant crystals")])]));
 LycheeRecipeManager.addRecipe("endslimecrystf", <recipetype:lychee:block_interacting>, new LycheeRecipeBuilder()
     .itemIn(<item:tconstruct:ender_slime_grass_seeds>)
     .blockIn(<block:tconstruct:ender_slime_crystal_block>)
     .setGhost(true)
-    .post([LycheePosts.dropItem(<item:tconstruct:budding_ender_slime_crystal>).condition([LycheeConditions.chance(0.5).description("Awaken the dormany crystals")])]));
+    .post([LycheePosts.dropItem(<item:tconstruct:budding_ender_slime_crystal>).condition([LycheeConditions.chance(0.5).description("Awaken the dormant crystals")])]));
 LycheeRecipeManager.addRecipe("amethycrystf", <recipetype:lychee:block_interacting>, new LycheeRecipeBuilder()
     .itemIn(<item:botania:purple_mushroom>)
     .blockIn(<block:minecraft:amethyst_block>)
     .setGhost(true)
-    .post([LycheePosts.dropItem(<item:minecraft:budding_amethyst>).condition([LycheeConditions.chance(0.5).description("Awaken the dormany crystals")])]));
+    .post([LycheePosts.dropItem(<item:minecraft:budding_amethyst>).condition([LycheeConditions.chance(0.5).description("Awaken the dormant crystals")])]));
 LycheeRecipeManager.addRecipe("soulsandf", <recipetype:lychee:lightning_channeling>, new LycheeRecipeBuilder()
     .post([LycheePosts.dropItem(<item:tconstruct:soul_glass>).condition([LycheeConditions.chance(0.5).description("If there is glass below the lightning rod, place soul glass there.")])])
     .setGhost(true)
