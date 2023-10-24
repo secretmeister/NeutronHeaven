@@ -14,6 +14,7 @@ recipes.remove(<item:minecraft:anvil>);
 recipes.remove(<item:minecraft:flint_and_steel>);
 recipes.remove(<item:angelblockrenewed:angel_block>);
 recipes.remove(<item:craftingautomat:autocrafter>);
+recipes.remove(<item:tconstruct:nether_grout>);
 recipes.removeByRegex("pipez:.*_pipe.*");
 
 craftingTable.addShapeless("cobble",<item:minecraft:cobblestone>*4, [<item:minecraft:cobblestone>]);
@@ -24,6 +25,7 @@ craftingTable.addShapeless("gravfast",<item:minecraft:gravel>*8, [<item:minecraf
 craftingTable.addShapeless("sandfast",<item:minecraft:sand>*8, [<item:minecraft:gravel>,<item:minecraft:gravel>,<item:minecraft:gravel>,<item:minecraft:gravel>,<item:minecraft:gravel>,<item:minecraft:gravel>,<item:minecraft:gravel>,<item:minecraft:gravel>,<item:tconstruct:sledge_hammer>.anyDamage().transformDamage(4)]);
 craftingTable.addShapeless("drip",<item:minecraft:dripstone_block>, [<item:minecraft:red_sand>,<item:minecraft:clay>]);
 craftingTable.addShapeless("disp",<item:minecraft:dispenser>, [<item:minecraft:dropper>,<item:minecraft:hopper>]);
+craftingTable.addShapeless("repkit",<item:tconstruct:repair_kit>.withTag({Material: "tconstruct:rock" as string})*2, [<tag:items:crafttweaker:hammers>, <item:tconstruct:large_plate>.withTag({Material: "tconstruct:rock" as string})]);
 
 
 craftingTable.addShaped("hamhead",<item:tconstruct:hammer_head>.withTag({Material: "tconstruct:rock" as string}),[[<item:stonechest:part_cobblestone>,<item:stonechest:part_cobblestone>],[<item:stonechest:part_cobblestone>,<item:stonechest:part_cobblestone>]]);
@@ -132,3 +134,8 @@ craftingTable.addShaped("pipef",<item:pipez:fluid_pipe>*16,[[<item:tconstruct:am
 craftingTable.addShaped("pipee",<item:pipez:energy_pipe>*16,[[<item:tconstruct:amethyst_bronze_ingot>,<item:tconstruct:amethyst_bronze_ingot>,<item:tconstruct:amethyst_bronze_ingot>],[<item:minecraft:redstone_block>,<item:minecraft:redstone>,<item:minecraft:redstone_block>],[<item:tconstruct:amethyst_bronze_ingot>,<item:tconstruct:amethyst_bronze_ingot>,<item:tconstruct:amethyst_bronze_ingot>]]);
 craftingTable.addShaped("pipeu",<item:pipez:universal_pipe>*4,[[<item:pipez:item_pipe>,<item:pipez:fluid_pipe>,<item:pipez:energy_pipe>],[<item:tconstruct:amethyst_bronze_ingot>,<item:botania:terrasteel_nugget>,<item:tconstruct:amethyst_bronze_ingot>],[<item:pipez:item_pipe>,<item:pipez:fluid_pipe>,<item:pipez:energy_pipe>]]);
 
+LycheeRecipeManager.addRecipe("nethergrout", <recipetype:lychee:item_inside>, new LycheeRecipeBuilder()
+  .itemIn([<item:minecraft:red_sand>, <item:minecraft:gravel>])
+  .blockIn(<block:tconstruct:liquid_soul_fluid>)
+  .setHideInJEI(true)
+  .post([LycheePosts.placeBlock(<block:tconstruct:nether_grout>)]));

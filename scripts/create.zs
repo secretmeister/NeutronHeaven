@@ -25,6 +25,9 @@ craftingTable.addShapeless("alloy",<item:create:andesite_alloy>, [<item:minecraf
 
 <recipetype:create:milling>.removeByInput(<item:minecraft:calcite>);
 <recipetype:create:milling>.addRecipe("calcite", [<item:minecraft:white_dye>%75], <item:minecraft:calcite>, 200);
+<recipetype:create:milling>.addRecipe("snow", [<item:minecraft:snowball>*3%75,<item:minecraft:snowball>%50], <item:minecraft:packed_ice>, 100);
+
+<recipetype:create:crushing>.addRecipe("string", [<item:minecraft:string>*5%80,<item:minecraft:string>*2%65,<item:minecraft:string>%40], <item:minecraft:cobweb>, 20);
 
 <recipetype:create:compacting>.addRecipe("amethy", <constant:create:heat_condition:none>, [<item:minecraft:amethyst_block>], [<item:botania:lavender_quartz>, <item:tconstruct:earth_slime_crystal_block>], []);
 <recipetype:create:compacting>.addRecipe("feather", <constant:create:heat_condition:none>, [<item:minecraft:feather>*4], [<item:create:white_sail>], [<fluid:tconstruct:blood>*250]);
@@ -35,11 +38,15 @@ craftingTable.addShapeless("alloy",<item:create:andesite_alloy>, [<item:minecraf
 
 <recipetype:create:emptying>.addRecipe("bone", <item:minecraft:bone>, <fluid:tconstruct:blood>*30,<item:minecraft:rotten_flesh>,  10);
 
-<recipetype:create:mixing>.addRecipe("rottflesh", <constant:create:heat_condition:heated>, [<item:minecraft:rotten_flesh>*3], [<item:minecraft:bone>], [<fluid:tconstruct:blood_fluid>*250], 100);
-<recipetype:create:mixing>.addRecipe("blazeblood", <constant:create:heat_condition:super_heated>, [<fluid:tconstruct:blazing_blood>*150], [<item:minecraft:blaze_powder>], [<fluid:tconstruct:lava>*100], 50);
+<recipetype:create:mixing>.addRecipe("rottflesh", <constant:create:heat_condition:heated>, [<item:minecraft:rotten_flesh>*3], [<item:minecraft:bone>], [<fluid:tconstruct:blood>*250], 100);
+<recipetype:create:mixing>.addRecipe("blazeblood", <constant:create:heat_condition:superheated>, [<fluid:tconstruct:blazing_blood>*150], [<item:minecraft:blaze_powder>], [<fluid:minecraft:lava>*100], 50);
 
 
 <recipetype:create:mechanical_crafting>.addRecipe("elytra", <item:minecraft:elytra>, [
-    [<item:minecraft:dirt>, <item:minecraft:air>, <item:minecraft:dirt>], 
-    [<item:minecraft:air>, <item:minecraft:dirt>, <item:minecraft:air>]
+    [<item:minecraft:air>, <item:minecraft:phantom_membrane>, <item:botania:manaweave_cloth>, <item:botania:manaweave_cloth>, <item:botania:manaweave_cloth>,<item:minecraft:phantom_membrane>, <item:minecraft:air>], 
+    [<item:minecraft:phantom_membrane>, <item:botania:rune_pride>, <item:minecraft:phantom_membrane>, <item:minecraft:phantom_membrane>, <item:minecraft:phantom_membrane>, <item:botania:rune_greed>, <item:minecraft:phantom_membrane>],
+    [<item:minecraft:phantom_membrane>, <item:botania:manaweave_cloth>, <item:minecraft:phantom_membrane>, <item:minecraft:air>, <item:minecraft:phantom_membrane>, <item:botania:manaweave_cloth>, <item:minecraft:phantom_membrane>],
+    [<item:minecraft:phantom_membrane>, <item:botania:manaweave_cloth>, <item:minecraft:phantom_membrane>, <item:minecraft:air>, <item:minecraft:phantom_membrane>, <item:botania:manaweave_cloth>, <item:minecraft:phantom_membrane>],
+    [<item:minecraft:phantom_membrane>, <item:botania:rune_wrath>, <item:minecraft:phantom_membrane>, <item:minecraft:air>, <item:minecraft:phantom_membrane>, <item:botania:rune_envy>, <item:minecraft:phantom_membrane>],
+    [<item:minecraft:air>, <item:minecraft:phantom_membrane>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>, <item:minecraft:phantom_membrane>, <item:minecraft:air>]
     ]);

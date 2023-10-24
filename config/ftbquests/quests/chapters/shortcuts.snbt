@@ -21,8 +21,10 @@
 			}]
 		}
 		{
+			title: "Observe a stripped greenheart log"
 			x: 1.0d
 			y: 3.0d
+			subtitle: "But what to do with it?"
 			dependencies: ["19518A85318783FF"]
 			invisible: true
 			id: "55D7C452A91BEA8D"
@@ -63,32 +65,6 @@
 				type: "item"
 				item: "minecraft:water_bucket"
 			}]
-		}
-		{
-			title: "Barterer"
-			icon: "tconstruct:piglin_head"
-			x: 1.5d
-			y: 5.0d
-			dependencies: ["167331368E62BE44"]
-			invisible: true
-			id: "5AB1549DD3043006"
-			tasks: [
-				{
-					id: "6D636DF24BFF610D"
-					type: "item"
-					item: "minecraft:obsidian"
-				}
-				{
-					id: "20E058F7830955D4"
-					type: "item"
-					item: "minecraft:leather"
-				}
-				{
-					id: "12F39924198DD04E"
-					type: "item"
-					item: "minecraft:fire_charge"
-				}
-			]
 		}
 	]
 	quest_links: [ ]

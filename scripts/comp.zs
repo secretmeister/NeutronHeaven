@@ -27,7 +27,20 @@
     {
       "item": "botania:quartz_lavender"
     }]});
-
+<recipetype:pneumaticcraft:pressure_chamber>.addJsonRecipe("phantmemb",{
+  "type": "pneumaticcraft:pressure_chamber",
+  "inputs": [
+    {
+      "type": "pneumaticcraft:stacked_item",
+      "item": "tconstruct:silky_cloth",
+      "count": 3
+    }
+    ],
+  "pressure": -1,
+  "results": [
+    {
+      "item": "minecraft:phantom_membrane"
+    }]});
 <recipetype:pneumaticcraft:fluid_mixer>.addJsonRecipe("netherwart",    {
   "type": "pneumaticcraft:fluid_mixer",
   "input1": {

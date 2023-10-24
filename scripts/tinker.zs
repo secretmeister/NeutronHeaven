@@ -1,6 +1,7 @@
 <recipetype:tconstruct:alloying>.removeByName("tconstruct:smeltery/alloys/molten_slimesteel");
 <recipetype:tconstruct:alloying>.removeByName("tconstruct:smeltery/alloys/molten_brass");
 <recipetype:tconstruct:casting_basin>.removeByName("tconstruct:smeltery/casting/slime/earth/dirt");
+<recipetype:tconstruct:casting_table>.removeByRegex("tconstruct:smeltery/casting/metal/.*/plate_.*_cast.*");
 
 
 <recipetype:tconstruct:molding_table>.addJsonRecipe("roundplatesand",{
@@ -25,33 +26,7 @@
 });
 
 <recipetype:tconstruct:casting_table>.remove(<item:tconstruct:copper_nugget>);
-/*
-<recipetype:tconstruct:casting_basin>.addJsonRecipe("blood", {
-  "type": "tconstruct:casting_basin",
-  "cast": {
-    "item": "tconstruct:sky_congealed_slime"
-  },
-  "cast_consumed": true,
-  "fluid": {
-    "tag": "tconstruct:blood",
-    "amount": 750
-  },
-  "result": "tconstruct:blood_congealed_slime",
-  "cooling_time": 150
-});*/
-<recipetype:tconstruct:casting_table>.addJsonRecipe("scorched2", {
-  "type": "tconstruct:casting_table",
-  "cast": {
-    "item": "minecraft:nether_brick"
-  },
-  "cast_consumed": true,
-  "fluid": {
-    "tag": "tconstruct:liquid_soul",
-    "amount": 500
-  },
-  "result": "tconstruct:scorched_brick",
-  "cooling_time": 200
-});
+
 <recipetype:tconstruct:casting_table>.addJsonRecipe("nugget", {
   "type": "tconstruct:casting_table",
   "cast": {
@@ -176,4 +151,109 @@
   },
   "duration": 75,
   "temperature": 930
+});
+
+<recipetype:tconstruct:casting_table>.addJsonRecipe("platesandcopp", {
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "tag": "tconstruct:casts/single_use/plate"
+  },
+  "cast_consumed": true,
+  "fluid": {
+    "tag": "tconstruct:molten_copper",
+    "amount": 90
+  },
+  "result": "create:copper_sheet",
+  "cooling_time": 100
+});
+<recipetype:tconstruct:casting_table>.addJsonRecipe("plategoldcopp", {
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "item": "tconstruct:plate_cast"
+  },
+  "cast_consumed": false,
+  "fluid": {
+    "tag": "tconstruct:molten_copper",
+    "amount": 90
+  },
+  "result": "create:copper_sheet",
+  "cooling_time": 100
+});
+<recipetype:tconstruct:casting_table>.addJsonRecipe("platesandbrass", {
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "tag": "tconstruct:casts/single_use/plate"
+  },
+  "cast_consumed": true,
+  "fluid": {
+    "tag": "tconstruct:molten_brass",
+    "amount": 90
+  },
+  "result": "create:brass_sheet",
+  "cooling_time": 140
+});
+<recipetype:tconstruct:casting_table>.addJsonRecipe("plategoldbrass", {
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "item": "tconstruct:plate_cast"
+  },
+  "cast_consumed": false,
+  "fluid": {
+    "tag": "tconstruct:molten_brass",
+    "amount": 90
+  },
+  "result": "create:brass_sheet",
+  "cooling_time": 140
+});
+<recipetype:tconstruct:casting_table>.addJsonRecipe("platesandiron", {
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "tag": "tconstruct:casts/single_use/plate"
+  },
+  "cast_consumed": true,
+  "fluid": {
+    "tag": "tconstruct:molten_iron",
+    "amount": 90
+  },
+  "result": "create:iron_sheet",
+  "cooling_time": 100
+});
+<recipetype:tconstruct:casting_table>.addJsonRecipe("plategoldiron", {
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "item": "tconstruct:plate_cast"
+  },
+  "cast_consumed": false,
+  "fluid": {
+    "tag": "tconstruct:molten_iron",
+    "amount": 90
+  },
+  "result": "create:iron_sheet",
+  "cooling_time": 100
+});
+<recipetype:tconstruct:casting_table>.addJsonRecipe("platesandgold", {
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "tag": "tconstruct:casts/single_use/plate"
+  },
+  "cast_consumed": true,
+  "fluid": {
+    "tag": "tconstruct:molten_gold",
+    "amount": 90
+  },
+  "result": "create:golden_sheet",
+  "cooling_time": 100
+});
+<recipetype:tconstruct:casting_table>.addJsonRecipe("plategoldgold", {
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "item": "tconstruct:plate_cast"
+  },
+  "cast_consumed": false,
+  "fluid": {
+    "tag": "tconstruct:molten_gold",
+    "amount": 90
+  },
+  "result": "create:golden_sheet",
+  "cooling_time": 100
 });

@@ -15,22 +15,6 @@ craftingTable.remove(<item:minecraft:end_crystal>);
     .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:minecraft:end_crystal>))
     .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:minecraft:elytra>)));
 
-<recipetype:pneumaticcraft:pressure_chamber>.addJsonRecipe("ely",{
-  "type": "pneumaticcraft:pressure_chamber",
-  "inputs": [
-    {
-      "item": "pneumaticcraft:jet_boots_upgrade_2"
-    },
-    {
-      "item": "botania:tornado_rod"
-    }
-  ],
-  "pressure": 5,
-  "results": [
-    {
-      "item": "minecraft:elytra"
-    }]});
-
 <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("cry")
     .transitionTo(<item:minecraft:obsidian>)
     .require(<item:minecraft:ice>)

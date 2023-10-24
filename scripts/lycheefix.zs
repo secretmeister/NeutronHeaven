@@ -65,3 +65,8 @@ LycheeRecipeManager.addRecipe("thegodsgracef", <recipetype:lychee:item_burning>,
   .post([LycheePosts.dropItem(<item:minecraft:blue_terracotta>).condition(LycheeConditions.chance(1).description("Requires blue terracotta below the fire")),LycheePosts.dropItem(<item:minecraft:trident>).condition(LycheeConditions.chance(1).description("The gods' gift."))])
   .comment("If you burn a valuable item atop a block of sky blue, the gods will grant you a boon."));
 
+LycheeRecipeManager.addRecipe("nethergroutf", <recipetype:lychee:item_inside>, new LycheeRecipeBuilder()
+  .itemIn([<item:minecraft:red_sand>, <item:minecraft:gravel>])
+  .blockIn(<block:tconstruct:liquid_soul_fluid>)
+  .setGhost(true)
+  .post([LycheePosts.dropItem(<item:tconstruct:nether_grout>).condition(LycheeConditions.chance(1).description("Congeals the red sand and gravel into a raw hellish substance"))]));

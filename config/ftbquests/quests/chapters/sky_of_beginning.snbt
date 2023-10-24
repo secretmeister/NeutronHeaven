@@ -22,7 +22,10 @@
 		{
 			x: -6.0d
 			y: 0.0d
-			description: ["From now on, documentation will be more sparse, but the quests will be more direct, remember you can check quests dependencies by clicking the arrow in the top left"]
+			description: [
+				"From now on, documentation will be more sparse, but the quests will be more direct, remember you can check quests dependencies by clicking the arrow in the top left"
+				"Obtaining the purest daisy unlocks an easy way to mass produce coal, in the form of blocks."
+			]
 			dependencies: [
 				"4F545A6BD04F9808"
 				"57BC98F4EFBC35D0"
@@ -86,6 +89,7 @@
 		{
 			x: -7.0d
 			y: 2.0d
+			description: ["(Weighted pressure plates could be useful here)"]
 			dependencies: [
 				"558940C3BAABE3D6"
 				"0AA6397E19FDD6D7"

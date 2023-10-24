@@ -263,6 +263,7 @@
 			x: 0.5d
 			y: 0.5d
 			subtitle: "Remote Hopper"
+			description: ["Hopperhocks are very useful flowers. They pick up all items within range, and place them in any adjacent containers. You can filter what items it puts in containers by placing items frames on them."]
 			dependencies: ["535B256EEBA8FCC3"]
 			id: "4F59294BA8A08449"
 			tasks: [{
@@ -275,6 +276,7 @@
 			x: 0.5d
 			y: 2.5d
 			subtitle: "Ranged Placer"
+			description: ["The Rannuncarpus is a very handy tool. It picks up any itesm around it, and places them on a block near it that has air above it and matches the block below the dirt it is on. An item frame on the block below the dirt will specify what itesm it will pick up."]
 			dependencies: [
 				"6E0C1DFE3784B4C4"
 				"370F0E89E80234DA"
