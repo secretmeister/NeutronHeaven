@@ -9,8 +9,8 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: 0.0d
-			y: 0.5d
+			x: 1.0d
+			y: -0.5d
 			dependencies: ["410231EB71A9934C"]
 			id: "0695B7B301684E74"
 			tasks: [{
@@ -20,7 +20,7 @@
 			}]
 		}
 		{
-			x: 1.0d
+			x: 0.5d
 			y: 0.5d
 			dependencies: ["0695B7B301684E74"]
 			id: "3E2ECA2996708682"
@@ -56,7 +56,7 @@
 			}]
 		}
 		{
-			x: 3.0d
+			x: 2.5d
 			y: 0.5d
 			dependencies: [
 				"24A4549D6E5F8523"
@@ -71,7 +71,7 @@
 			}]
 		}
 		{
-			x: 2.0d
+			x: 1.5d
 			y: 0.5d
 			dependencies: ["3E2ECA2996708682"]
 			id: "24A4549D6E5F8523"
@@ -95,7 +95,7 @@
 		{
 			title: "Assembly Line"
 			icon: "pneumaticcraft:assembly_laser"
-			x: 2.0d
+			x: 1.5d
 			y: 2.5d
 			dependencies: [
 				"3D54A3AB0E42E4A9"
@@ -159,7 +159,7 @@
 			}]
 		}
 		{
-			x: 0.0d
+			x: 0.5d
 			y: 2.5d
 			dependencies: ["274C695B5F782481"]
 			id: "63488F489392EA0E"
@@ -170,14 +170,36 @@
 			}]
 		}
 		{
-			x: 3.0d
+			x: 2.5d
 			y: 2.5d
 			dependencies: ["0EE833BFE91F5781"]
 			id: "3AC26CCDC6847B66"
 			tasks: [{
-				id: "44445A3FA9009F4C"
+				id: "6A267829C8F068DF"
 				type: "item"
 				item: "pneumaticcraft:advanced_pressure_tube"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 3.5d
+			dependencies: ["3AC26CCDC6847B66"]
+			id: "13C757A6DD54F238"
+			tasks: [{
+				id: "1B2304362D03D046"
+				type: "item"
+				item: "pneumaticcraft:vacuum_pump"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 3.5d
+			dependencies: ["13C757A6DD54F238"]
+			id: "1974135E6F1C5392"
+			tasks: [{
+				id: "3E548207D697B22D"
+				type: "item"
+				item: "minecraft:phantom_membrane"
 			}]
 		}
 	]

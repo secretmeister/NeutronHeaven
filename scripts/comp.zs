@@ -1,4 +1,11 @@
+recipes.remove(<item:pneumaticcraft:vacuum_pump>);
 <recipetype:pneumaticcraft:pressure_chamber>.remove(<item:pneumaticcraft:compressed_stone>);
+
+craftingTable.addShaped("vacuum",<item:pneumaticcraft:vacuum_pump>,[
+  [<item:pneumaticcraft:pressure_gauge>,<item:pneumaticcraft:turbine_rotor>,<item:pneumaticcraft:pressure_gauge>],
+  [<item:pneumaticcraft:advanced_pressure_tube>,<item:pneumaticcraft:turbine_rotor>,<item:pneumaticcraft:advanced_pressure_tube>],
+  [<item:pneumaticcraft:reinforced_stone_slab>,<item:pneumaticcraft:reinforced_stone_slab>,<item:pneumaticcraft:reinforced_stone_slab>]
+]);
 
 <recipetype:pneumaticcraft:pressure_chamber>.addJsonRecipe("stone2",{
   "type": "pneumaticcraft:pressure_chamber",
@@ -27,7 +34,7 @@
     {
       "item": "botania:quartz_lavender"
     }]});
-<recipetype:pneumaticcraft:pressure_chamber>.addJsonRecipe("phantmemb",{
+  <recipetype:pneumaticcraft:pressure_chamber>.addJsonRecipe("phantmemb",{
   "type": "pneumaticcraft:pressure_chamber",
   "inputs": [
     {
@@ -41,6 +48,7 @@
     {
       "item": "minecraft:phantom_membrane"
     }]});
+
 <recipetype:pneumaticcraft:fluid_mixer>.addJsonRecipe("netherwart",    {
   "type": "pneumaticcraft:fluid_mixer",
   "input1": {

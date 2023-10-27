@@ -14,7 +14,7 @@ recipes.remove(<item:create:encased_chain_drive>);
 craftingTable.addShaped("encasedchaindrive", <item:create:encased_chain_drive>*16, [[<item:create:andesite_casing>,<item:minecraft:iron_ingot>],[<item:minecraft:iron_ingot>,<item:minecraft:iron_ingot>]]);
 craftingTable.addShaped("spout", <item:create:spout>, [[<item:minecraft:air>,<item:create:andesite_alloy>,<item:minecraft:air>],[<tag:items:forge:glass_panes>,<item:create:copper_casing>,<tag:items:forge:glass_panes>],[<item:minecraft:air>,<item:tconstruct:round_plate>.withTag({Material: "tconstruct:copper" as string}),<item:minecraft:air>]]);
 craftingTable.addShaped("belt", <item:create:belt_connector>*8, [[<item:minecraft:dried_kelp>,<item:minecraft:dried_kelp>,<item:minecraft:dried_kelp>],[<item:minecraft:dried_kelp>,<item:minecraft:dried_kelp>,<item:minecraft:dried_kelp>]]);
-craftingTable.addShaped("tank", <item:create:fluid_tank>, [[<item:create:copper_sheet>],[<item:pneumaticcraft:small_tank>],[<item:create:copper_sheet>]]);
+craftingTable.addShaped("tank", <item:create:fluid_tank>, [[<item:create:copper_sheet>],[<item:tconstruct:seared_fuel_tank>],[<item:create:copper_sheet>]]);
 craftingTable.addShapeless("alloy",<item:create:andesite_alloy>, [<item:minecraft:andesite>,<item:create:zinc_nugget>,<item:minecraft:iron_nugget>,<item:minecraft:andesite>]);
 
 <recipetype:create:filling>.addRecipe("bettcopp",<item:create:crushed_raw_copper>, <item:minecraft:granite>, <fluid:tconstruct:seared_stone>*125);
@@ -34,12 +34,12 @@ craftingTable.addShapeless("alloy",<item:create:andesite_alloy>, [<item:minecraf
 <recipetype:create:compacting>.addRecipe("blazcakbas", <constant:create:heat_condition:none>, [<item:create:blaze_cake_base>], [<item:create:cinder_flour>, <item:minecraft:sugar>], [<fluid:create:chocolate>*250]);
 <recipetype:create:compacting>.addRecipe("eye", <constant:create:heat_condition:none>, [<item:minecraft:spider_eye>], [<item:minecraft:poisonous_potato>, <item:minecraft:red_dye>], [<fluid:tconstruct:blood>*25]);
 <recipetype:create:compacting>.addRecipe("necrot", <constant:create:heat_condition:heated>, [<item:tconstruct:necrotic_bone>*2], [<item:minecraft:skeleton_skull>, <item:minecraft:bone>, <item:minecraft:charcoal>*5], [<fluid:tconstruct:liquid_soul>*100]);
-<recipetype:create:compacting>.addRecipe("brasscass", <constant:create:heat_condition:heated>, [<item:create:brass_casing>], [<item:create:andesite_casing>], [<fluid:tconstruct:molten_brass>*90]);
+<recipetype:create:compacting>.addRecipe("rottflesh", <constant:create:heat_condition:none>, [<item:minecraft:rotten_flesh>*3], [<item:minecraft:bone>], [<fluid:tconstruct:blood>*200], 100);
 
-<recipetype:create:emptying>.addRecipe("bone", <item:minecraft:bone>, <fluid:tconstruct:blood>*30,<item:minecraft:rotten_flesh>,  10);
+<recipetype:create:emptying>.addRecipe("bone", <item:minecraft:bone>, <fluid:tconstruct:blood>*75,<item:minecraft:rotten_flesh>,  10);
 
-<recipetype:create:mixing>.addRecipe("rottflesh", <constant:create:heat_condition:heated>, [<item:minecraft:rotten_flesh>*3], [<item:minecraft:bone>], [<fluid:tconstruct:blood>*250], 100);
 <recipetype:create:mixing>.addRecipe("blazeblood", <constant:create:heat_condition:superheated>, [<fluid:tconstruct:blazing_blood>*150], [<item:minecraft:blaze_powder>], [<fluid:minecraft:lava>*100], 50);
+<recipetype:create:mixing>.addRecipe("brasscass", <constant:create:heat_condition:heated>, [<item:create:brass_casing>], [<item:create:andesite_casing>], [<fluid:tconstruct:molten_brass>*90]);
 
 
 <recipetype:create:mechanical_crafting>.addRecipe("elytra", <item:minecraft:elytra>, [
