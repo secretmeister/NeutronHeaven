@@ -3,14 +3,14 @@
 	group: "437B64C75C6F34C8"
 	order_index: 1
 	filename: "pressurized_procedures"
-	title: "Compressed Chaos"
+	title: "Synthesis and Smelting"
 	icon: "pneumaticcraft:fluid_mixer"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: -0.5d
-			y: -1.5d
+			x: -1.5d
+			y: -2.5d
 			dependencies: ["23696CD4F1516DA1"]
 			id: "4978B9493706987B"
 			tasks: [{
@@ -21,7 +21,7 @@
 		}
 		{
 			x: 0.5d
-			y: -1.5d
+			y: -2.5d
 			dependencies: [
 				"4D42C2AB06A255A5"
 				"2EA1A468B0D52FFA"
@@ -35,7 +35,7 @@
 		}
 		{
 			x: 0.5d
-			y: -2.5d
+			y: -3.5d
 			dependencies: [
 				"4D42C2AB06A255A5"
 				"2EA1A468B0D52FFA"
@@ -67,6 +67,59 @@
 				id: "47B50DA61F2AFB5C"
 				type: "item"
 				item: "pneumaticcraft:fluid_mixer"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -1.5d
+			dependencies: [
+				"2EA1A468B0D52FFA"
+				"4D42C2AB06A255A5"
+			]
+			id: "5C704BE90DD3B83D"
+			tasks: [{
+				id: "572BF3BBCDF6606A"
+				type: "item"
+				item: "pneumaticcraft:biodiesel_bucket"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -0.5d
+			dependencies: ["5C704BE90DD3B83D"]
+			id: "23C93F4861D1EA7C"
+			tasks: [{
+				id: "4816592AD6E90ED7"
+				type: "item"
+				item: {
+					id: "tconstruct:smeltery_controller"
+					Count: 1b
+					tag: {
+						texture: "tconstruct:seared_bricks"
+					}
+				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: 0.5d
+			dependencies: ["23C93F4861D1EA7C"]
+			id: "45E7B1FEC21C0ECC"
+			tasks: [{
+				id: "001B090844B3AA40"
+				type: "item"
+				item: "tconstruct:blood_slime_ball"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 0.5d
+			dependencies: ["23C93F4861D1EA7C"]
+			id: "291C546C0E6262C9"
+			tasks: [{
+				id: "2EC49B68D9E4B68F"
+				type: "item"
+				item: "create:brass_ingot"
 			}]
 		}
 	]

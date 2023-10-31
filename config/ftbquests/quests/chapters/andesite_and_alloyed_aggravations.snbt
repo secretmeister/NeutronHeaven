@@ -52,7 +52,7 @@
 		}
 		{
 			x: -3.0d
-			y: -0.5d
+			y: 0.0d
 			dependencies: [
 				"24A297A149F48F9F"
 				"482977C98BE4CA92"

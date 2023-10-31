@@ -25,7 +25,7 @@ craftingTable.addShapeless("gravfast",<item:minecraft:gravel>*8, [<item:minecraf
 craftingTable.addShapeless("sandfast",<item:minecraft:sand>*8, [<item:minecraft:gravel>,<item:minecraft:gravel>,<item:minecraft:gravel>,<item:minecraft:gravel>,<item:minecraft:gravel>,<item:minecraft:gravel>,<item:minecraft:gravel>,<item:minecraft:gravel>,<item:tconstruct:sledge_hammer>.anyDamage().transformDamage(4)]);
 craftingTable.addShapeless("drip",<item:minecraft:dripstone_block>, [<item:minecraft:red_sand>,<item:minecraft:clay>]);
 craftingTable.addShapeless("disp",<item:minecraft:dispenser>, [<item:minecraft:dropper>,<item:minecraft:hopper>]);
-craftingTable.addShapeless("repkit",<item:tconstruct:repair_kit>.withTag({Material: "tconstruct:rock" as string})*2, [<tag:items:crafttweaker:hammers>, <item:tconstruct:large_plate>.withTag({Material: "tconstruct:rock" as string})]);
+craftingTable.addShapeless("repkit",<item:tconstruct:repair_kit>.withTag({Material: "tconstruct:rock" as string})*2, [<item:tconstruct:sledge_hammer>.anyDamage().transformDamage(5), <item:tconstruct:large_plate>.withTag({Material: "tconstruct:rock" as string})]);
 
 
 craftingTable.addShaped("hamhead",<item:tconstruct:hammer_head>.withTag({Material: "tconstruct:rock" as string}),[[<item:stonechest:part_cobblestone>,<item:stonechest:part_cobblestone>],[<item:stonechest:part_cobblestone>,<item:stonechest:part_cobblestone>]]);

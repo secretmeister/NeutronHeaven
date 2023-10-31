@@ -34,9 +34,9 @@ craftingTable.addShapeless("alloy",<item:create:andesite_alloy>, [<item:minecraf
 <recipetype:create:compacting>.addRecipe("blazcakbas", <constant:create:heat_condition:none>, [<item:create:blaze_cake_base>], [<item:create:cinder_flour>, <item:minecraft:sugar>], [<fluid:create:chocolate>*250]);
 <recipetype:create:compacting>.addRecipe("eye", <constant:create:heat_condition:none>, [<item:minecraft:spider_eye>], [<item:minecraft:poisonous_potato>, <item:minecraft:red_dye>], [<fluid:tconstruct:blood>*25]);
 <recipetype:create:compacting>.addRecipe("necrot", <constant:create:heat_condition:heated>, [<item:tconstruct:necrotic_bone>*2], [<item:minecraft:skeleton_skull>, <item:minecraft:bone>, <item:minecraft:charcoal>*5], [<fluid:tconstruct:liquid_soul>*100]);
-<recipetype:create:compacting>.addRecipe("rottflesh", <constant:create:heat_condition:none>, [<item:minecraft:rotten_flesh>*3], [<item:minecraft:bone>], [<fluid:tconstruct:blood>*200], 100);
+<recipetype:create:compacting>.addRecipe("rottflesh", <constant:create:heat_condition:none>, [<item:minecraft:rotten_flesh>*3], [<item:minecraft:bone>], [<fluid:tconstruct:blood>*100], 100);
 
-<recipetype:create:emptying>.addRecipe("bone", <item:minecraft:bone>, <fluid:tconstruct:blood>*75,<item:minecraft:rotten_flesh>,  10);
+<recipetype:create:emptying>.addRecipe("bone", <item:minecraft:bone>, <fluid:tconstruct:blood>*30,<item:minecraft:rotten_flesh>,  10);
 
 <recipetype:create:mixing>.addRecipe("blazeblood", <constant:create:heat_condition:superheated>, [<fluid:tconstruct:blazing_blood>*150], [<item:minecraft:blaze_powder>], [<fluid:minecraft:lava>*100], 50);
 <recipetype:create:mixing>.addRecipe("brasscass", <constant:create:heat_condition:heated>, [<item:create:brass_casing>], [<item:create:andesite_casing>], [<fluid:tconstruct:molten_brass>*90]);

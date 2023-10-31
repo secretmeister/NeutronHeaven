@@ -1,0 +1,298 @@
+{
+	id: "7B46BEA46DED3101"
+	group: "437B64C75C6F34C8"
+	order_index: 4
+	filename: "runic_ruminations"
+	title: "Runic Ruminations"
+	icon: "botania:runic_altar"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -2.0d
+			y: -1.5d
+			dependencies: ["7A9BE30A9644F99A"]
+			id: "63C36487E18FBF96"
+			tasks: [{
+				id: "7AD8E4E9A3F73729"
+				type: "item"
+				item: "minecraft:string"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 0.0d
+			dependencies: ["28D38FDF31C2ADC3"]
+			id: "6224906F31FA2A4A"
+			tasks: [{
+				id: "4E7C3E15968FB6E0"
+				type: "item"
+				item: "minecraft:sugar_cane"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 0.0d
+			dependencies: [
+				"41430DBE61B489F1"
+				"63C36487E18FBF96"
+				"6224906F31FA2A4A"
+			]
+			id: "74AA7B48781A88E8"
+			tasks: [{
+				id: "260D138797C154D3"
+				type: "item"
+				item: "botania:rune_water"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 0.0d
+			dependencies: [
+				"41430DBE61B489F1"
+				"194A44D04A80BDB6"
+			]
+			id: "6E0C1DFE3784B4C4"
+			tasks: [{
+				id: "39CAE789718E9689"
+				type: "item"
+				item: "botania:rune_earth"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 0.0d
+			dependencies: [
+				"41430DBE61B489F1"
+				"73DE3999221D25DA"
+			]
+			id: "535B256EEBA8FCC3"
+			tasks: [{
+				id: "63194E1B35FBD458"
+				type: "item"
+				item: "botania:rune_air"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 0.0d
+			dependencies: [
+				"41430DBE61B489F1"
+				"43BA0605185EEDF0"
+			]
+			id: "09C9D61131C1E823"
+			tasks: [{
+				id: "7D927434663584FE"
+				type: "item"
+				item: "botania:rune_mana"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			dependencies: [
+				"41430DBE61B489F1"
+				"29E1F886D3B50A2A"
+			]
+			id: "5646D6F069B8F165"
+			tasks: [{
+				id: "175445C373B23B29"
+				type: "item"
+				item: "botania:rune_fire"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 0.0d
+			dependencies: [
+				"45E7B1FEC21C0ECC"
+				"4D42C2AB06A255A5"
+			]
+			id: "29E1F886D3B50A2A"
+			tasks: [{
+				id: "5B45CD84DDA5FEC5"
+				type: "item"
+				item: "minecraft:nether_wart"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -1.5d
+			dependencies: ["63C36487E18FBF96"]
+			id: "73DE3999221D25DA"
+			tasks: [{
+				id: "4A6A826C0EA08D98"
+				type: "item"
+				item: "minecraft:feather"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -1.5d
+			dependencies: ["45E7B1FEC21C0ECC"]
+			id: "43BA0605185EEDF0"
+			tasks: [{
+				id: "422151173022662B"
+				type: "item"
+				item: "minecraft:ender_pearl"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -3.5d
+			dependencies: ["43BA0605185EEDF0"]
+			id: "76B2E5503503D064"
+			tasks: [{
+				id: "7F9A7296F612C803"
+				type: "item"
+				item: "botania:alchemy_catalyst"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -2.5d
+			dependencies: ["76B2E5503503D064"]
+			id: "4B002B9746BD37D5"
+			tasks: [{
+				id: "20238E80AA77B24A"
+				type: "item"
+				item: "minecraft:tuff"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -2.5d
+			dependencies: ["76B2E5503503D064"]
+			id: "26FEB96A2E908253"
+			tasks: [{
+				id: "728B0204690FEDA9"
+				type: "item"
+				item: "minecraft:glowstone_dust"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -1.5d
+			dependencies: ["76B2E5503503D064"]
+			id: "194A44D04A80BDB6"
+			tasks: [{
+				id: "6FEED4FCB5269C28"
+				type: "item"
+				item: "minecraft:deepslate"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -2.5d
+			dependencies: ["72CE81EB18FBE5F2"]
+			id: "41430DBE61B489F1"
+			tasks: [{
+				id: "38CD79C8F7888F30"
+				type: "item"
+				item: "botania:runic_altar"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 3.5d
+			dependencies: [
+				"74AA7B48781A88E8"
+				"5646D6F069B8F165"
+			]
+			id: "4E2F515A395FC9C9"
+			tasks: [{
+				id: "6F129F9699D815DF"
+				type: "item"
+				item: "botania:rune_spring"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 4.5d
+			dependencies: ["4E2F515A395FC9C9"]
+			id: "30132D01DC0D09C7"
+			tasks: [{
+				id: "4584DA4A09D9C4A6"
+				type: "item"
+				item: "botania:rune_greed"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 2.5d
+			dependencies: ["02F6EF16D092E5D3"]
+			id: "6B71EC5C64F41A80"
+			tasks: [{
+				id: "6E581CF20ECDD534"
+				type: "item"
+				item: "botania:rune_pride"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 1.5d
+			dependencies: [
+				"535B256EEBA8FCC3"
+				"6E0C1DFE3784B4C4"
+			]
+			id: "02F6EF16D092E5D3"
+			tasks: [{
+				id: "0869173B5FABCAF0"
+				type: "item"
+				item: "botania:rune_summer"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 2.0d
+			dependencies: [
+				"5646D6F069B8F165"
+				"535B256EEBA8FCC3"
+			]
+			id: "4E8013755DE4C585"
+			tasks: [{
+				id: "35AEF8E0798745A7"
+				type: "item"
+				item: "botania:rune_autumn"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 3.0d
+			dependencies: ["4E8013755DE4C585"]
+			id: "6FB29AEFABE6BDBD"
+			tasks: [{
+				id: "1254AE64470204B3"
+				type: "item"
+				item: "botania:rune_sloth"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 3.0d
+			dependencies: ["24BF1724AE8B22BB"]
+			id: "7775ECB6EF2071DA"
+			tasks: [{
+				id: "1A6E7786BE3D581C"
+				type: "item"
+				item: "botania:rune_envy"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 2.0d
+			dependencies: [
+				"6E0C1DFE3784B4C4"
+				"74AA7B48781A88E8"
+				"1736FF7BF7F3D2C9"
+			]
+			id: "24BF1724AE8B22BB"
+			tasks: [{
+				id: "39A7FE81A442348A"
+				type: "item"
+				item: "botania:rune_winter"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

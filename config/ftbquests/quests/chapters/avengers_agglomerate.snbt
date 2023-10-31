@@ -3,7 +3,7 @@
 	group: "088D69D914535C04"
 	order_index: 0
 	filename: "avengers_agglomerate"
-	title: "Avengers, Agglomerate"
+	title: "Agglomeration Adoration"
 	icon: "botania:terrasteel_ingot"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
@@ -100,107 +100,6 @@
 				id: "2D3A7A51258E380D"
 				type: "item"
 				item: "minecraft:oak_sapling"
-			}]
-		}
-		{
-			x: -2.5d
-			y: 3.0d
-			dependencies: [
-				"74AA7B48781A88E8"
-				"5646D6F069B8F165"
-			]
-			id: "4E2F515A395FC9C9"
-			tasks: [{
-				id: "6F129F9699D815DF"
-				type: "item"
-				item: "botania:rune_spring"
-			}]
-		}
-		{
-			x: -2.5d
-			y: 4.0d
-			dependencies: ["4E2F515A395FC9C9"]
-			id: "30132D01DC0D09C7"
-			tasks: [{
-				id: "4584DA4A09D9C4A6"
-				type: "item"
-				item: "botania:rune_greed"
-			}]
-		}
-		{
-			x: -1.5d
-			y: 3.0d
-			dependencies: [
-				"535B256EEBA8FCC3"
-				"6E0C1DFE3784B4C4"
-			]
-			id: "02F6EF16D092E5D3"
-			tasks: [{
-				id: "0869173B5FABCAF0"
-				type: "item"
-				item: "botania:rune_summer"
-			}]
-		}
-		{
-			x: -1.5d
-			y: 4.0d
-			dependencies: ["02F6EF16D092E5D3"]
-			id: "6B71EC5C64F41A80"
-			tasks: [{
-				id: "6E581CF20ECDD534"
-				type: "item"
-				item: "botania:rune_pride"
-			}]
-		}
-		{
-			x: -0.5d
-			y: 3.0d
-			dependencies: [
-				"5646D6F069B8F165"
-				"535B256EEBA8FCC3"
-			]
-			id: "4E8013755DE4C585"
-			tasks: [{
-				id: "35AEF8E0798745A7"
-				type: "item"
-				item: "botania:rune_autumn"
-			}]
-		}
-		{
-			x: -0.5d
-			y: 4.0d
-			dependencies: ["4E8013755DE4C585"]
-			id: "6FB29AEFABE6BDBD"
-			tasks: [{
-				id: "1254AE64470204B3"
-				type: "item"
-				item: "botania:rune_sloth"
-			}]
-		}
-		{
-			x: 0.5d
-			y: 3.0d
-			dependencies: [
-				"6E0C1DFE3784B4C4"
-				"74AA7B48781A88E8"
-				"1736FF7BF7F3D2C9"
-			]
-			id: "24BF1724AE8B22BB"
-			tasks: [{
-				id: "39A7FE81A442348A"
-				type: "item"
-				item: "botania:rune_winter"
-			}]
-		}
-		{
-			x: 0.5d
-			y: 4.0d
-			dependencies: ["24BF1724AE8B22BB"]
-			id: "7775ECB6EF2071DA"
-			tasks: [{
-				id: "1A6E7786BE3D581C"
-				type: "item"
-				item: "botania:rune_envy"
 			}]
 		}
 	]
