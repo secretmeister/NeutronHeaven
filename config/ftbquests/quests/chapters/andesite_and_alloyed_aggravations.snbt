@@ -37,6 +37,7 @@
 		{
 			x: -1.0d
 			y: 0.5d
+			min_required_dependencies: 2
 			dependencies: [
 				"24A297A149F48F9F"
 				"482977C98BE4CA92"

@@ -90,6 +90,7 @@
 		{
 			x: -2.0d
 			y: -1.5d
+			description: ["A pulse mana spreader could be useful here"]
 			dependencies: ["74AA7B48781A88E8"]
 			id: "29A2BC2A488E0D84"
 			tasks: [{

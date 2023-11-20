@@ -13,7 +13,7 @@ craftingTable.remove(<item:minecraft:end_crystal>);
     .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:minecraft:end_stone_bricks>))
     .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:tconstruct:ender_cake>))
     .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:minecraft:end_crystal>))
-    .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:minecraft:elytra>)));
+    .addStep<mods.createtweaker.DeployerApplicationRecipe>((rb) => rb.require(<item:minecraft:elytra>.anyDamage().transformDamage(420))));
 
 <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("cry")
     .transitionTo(<item:minecraft:obsidian>)

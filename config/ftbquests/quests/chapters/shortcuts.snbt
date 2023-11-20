@@ -9,9 +9,13 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: 2.0d
-			y: 3.0d
-			dependencies: ["55D7C452A91BEA8D"]
+			x: 3.0d
+			y: 2.0d
+			min_required_dependencies: 1
+			dependencies: [
+				"55D7C452A91BEA8D"
+				"7D38AB9FFD2E510E"
+			]
 			invisible: true
 			id: "482977C98BE4CA92"
 			tasks: [{
@@ -22,10 +26,14 @@
 		}
 		{
 			title: "Observe a stripped greenheart log"
-			x: 1.0d
-			y: 3.0d
+			x: 4.0d
+			y: 2.0d
 			subtitle: "But what to do with it?"
-			dependencies: ["19518A85318783FF"]
+			min_required_dependencies: 1
+			dependencies: [
+				"226D246E5C81F020"
+				"5ACD90E637161C6D"
+			]
 			invisible: true
 			id: "55D7C452A91BEA8D"
 			tasks: [{
@@ -40,7 +48,7 @@
 		}
 		{
 			x: 1.0d
-			y: 4.0d
+			y: 3.0d
 			dependencies: ["037C6A9E7331A19C"]
 			invisible: true
 			id: "6ACE93F44C470D62"
@@ -55,8 +63,8 @@
 			}]
 		}
 		{
-			x: 2.0d
-			y: 4.0d
+			x: 0.0d
+			y: 3.0d
 			dependencies: ["6ACE93F44C470D62"]
 			invisible: true
 			id: "7464615230CFD315"
@@ -64,6 +72,117 @@
 				id: "4EDD278379016C4C"
 				type: "item"
 				item: "minecraft:water_bucket"
+			}]
+		}
+		{
+			icon: "tconstruct:earth_slime_sapling"
+			x: 4.0d
+			y: 3.0d
+			invisible: true
+			id: "226D246E5C81F020"
+			tasks: [{
+				id: "1A4832EBD2B03C5E"
+				type: "structure"
+				title: "Find a Slime Island"
+				icon: "tconstruct:earth_slime_sapling"
+				structure: "tconstruct:earth_slime_island"
+			}]
+		}
+		{
+			title: "Slime Materials"
+			icon: "minecraft:slime_ball"
+			x: 3.0d
+			y: 3.0d
+			dependencies: ["226D246E5C81F020"]
+			invisible: true
+			id: "1F0B5457BB0B5412"
+			tasks: [
+				{
+					id: "702A159E65823DAA"
+					type: "item"
+					item: "minecraft:slime_ball"
+				}
+				{
+					id: "5995046B7E60C9EE"
+					type: "item"
+					item: "tconstruct:earth_slime_dirt"
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: 4.0d
+			invisible: true
+			id: "446E7A8231BE34A9"
+			tasks: [{
+				id: "03C977FA52D4745F"
+				type: "structure"
+				title: "Find a Sky Slime Island"
+				icon: "tconstruct:sky_slime_sapling"
+				structure: "tconstruct:sky_slime_island"
+			}]
+		}
+		{
+			title: "Skyslime"
+			x: 2.0d
+			y: 3.0d
+			dependencies: ["446E7A8231BE34A9"]
+			id: "5C5779BEDE7DA142"
+			tasks: [{
+				id: "49FDC2B64A6A698E"
+				type: "item"
+				item: "tconstruct:sky_slime_ball"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 2.0d
+			invisible: true
+			id: "02E0BD98966C2E6E"
+			tasks: [{
+				id: "7AAAED932B360498"
+				type: "structure"
+				title: "Find a sky island"
+				icon: "minecraft:spruce_sapling"
+				structure: "tcontruct:clay_island"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 2.0d
+			dependencies: ["02E0BD98966C2E6E"]
+			id: "7D38AB9FFD2E510E"
+			tasks: [{
+				id: "14AF37007C8AC0B9"
+				type: "item"
+				title: "Wooden Log"
+				icon: "minecraft:oak_log"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.0d
+			dependencies: ["02E0BD98966C2E6E"]
+			id: "4C8B327C5F6D756A"
+			tasks: [{
+				id: "5D7F247D1C999C7B"
+				type: "item"
+				title: "Mystical Flower"
+				icon: "botania:white_mystical_flower"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "botania:mystical_flowers"
+					}
+				}
 			}]
 		}
 	]

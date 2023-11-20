@@ -23,7 +23,7 @@ LycheeRecipeManager.addRecipe("redstf", <recipetype:lychee:block_crushing>, new 
     .crushingFallingBlock(<tag:blocks:minecraft:anvil>)
     .crushingLandingBlock(<block:minecraft:stone>)
     .setGhost(true)
-    .post([LycheePosts.anvilDamageChance(1),LycheePosts.dropItem(<item:minecraft:redstone_ore>).condition([LycheeConditions.chance(0.5).description("Shoves the redstone into the stone, making a source of redstone!")])]));
+    .post([LycheePosts.anvilDamageChance(0.1),LycheePosts.dropItem(<item:minecraft:redstone_ore>).condition([LycheeConditions.chance(0.5).description("Forces the redstone into the stone, making a source of redstone! (has a 10% chance to damage anvil)")])]));
 LycheeRecipeManager.addRecipe("endslf", <recipetype:lychee:block_crushing>, new LycheeRecipeBuilder()
     .crushingFallingBlock(<block:minecraft:slime_block>)
     .crushingLandingBlock(<block:minecraft:chorus_flower>)
@@ -70,3 +70,16 @@ LycheeRecipeManager.addRecipe("nethergroutf", <recipetype:lychee:item_inside>, n
   .blockIn(<block:tconstruct:liquid_soul_fluid>)
   .setGhost(true)
   .post([LycheePosts.dropItem(<item:tconstruct:nether_grout>).condition(LycheeConditions.chance(1).description("Congeals the red sand and gravel into a raw hellish substance"))]));
+
+LycheeRecipeManager.addRecipe("infestation", <recipetype:lychee:block_interacting>, new LycheeRecipeBuilder()
+    .itemIn(<item:botania:mycelium_seeds>)
+    .blockIn(<block:minecraft:dirt>)
+    .setGhost(true)
+    .post([LycheePosts.dropItem(<item:minecraft:mycelium>).condition([LycheeConditions.chance(1).description("Infests the dirt into mycelium")])]));
+
+LycheeRecipeManager.addRecipe("claybetf", <recipetype:lychee:item_inside>, new LycheeRecipeBuilder()
+    .itemIn([<item:minecraft:sand>])
+    .blockIn(<block:minecraft:water>)
+    .setGhost(true)
+    .post([LycheePosts.dropItem(<item:minecraft:clay>).condition(LycheeConditions.chance(0.8).description("Mixes with the water to become clay"))])
+);

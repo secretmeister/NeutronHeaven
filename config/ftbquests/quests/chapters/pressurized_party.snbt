@@ -99,7 +99,7 @@
 			x: 0.5d
 			y: 1.5d
 			subtitle: "Ooo shiny"
-			description: ["(Not needed for a long while)"]
+			description: [""]
 			dependencies: ["1B1146A650021F90"]
 			id: "6EA8648EB67181A7"
 			tasks: [{

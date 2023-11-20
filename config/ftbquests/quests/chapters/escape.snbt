@@ -11,7 +11,10 @@
 		{
 			x: 2.0d
 			y: 1.5d
-			description: ["The Final Challenge, each thing requiring quite a bit of crafting"]
+			description: [
+				"The Final Challenge, each thing requiring quite a bit of crafting"
+				"(Requires a 4x2 spot to place down)"
+			]
 			dependencies: [
 				"5CA8795ADC19C35F"
 				"7F6561C8B7604FDA"
@@ -26,14 +29,22 @@
 				type: "item"
 				item: "dimpaintings:end_painting"
 			}]
-			rewards: [{
-				id: "3B18D9DCCDA4A91A"
-				type: "toast"
-				title: "Congratulations, you beat the pack!"
-				icon: "minecraft:end_stone"
-				auto: "enabled"
-				description: ""
-			}]
+			rewards: [
+				{
+					id: "3B18D9DCCDA4A91A"
+					type: "toast"
+					title: "Congratulations, you beat the pack!"
+					icon: "minecraft:end_stone"
+					auto: "enabled"
+					description: ""
+				}
+				{
+					id: "0DD9BBCBE5508F7B"
+					type: "item"
+					title: "A way back"
+					item: "dimpaintings:overworld_painting"
+				}
+			]
 		}
 		{
 			x: 1.0d

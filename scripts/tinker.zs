@@ -78,7 +78,7 @@
     "fluid": "tconstruct:molten_brass",
     "amount": 90
   },
-  "temperature": 850
+  "temperature": 700
 });
 
 <recipetype:tconstruct:melting>.addJsonRecipe("bettiron",{

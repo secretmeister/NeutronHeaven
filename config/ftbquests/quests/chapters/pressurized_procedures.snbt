@@ -101,7 +101,7 @@
 			}]
 		}
 		{
-			x: 1.0d
+			x: 0.5d
 			y: 0.5d
 			dependencies: ["23C93F4861D1EA7C"]
 			id: "45E7B1FEC21C0ECC"
@@ -109,17 +109,6 @@
 				id: "001B090844B3AA40"
 				type: "item"
 				item: "tconstruct:blood_slime_ball"
-			}]
-		}
-		{
-			x: 0.0d
-			y: 0.5d
-			dependencies: ["23C93F4861D1EA7C"]
-			id: "291C546C0E6262C9"
-			tasks: [{
-				id: "2EC49B68D9E4B68F"
-				type: "item"
-				item: "create:brass_ingot"
 			}]
 		}
 	]

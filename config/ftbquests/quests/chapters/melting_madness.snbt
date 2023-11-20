@@ -72,7 +72,7 @@
 		}
 		{
 			x: 1.5d
-			y: 2.0d
+			y: 1.0d
 			dependencies: ["1FD5E5AC1B09F3CE"]
 			id: "66652730F0380203"
 			tasks: [{
@@ -116,17 +116,13 @@
 		}
 		{
 			x: 1.5d
-			y: 1.0d
-			dependencies: [
-				"5AFEABBD7EED079B"
-				"7919A18254CEE578"
-			]
-			dependency_requirement: "one_completed"
-			id: "6645AD6547BCD9AB"
+			y: 2.0d
+			dependencies: ["66652730F0380203"]
+			id: "291C546C0E6262C9"
 			tasks: [{
-				id: "60CE6BAB2D1E4412"
+				id: "2EC49B68D9E4B68F"
 				type: "item"
-				item: "tconstruct:cast_chest"
+				item: "create:brass_ingot"
 			}]
 		}
 	]

@@ -10,6 +10,7 @@
 	quests: [
 		{
 			title: "Steam Prodigy"
+			icon: "create:steam_engine"
 			x: -5.5d
 			y: 1.0d
 			description: ["Create a steam powered factory before getting wood!"]
@@ -20,18 +21,25 @@
 				"274489E7A89845B8"
 			]
 			id: "773D23A442A22750"
-			tasks: [{
-				id: "4D6E88D5BF7A1BAF"
-				type: "advancement"
-				icon: "create:steam_engine"
-				advancement: "create:steam_engine"
-				criterion: ""
-			}]
+			tasks: [
+				{
+					id: "4D6E88D5BF7A1BAF"
+					type: "advancement"
+					icon: "create:steam_engine"
+					advancement: "create:steam_engine"
+					criterion: ""
+				}
+				{
+					id: "4B9FBC365FE42AD6"
+					type: "checkmark"
+					title: "Automated before wood?"
+				}
+			]
 		}
 		{
 			title: "Redstone Factory"
 			icon: "minecraft:redstone_ore"
-			x: -3.5d
+			x: -4.5d
 			y: 1.0d
 			description: ["Fully automate the production of redstone"]
 			dependencies: ["6DEBD5320736049C"]
@@ -50,6 +58,34 @@
 					title: "Automated?"
 				}
 			]
+		}
+		{
+			x: -2.5d
+			y: 1.0d
+			description: ["Aquire a most amazing seed"]
+			dependencies: [
+				"21EE8AA0B6155DC5"
+				"6FB29AEFABE6BDBD"
+				"7775ECB6EF2071DA"
+			]
+			id: "1045560FFA80A335"
+			tasks: [{
+				id: "68D9553AE98A31FD"
+				type: "item"
+				item: "botania:overgrowth_seed"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 1.0d
+			description: ["To extract one of these from the corpse of a withered demon is a difficult challenge"]
+			dependencies: ["107CD05C9CE45DBE"]
+			id: "45B32F0A2AC7383F"
+			tasks: [{
+				id: "34D795D25E5DAAD3"
+				type: "item"
+				item: "minecraft:nether_star"
+			}]
 		}
 	]
 	quest_links: [ ]

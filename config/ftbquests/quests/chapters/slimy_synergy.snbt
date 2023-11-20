@@ -26,9 +26,11 @@
 		{
 			x: 0.5d
 			y: -4.0d
+			min_required_dependencies: 2
 			dependencies: [
-				"535FF2C776D23901"
 				"1FD5E5AC1B09F3CE"
+				"535FF2C776D23901"
+				"5C5779BEDE7DA142"
 			]
 			id: "71210FE62C24CCDE"
 			tasks: [{
@@ -479,7 +481,10 @@
 		{
 			x: -1.0d
 			y: -1.5d
-			dependencies: ["34A0818318A22549"]
+			dependencies: [
+				"34A0818318A22549"
+				"6EA8648EB67181A7"
+			]
 			id: "19F4A4B8BEA72EB4"
 			tasks: [{
 				id: "07DD0AC424BC92C4"

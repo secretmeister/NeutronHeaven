@@ -21,7 +21,7 @@ recipes.remove(<item:tconstruct:earth_slime_dirt>);
     {"item": "tconstruct:sky_slime_ball", "count": 2}]});
 
 LycheeRecipeManager.addRecipe("soulsand", <recipetype:lychee:lightning_channeling>, new LycheeRecipeBuilder()
-    .post([LycheePosts.placeBlock(<block:tconstruct:soul_glass>, new BlockPos(0, -2, 0)).condition([LycheeConditions.block(<block:minecraft:glass>, new BlockPos(0, -2, 0))]),LycheePosts.executeCommand("weather thunder 150", true).condition([LycheeConditions.chance(0.3)])])
+    .post([LycheePosts.placeBlock(<block:tconstruct:soul_glass>, new BlockPos(0, -2, 0)).condition([LycheeConditions.block(<block:minecraft:glass>, new BlockPos(0, -2, 0))])])
     .setHideInJEI(true)
     .comment("Scares the glass below into soul glass")
 );
@@ -61,6 +61,9 @@ LycheeRecipeManager.addRecipe("thegodsgrace", <recipetype:lychee:item_burning>, 
   .setHideInJEI(true)
   .post([LycheePosts.executeCommand("weather thunder", true),LycheePosts.executeCommand("summon minecraft:lightning_bolt"),LycheePosts.executeCommand("summon minecraft:trident ~ ~30 ~ {\"pickup\":1}")]));
 
+LycheeRecipeManager.addRecipe("clear", <recipetype:lychee:item_burning>, new LycheeRecipeBuilder()
+  .itemIn(<item:minecraft:sponge>)
+  .post([LycheePosts.executeCommand("execute as @a run weather clear", true).condition(LycheeConditions.chance(1).description("Absorbs the rain")),LycheePosts.dropItem(<item:minecraft:wet_sponge>)]));
 
 <recipetype:tconstruct:casting_table>.addJsonRecipe("tridentchanneling", {
   "type": "tconstruct:casting_table",

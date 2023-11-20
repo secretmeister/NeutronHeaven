@@ -28,6 +28,7 @@ craftingTable.addShapeless("tree_fertilizer",<item:create:tree_fertilizer>,[<tag
 
 <recipetype:botania:pure_daisy>.addRecipe("pureclay", <blockstate:minecraft:clay>, <blockstate:minecraft:sand>,  100);
 <recipetype:botania:pure_daisy>.addRecipe("purecoal", <blockstate:minecraft:coal_block>, <blockstate:minecraft:black_terracotta>, 200);
+<recipetype:botania:pure_daisy>.addRecipe("sponge", <blockstate:minecraft:sponge>, <blockstate:minecraft:gold_block>, 400);
 
 <recipetype:botania:mana_infusion>.remove(<item:minecraft:melon_seeds>);
 <recipetype:botania:mana_infusion>.remove(<item:minecraft:beetroot_seeds>);
@@ -112,7 +113,7 @@ LycheeRecipeManager.addRecipe("endsl", <recipetype:lychee:block_crushing>, new L
     .setHideInJEI(true)
     .post([LycheePosts.placeBlock(<block:tconstruct:ender_congealed_slime>),LycheePosts.preventDefault()]));
 
-<recipetype:botania:orechid>.registerOreWeight("sandstone",  <blockstate:minecraft:sand>,              <block:minecraft:sandstone>, 200);
+<recipetype:botania:orechid>.registerOreWeight("sandstone",  <blockstate:minecraft:sand>,              <block:minecraft:sandstone>, 50);
 <recipetype:botania:orechid>.registerOreWeight("endstone",   <blockstate:minecraft:end_stone>,         <block:minecraft:sandstone>, 1);
 
 <recipetype:botania:orechid>.registerOreWeight("nethergold", <blockstate:minecraft:nether_gold_ore>,   <block:minecraft:netherrack>, 40);

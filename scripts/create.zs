@@ -40,6 +40,7 @@ craftingTable.addShapeless("alloy",<item:create:andesite_alloy>, [<item:minecraf
 
 <recipetype:create:mixing>.addRecipe("blazeblood", <constant:create:heat_condition:superheated>, [<fluid:tconstruct:blazing_blood>*150], [<item:minecraft:blaze_powder>], [<fluid:minecraft:lava>*100], 50);
 <recipetype:create:mixing>.addRecipe("brasscass", <constant:create:heat_condition:heated>, [<item:create:brass_casing>], [<item:create:andesite_casing>], [<fluid:tconstruct:molten_brass>*90]);
+<recipetype:create:mixing>.addRecipe("laava", <constant:create:heat_condition:heated>, [<fluid:minecraft:lava>*500], [<item:create:powdered_obsidian>*3], [<fluid:minecraft:lava>*100], 100);
 
 
 <recipetype:create:mechanical_crafting>.addRecipe("elytra", <item:minecraft:elytra>, [

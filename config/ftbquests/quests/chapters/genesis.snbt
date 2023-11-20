@@ -9,19 +9,22 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
+			title: "Cobblestone"
+			icon: "minecraft:cobblestone"
 			x: -3.0d
 			y: -4.0d
-			subtitle: "Please read quest descriptions"
-			description: [
-				"This book seems to have an emergency feature that provides endless cobblestone"
-				"You notice you can craft one cobble into four, an easy shortcut"
-			]
+			subtitle: "The foundation of the pack"
+			description: ["You can craft one cobble into four, an easy shortcut. This book also has an emergency page that produces infinite cobblestone"]
 			id: "4D0586A728999E99"
 			tasks: [{
-				id: "05744176C4E6A740"
+				id: "62D53C473C9B1EDE"
+				type: "checkmark"
+				title: "Aquire your first Cobblestone"
+			}]
+			rewards: [{
+				id: "03B8A58EC02A23E0"
 				type: "item"
 				item: "minecraft:cobblestone"
-				count: 64L
 			}]
 		}
 		{
@@ -183,6 +186,7 @@
 			}]
 		}
 		{
+			title: "Explosive"
 			x: 3.0d
 			y: -3.5d
 			dependencies: [
@@ -194,7 +198,15 @@
 			tasks: [{
 				id: "66EB739AAD2ADB76"
 				type: "item"
-				item: "minecraft:tnt"
+				title: "Any explosive"
+				icon: "minecraft:tnt"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "lychee:block_exploding_catalysts"
+					}
+				}
 			}]
 		}
 		{
@@ -244,9 +256,11 @@
 			x: 1.5d
 			y: -5.0d
 			subtitle: "The start of the real journey"
+			min_required_dependencies: 2
 			dependencies: [
 				"5ACD90E637161C6D"
 				"31284DCE27BBC499"
+				"1F0B5457BB0B5412"
 			]
 			size: 1.25d
 			id: "2E7AA8DC7F4A93D0"
