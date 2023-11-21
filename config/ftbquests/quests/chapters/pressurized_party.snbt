@@ -38,17 +38,6 @@
 					item: "pneumaticcraft:pressure_chamber_valve"
 				}
 			]
-			rewards: [{
-				id: "31C7E7AD372C2CC6"
-				type: "item"
-				item: {
-					id: "patchouli:guide_book"
-					Count: 1b
-					tag: {
-						"patchouli:book": "pneumaticcraft:book"
-					}
-				}
-			}]
 		}
 		{
 			x: 1.5d
@@ -59,6 +48,17 @@
 				id: "4EE29762FAD6E4A6"
 				type: "item"
 				item: "pneumaticcraft:pressure_tube"
+			}]
+			rewards: [{
+				id: "24CEECFA3FCE7DA2"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "pneumaticcraft:book"
+					}
+				}
 			}]
 		}
 		{

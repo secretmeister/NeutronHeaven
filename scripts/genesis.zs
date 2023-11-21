@@ -7,6 +7,7 @@ import crafttweaker.api.events.CTEventManager;
 <tag:items:crafttweaker:stone>.remove(<item:minecraft:polished_andesite>);
 <tag:items:lychee:item_exploding_catalysts>.add(<item:tconstruct:efln_ball>);
 <tag:items:lychee:block_exploding_catalysts>.add(<item:tconstruct:efln_ball>);
+<tag:items:botania:loonium_blacklist>.remove(<item:botania:overgrowth_seed>);
 
 recipes.remove(<item:minecraft:dispenser>);
 recipes.remove(<item:crafting_on_a_stick:crafting_table>);
@@ -46,11 +47,11 @@ craftingTable.addShaped("piston2",<item:minecraft:piston>,[[<item:botania:living
 
 
 furnace.removeByRegex("create:.*from_crushed");
-furnace.addRecipe("crushiron", <item:minecraft:iron_nugget>*6, <item:create:crushed_raw_iron>, 0.1, 220);
-furnace.addRecipe("crushgold", <item:minecraft:gold_nugget>*6, <item:create:crushed_raw_gold>, 0.1, 220);
-furnace.addRecipe("crushcopp", <item:create:copper_nugget>*6, <item:create:crushed_raw_copper>, 0.1, 220);
-furnace.addRecipe("crushzinc", <item:create:zinc_nugget>*6, <item:create:crushed_raw_zinc>, 0.1, 220);
-furnace.addRecipe("coall", <item:minecraft:coal>*5, <item:minecraft:dried_kelp_block>, 0.1, 400);
+furnace.addRecipe("crushiron", <item:minecraft:iron_nugget>*6, <item:create:crushed_raw_iron>, 0.1, 200);
+furnace.addRecipe("crushgold", <item:minecraft:gold_nugget>*6, <item:create:crushed_raw_gold>, 0.1, 200);
+furnace.addRecipe("crushcopp", <item:create:copper_nugget>*6, <item:create:crushed_raw_copper>, 0.1, 200);
+furnace.addRecipe("crushzinc", <item:create:zinc_nugget>*6, <item:create:crushed_raw_zinc>, 0.1, 200);
+furnace.addRecipe("coall", <item:minecraft:coal>*5, <item:minecraft:dried_kelp_block>, 0.1, 200);
 
 
 LycheeRecipeManager.addRecipe("crushgrav", <recipetype:lychee:block_interacting>, new LycheeRecipeBuilder()

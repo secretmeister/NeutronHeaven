@@ -135,22 +135,9 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: 2.0d
-			invisible: true
-			id: "02E0BD98966C2E6E"
-			tasks: [{
-				id: "7AAAED932B360498"
-				type: "structure"
-				title: "Find a sky island"
-				icon: "minecraft:spruce_sapling"
-				structure: "tcontruct:clay_island"
-			}]
-		}
-		{
 			x: 2.0d
 			y: 2.0d
-			dependencies: ["02E0BD98966C2E6E"]
+			dependencies: ["4A1CC4979EF65CD5"]
 			id: "7D38AB9FFD2E510E"
 			tasks: [{
 				id: "14AF37007C8AC0B9"
@@ -169,7 +156,7 @@
 		{
 			x: 0.0d
 			y: 2.0d
-			dependencies: ["02E0BD98966C2E6E"]
+			dependencies: ["4A1CC4979EF65CD5"]
 			id: "4C8B327C5F6D756A"
 			tasks: [{
 				id: "5D7F247D1C999C7B"
@@ -183,6 +170,19 @@
 						value: "botania:mystical_flowers"
 					}
 				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: 2.0d
+			invisible: true
+			id: "4A1CC4979EF65CD5"
+			tasks: [{
+				id: "2DBB3198B96E91F8"
+				type: "structure"
+				title: "Find a Clay Sky Island"
+				icon: "minecraft:spruce_sapling"
+				structure: "tconstruct:clay_island"
 			}]
 		}
 	]

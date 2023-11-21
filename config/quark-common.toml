@@ -1580,9 +1580,9 @@
 
 	[oddities.pipes]
 		#How long it takes for an item to cross a pipe. Bigger = slower.
-		"Pipe Speed" = 5
+		"Pipe Speed" = 3
 		#Set to 0 if you don't want pipes to have a max amount of items
-		"Max Pipe Items" = 16
+		"Max Pipe Items" = 0
 		#When items eject or are absorbed by pipes, should they make sounds?
 		"Do Pipes Whoosh" = true
 

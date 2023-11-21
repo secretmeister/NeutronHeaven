@@ -373,6 +373,27 @@
 				item: "minecraft:bread"
 			}]
 		}
+		{
+			title: "Early Sticks"
+			icon: "minecraft:dead_bush"
+			x: -0.5d
+			y: -5.0d
+			description: ["Vanilla tools do still exist you know"]
+			dependencies: ["3C6D3B1CC8DA0171"]
+			id: "6571B7E9246378E6"
+			tasks: [
+				{
+					id: "7BBD8F9CE506D92C"
+					type: "item"
+					item: "minecraft:dead_bush"
+				}
+				{
+					id: "559FE089FA2B51BE"
+					type: "item"
+					item: "minecraft:stick"
+				}
+			]
+		}
 	]
 	quest_links: [ ]
 }

@@ -1,5 +1,6 @@
 recipes.remove(<item:pneumaticcraft:vacuum_pump>);
 <recipetype:pneumaticcraft:pressure_chamber>.remove(<item:pneumaticcraft:compressed_stone>);
+<recipetype:pneumaticcraft:pressure_chamber>.remove(<item:minecraft:diamond>);
 
 craftingTable.addShaped("vacuum",<item:pneumaticcraft:vacuum_pump>,[
   [<item:pneumaticcraft:pressure_gauge>,<item:pneumaticcraft:turbine_rotor>,<item:pneumaticcraft:pressure_gauge>],
@@ -18,6 +19,20 @@ craftingTable.addShaped("vacuum",<item:pneumaticcraft:vacuum_pump>,[
   "results": [
     {
       "item": "pneumaticcraft:compressed_stone"
+    }]});
+<recipetype:pneumaticcraft:pressure_chamber>.addJsonRecipe("diamoond",{
+  "type": "pneumaticcraft:pressure_chamber",
+  "inputs": [
+    {
+      "type": "pneumaticcraft:stacked_item",
+      "item": "minecraft:coal_block",
+      "count": 3
+    }
+  ],
+  "pressure": 4.0,
+  "results": [
+    {
+      "item": "minecraft:diamond"
     }]});
 <recipetype:pneumaticcraft:pressure_chamber>.addJsonRecipe("lavquar",{
   "type": "pneumaticcraft:pressure_chamber",

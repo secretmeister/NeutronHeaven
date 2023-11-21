@@ -38,6 +38,11 @@
 					item: "tconstruct:seared_table"
 				}
 			]
+			rewards: [{
+				id: "618676BC25C1FCE1"
+				type: "item"
+				item: "tconstruct:puny_smelting"
+			}]
 		}
 		{
 			title: "Sand Round Plate Cast"
@@ -79,6 +84,11 @@
 				id: "2E8E719DA6F7D44A"
 				type: "item"
 				item: "tconstruct:scorched_alloyer"
+			}]
+			rewards: [{
+				id: "49B9F6D60EB55098"
+				type: "item"
+				item: "tconstruct:fantastic_foundry"
 			}]
 		}
 		{

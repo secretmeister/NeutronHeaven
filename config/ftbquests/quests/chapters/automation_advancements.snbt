@@ -165,7 +165,7 @@
 			x: -1.5d
 			y: 0.5d
 			subtitle: "Generically useful redstone component"
-			dependencies: ["410231EB71A9934C"]
+			dependencies: ["0064B3E23969AFF5"]
 			id: "2671B4A26B2C59C5"
 			tasks: [{
 				id: "3ABF95F511088E49"

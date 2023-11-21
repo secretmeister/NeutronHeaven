@@ -99,6 +99,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "53361D3566D8B4AA"
+				type: "item"
+				item: "tconstruct:mighty_smelting"
+			}]
 		}
 		{
 			x: 0.5d
