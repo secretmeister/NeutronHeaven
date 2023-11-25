@@ -16,7 +16,6 @@ recipes.remove(<item:minecraft:blast_furnace>);
 recipes.remove(<item:minecraft:anvil>);
 recipes.remove(<item:minecraft:flint_and_steel>);
 recipes.remove(<item:angelblockrenewed:angel_block>);
-recipes.remove(<item:craftingautomat:autocrafter>);
 recipes.remove(<item:tconstruct:nether_grout>);
 recipes.remove(<item:structuredcrafting:structured_crafter>);
 recipes.removeByRegex("pipez:.*_pipe.*");
@@ -43,7 +42,6 @@ craftingTable.addShaped("blast_furnace",<item:minecraft:blast_furnace>,[[<item:m
 craftingTable.addShaped("anvil",<item:minecraft:anvil>,[[<item:create:andesite_alloy>,<item:create:andesite_alloy>,<item:create:andesite_alloy>],[<item:minecraft:air>,<item:pneumaticcraft:ingot_iron_compressed>,<item:minecraft:air>],[<item:pneumaticcraft:ingot_iron_compressed>,<item:pneumaticcraft:ingot_iron_compressed>,<item:pneumaticcraft:ingot_iron_compressed>]]);
 craftingTable.addShaped("exca", <item:tconstruct:excavator>.withTag({tic_multipliers: {"tconstruct:mining_speed": 0.3 as float, "tconstruct:attack_damage": 1.2 as float, "tconstruct:durability": 3.75 as float}, tic_stats: {"tconstruct:attack_speed": 1.0 as float, "tconstruct:mining_speed": 1.26 as float, "tconstruct:attack_damage": 3.0 as float, "tconstruct:harvest_tier": "minecraft:stone" as string, "tconstruct:durability": 435.0 as float}, tic_broken: 0 as byte, tic_modifiers: [{name: "tconstruct:knockback" as string, level: 2 as short}, {name: "tconstruct:stonebound" as string, level: 4 as short}, {name: "tconstruct:pathing" as string, level: 1 as short}], tic_materials: ["tconstruct:rock" as string, "tconstruct:rock" as string, "tconstruct:rock" as string, "tconstruct:rock" as string], tic_persistent_data: {abilities: 1 as int, upgrades: 2 as int}}),
 [[<item:tconstruct:large_plate>.withTag({Material: "tconstruct:rock" as string}),<item:tconstruct:large_plate>.withTag({Material: "tconstruct:rock" as string})],[<item:tconstruct:tough_handle>.withTag({Material: "tconstruct:rock" as string}),<item:tconstruct:tough_handle>.withTag({Material: "tconstruct:rock" as string})]]);
-craftingTable.addShaped("crafter",<item:craftingautomat:autocrafter>,[[<item:minecraft:lapis_lazuli>,<item:minecraft:lapis_lazuli>,<item:minecraft:lapis_lazuli>],[<item:minecraft:stone>,<item:crafting_on_a_stick:crafting_table>,<item:minecraft:stone>],[<item:minecraft:stone>,<item:minecraft:dropper>,<item:minecraft:stone>]]);
 craftingTable.addShaped("piston2",<item:minecraft:piston>,[[<item:botania:livingwood_planks>,<item:botania:livingwood_planks>,<item:botania:livingwood_planks>],[<item:minecraft:cobblestone>,<item:minecraft:iron_ingot>,<item:minecraft:cobblestone>],[<item:minecraft:cobblestone>,<item:minecraft:redstone>,<item:minecraft:cobblestone>]]);
 craftingTable.addShaped("crafterr",<item:structuredcrafting:structured_crafter>,[[<item:minecraft:stone>,<item:minecraft:dropper>,<item:minecraft:stone>],[<item:minecraft:iron_ingot>,<item:crafting_on_a_stick:crafting_table>,<item:minecraft:iron_ingot>],[<item:minecraft:stone>,<item:minecraft:redstone>,<item:minecraft:stone>]]);
 
