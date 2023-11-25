@@ -128,4 +128,5 @@ LycheeRecipeManager.addRecipe("endsl", <recipetype:lychee:block_crushing>, new L
 <recipetype:botania:orechid>.registerOreWeight("blackstone", <blockstate:minecraft:blackstone>,        <block:minecraft:netherrack>, 70);
 <recipetype:botania:orechid>.registerOreWeight("gilded",     <blockstate:minecraft:gilded_blackstone>, <block:minecraft:netherrack>, 1);
 
+//<recipetype:botania:marimorphosis>.registerOreWeight("orechid_test", <blockstate:minecraft:dirt>, <block:minecraft:diamond_ore>, 50, 10, the biomes to apply the extra weight in);
 

@@ -30,7 +30,6 @@
 			dependencies: [
 				"1FD5E5AC1B09F3CE"
 				"535FF2C776D23901"
-				"5C5779BEDE7DA142"
 			]
 			id: "71210FE62C24CCDE"
 			tasks: [{
@@ -92,6 +91,7 @@
 		{
 			x: 0.0d
 			y: -2.5d
+			description: ["Used to alloy. Place ingot tanks next to the alloyer block, a heater underneath, and a faucet out the front. Fill the tanks with the fluids you want to alloy, and then heat the alloyer."]
 			dependencies: ["1988CC578B98690C"]
 			id: "1FD5E5AC1B09F3CE"
 			tasks: [{
@@ -118,6 +118,7 @@
 		{
 			x: -3.0d
 			y: -2.5d
+			description: ["Tnker's faucets can pour into spouts."]
 			dependencies: ["6F59F0653A09FA8F"]
 			id: "04036B57D522636E"
 			tasks: [{
@@ -155,7 +156,7 @@
 			y: -2.5d
 			description: [
 				""
-				"Channel lightning into glass to haunt it with the souls of hell"
+				"Channel lightning into glass to haunt it with the souls of hell. Air blown over a soul fire will spread the hellish influence"
 			]
 			dependencies: [
 				"49902A8191A56842"

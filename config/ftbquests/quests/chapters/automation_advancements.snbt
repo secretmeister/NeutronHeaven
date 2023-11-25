@@ -95,16 +95,16 @@
 			x: -4.5d
 			y: 0.5d
 			subtitle: "Autocrafting at it's... strangest"
-			description: ["Define a recipe in its grid, and then input items in any face other than its output one. Any redstone signal will attempt to craft one recipe using its internal storage, and eject the result into the facing inventory. Comparators measure how many copies it could craft. Do not use this to try and craft recipes that use tools."]
+			description: ["This crafter is quite complex. Its input is a 3x3 array of either inventories or blocks at the base of the arrow on the crafter, and if that 3x3 array is a valid recipe it crafts it when powered. The output gets either placed in world (with any blocks beyond one getting spit out as items) or into an inventory."]
 			dependencies: [
 				"5A0C5186D79252F3"
 				"4887A0F37F0FF05D"
 			]
 			id: "1378CBB9821082B6"
 			tasks: [{
-				id: "55C6129DE7613A28"
+				id: "6C0B75B90C9BD1B6"
 				type: "item"
-				item: "craftingautomat:autocrafter"
+				item: "structuredcrafting:structured_crafter"
 			}]
 		}
 		{

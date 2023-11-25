@@ -27,10 +27,7 @@
 			x: -1.0d
 			y: -0.5d
 			min_required_dependencies: 1
-			dependencies: [
-				"410231EB71A9934C"
-				"7D38AB9FFD2E510E"
-			]
+			dependencies: ["410231EB71A9934C"]
 			id: "3F54BBA7D5DD9940"
 			tasks: [{
 				id: "3E1226484D47FC6D"

@@ -9,13 +9,10 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: 3.0d
-			y: 2.0d
+			x: 2.0d
+			y: 2.5d
 			min_required_dependencies: 1
-			dependencies: [
-				"55D7C452A91BEA8D"
-				"7D38AB9FFD2E510E"
-			]
+			dependencies: ["55D7C452A91BEA8D"]
 			invisible: true
 			id: "482977C98BE4CA92"
 			tasks: [{
@@ -26,14 +23,10 @@
 		}
 		{
 			title: "Observe a stripped greenheart log"
-			x: 4.0d
-			y: 2.0d
+			x: 1.0d
+			y: 2.5d
 			subtitle: "But what to do with it?"
-			min_required_dependencies: 1
-			dependencies: [
-				"226D246E5C81F020"
-				"5ACD90E637161C6D"
-			]
+			dependencies: ["5ACD90E637161C6D"]
 			invisible: true
 			id: "55D7C452A91BEA8D"
 			tasks: [{
@@ -47,8 +40,8 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: 3.0d
+			x: 2.0d
+			y: 1.5d
 			dependencies: ["037C6A9E7331A19C"]
 			invisible: true
 			id: "6ACE93F44C470D62"
@@ -63,8 +56,8 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: 3.0d
+			x: 1.0d
+			y: 1.5d
 			dependencies: ["6ACE93F44C470D62"]
 			invisible: true
 			id: "7464615230CFD315"
@@ -75,114 +68,129 @@
 			}]
 		}
 		{
-			icon: "tconstruct:earth_slime_sapling"
+			icon: "minecraft:magenta_glazed_terracotta"
+			x: 4.0d
+			y: 2.0d
+			description: [
+				"This quest will unlock a couple quests giving vague clues towards shortcuts. Those will allow you to unlock even more verbose hints."
+				"Dont bother trying to find structures, they are all disabled."
+			]
+			id: "18F9130A0C071C65"
+			tasks: [{
+				id: "1524AC9E071F7601"
+				type: "checkmark"
+				title: "Shortcuts?"
+			}]
+		}
+		{
+			title: "Hint 1.1"
+			x: 3.0d
+			y: 1.5d
+			description: ["You can freeze things"]
+			dependencies: ["18F9130A0C071C65"]
+			id: "0E1563E4B19FB1F8"
+			tasks: [{
+				id: "6B1E5CE0A03F4350"
+				type: "checkmark"
+				title: "Better Hint"
+			}]
+		}
+		{
+			title: "Hint 1.2"
+			x: 3.0d
+			y: 0.5d
+			description: ["Frozen water isn't only made from water"]
+			dependencies: ["0E1563E4B19FB1F8"]
+			id: "05F0B54EFFED58A6"
+			tasks: [{
+				id: "38B0D258E7215A83"
+				type: "checkmark"
+				title: "Reveal solution?"
+			}]
+		}
+		{
+			title: "Hint 2.1"
+			x: 3.0d
+			y: 2.5d
+			description: ["Andesite casings require what?"]
+			dependencies: ["18F9130A0C071C65"]
+			id: "4F89CBEAE368C3B6"
+			tasks: [{
+				id: "10D1D3240E6DB7A0"
+				type: "checkmark"
+				title: "Better Hint"
+			}]
+		}
+		{
+			title: "Hint 2.2"
+			x: 3.0d
+			y: 3.5d
+			description: ["You have leaves"]
+			dependencies: ["4F89CBEAE368C3B6"]
+			id: "01266B91E3A2E210"
+			tasks: [{
+				id: "040562E1173B220B"
+				type: "checkmark"
+				title: "Betterer Hint"
+			}]
+		}
+		{
+			title: "Hint 2.3"
+			x: 2.0d
+			y: 3.5d
+			description: ["All wood can be stripped"]
+			dependencies: ["01266B91E3A2E210"]
+			id: "5BCFE38E14097D2C"
+			tasks: [{
+				id: "585F35032B5BE74A"
+				type: "checkmark"
+				title: "Reveal solution?"
+			}]
+		}
+		{
+			title: "Solution 1"
+			x: 2.0d
+			y: 0.5d
+			description: ["You can freeze most tinkers fluids into ice, which you can break for water."]
+			dependencies: ["05F0B54EFFED58A6"]
+			id: "501B7406607DCE81"
+			tasks: [{
+				id: "6F84F4B624E5E851"
+				type: "item"
+				item: "minecraft:ice"
+			}]
+		}
+		{
+			title: "Solution 2"
+			x: 1.0d
+			y: 3.5d
+			description: ["Slimy leaves drop slimy saplings, which you can grow, and then strip the logs of to get andesite casings"]
+			dependencies: ["5BCFE38E14097D2C"]
+			id: "4651055858C9EAAF"
+			tasks: [{
+				id: "2D31F2764B3FC374"
+				type: "item"
+				item: "tconstruct:stripped_greenheart_log"
+			}]
+		}
+		{
 			x: 4.0d
 			y: 3.0d
-			invisible: true
-			id: "226D246E5C81F020"
-			tasks: [{
-				id: "1A4832EBD2B03C5E"
-				type: "structure"
-				title: "Find a Slime Island"
-				icon: "tconstruct:earth_slime_sapling"
-				structure: "tconstruct:earth_slime_island"
-			}]
-		}
-		{
-			title: "Slime Materials"
-			icon: "minecraft:slime_ball"
-			x: 3.0d
-			y: 3.0d
-			dependencies: ["226D246E5C81F020"]
-			invisible: true
-			id: "1F0B5457BB0B5412"
-			tasks: [
-				{
-					id: "702A159E65823DAA"
-					type: "item"
-					item: "minecraft:slime_ball"
-				}
-				{
-					id: "5995046B7E60C9EE"
-					type: "item"
-					item: "tconstruct:earth_slime_dirt"
-				}
+			subtitle: "Machine go nyoom"
+			dependencies: [
+				"4887A0F37F0FF05D"
+				"23696CD4F1516DA1"
+				"6EA8648EB67181A7"
 			]
-		}
-		{
-			x: 2.0d
-			y: 4.0d
-			invisible: true
-			id: "446E7A8231BE34A9"
+			id: "1562F68FB17D057C"
 			tasks: [{
-				id: "03C977FA52D4745F"
-				type: "structure"
-				title: "Find a Sky Slime Island"
-				icon: "tconstruct:sky_slime_sapling"
-				structure: "tconstruct:sky_slime_island"
-			}]
-		}
-		{
-			title: "Skyslime"
-			x: 2.0d
-			y: 3.0d
-			dependencies: ["446E7A8231BE34A9"]
-			id: "5C5779BEDE7DA142"
-			tasks: [{
-				id: "49FDC2B64A6A698E"
+				id: "025DF83F82AF32E0"
 				type: "item"
-				item: "tconstruct:sky_slime_ball"
-			}]
-		}
-		{
-			x: 2.0d
-			y: 2.0d
-			dependencies: ["4A1CC4979EF65CD5"]
-			id: "7D38AB9FFD2E510E"
-			tasks: [{
-				id: "14AF37007C8AC0B9"
-				type: "item"
-				title: "Wooden Log"
-				icon: "minecraft:oak_log"
 				item: {
-					id: "itemfilters:tag"
+					id: "tiab:time_in_a_bottle"
 					Count: 1b
-					tag: {
-						value: "minecraft:logs"
-					}
+					tag: { }
 				}
-			}]
-		}
-		{
-			x: 0.0d
-			y: 2.0d
-			dependencies: ["4A1CC4979EF65CD5"]
-			id: "4C8B327C5F6D756A"
-			tasks: [{
-				id: "5D7F247D1C999C7B"
-				type: "item"
-				title: "Mystical Flower"
-				icon: "botania:white_mystical_flower"
-				item: {
-					id: "itemfilters:tag"
-					Count: 1b
-					tag: {
-						value: "botania:mystical_flowers"
-					}
-				}
-			}]
-		}
-		{
-			x: 1.0d
-			y: 2.0d
-			invisible: true
-			id: "4A1CC4979EF65CD5"
-			tasks: [{
-				id: "2DBB3198B96E91F8"
-				type: "structure"
-				title: "Find a Clay Sky Island"
-				icon: "minecraft:spruce_sapling"
-				structure: "tconstruct:clay_island"
 			}]
 		}
 	]

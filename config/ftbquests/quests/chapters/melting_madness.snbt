@@ -78,6 +78,7 @@
 		{
 			x: 1.5d
 			y: 1.0d
+			description: ["Alloy it up!"]
 			dependencies: ["1FD5E5AC1B09F3CE"]
 			id: "66652730F0380203"
 			tasks: [{

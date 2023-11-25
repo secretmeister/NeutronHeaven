@@ -24,3 +24,4 @@ config/jade/jade.json
 config/pneumaticcraft/MicromissileDefaults.cfg
 config/roughlyenoughitems/hints.json
 config/roughlyenoughitems/config.json5
+config/roughlyenoughitems/pinyin_double.properties
