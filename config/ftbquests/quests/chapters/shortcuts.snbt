@@ -88,24 +88,26 @@
 			y: 1.5d
 			description: ["You can freeze things"]
 			dependencies: ["18F9130A0C071C65"]
+			hide_text_until_complete: true
 			id: "0E1563E4B19FB1F8"
 			tasks: [{
 				id: "6B1E5CE0A03F4350"
 				type: "checkmark"
-				title: "Better Hint"
+				title: "Hint 1"
 			}]
 		}
 		{
 			title: "Hint 1.2"
-			x: 3.0d
+			x: 2.5d
 			y: 0.5d
 			description: ["Frozen water isn't only made from water"]
 			dependencies: ["0E1563E4B19FB1F8"]
+			hide_text_until_complete: true
 			id: "05F0B54EFFED58A6"
 			tasks: [{
 				id: "38B0D258E7215A83"
 				type: "checkmark"
-				title: "Reveal solution?"
+				title: "Hint 2"
 			}]
 		}
 		{
@@ -114,11 +116,12 @@
 			y: 2.5d
 			description: ["Andesite casings require what?"]
 			dependencies: ["18F9130A0C071C65"]
+			hide_text_until_complete: true
 			id: "4F89CBEAE368C3B6"
 			tasks: [{
 				id: "10D1D3240E6DB7A0"
 				type: "checkmark"
-				title: "Better Hint"
+				title: "First Hint"
 			}]
 		}
 		{
@@ -127,11 +130,12 @@
 			y: 3.5d
 			description: ["You have leaves"]
 			dependencies: ["4F89CBEAE368C3B6"]
+			hide_text_until_complete: true
 			id: "01266B91E3A2E210"
 			tasks: [{
 				id: "040562E1173B220B"
 				type: "checkmark"
-				title: "Betterer Hint"
+				title: "Second Hint"
 			}]
 		}
 		{
@@ -140,24 +144,26 @@
 			y: 3.5d
 			description: ["All wood can be stripped"]
 			dependencies: ["01266B91E3A2E210"]
+			hide_text_until_complete: true
 			id: "5BCFE38E14097D2C"
 			tasks: [{
 				id: "585F35032B5BE74A"
 				type: "checkmark"
-				title: "Reveal solution?"
+				title: "Third Hint"
 			}]
 		}
 		{
 			title: "Solution 1"
-			x: 2.0d
+			x: 1.5d
 			y: 0.5d
 			description: ["You can freeze most tinkers fluids into ice, which you can break for water."]
 			dependencies: ["05F0B54EFFED58A6"]
+			hide_text_until_complete: true
 			id: "501B7406607DCE81"
 			tasks: [{
-				id: "6F84F4B624E5E851"
-				type: "item"
-				item: "minecraft:ice"
+				id: "547D232826E6E2CA"
+				type: "checkmark"
+				title: "Reveal Solution?"
 			}]
 		}
 		{
@@ -166,16 +172,17 @@
 			y: 3.5d
 			description: ["Slimy leaves drop slimy saplings, which you can grow, and then strip the logs of to get andesite casings"]
 			dependencies: ["5BCFE38E14097D2C"]
+			hide_text_until_complete: true
 			id: "4651055858C9EAAF"
 			tasks: [{
-				id: "2D31F2764B3FC374"
-				type: "item"
-				item: "tconstruct:stripped_greenheart_log"
+				id: "44E57B6C035BAF07"
+				type: "checkmark"
+				title: "Reveal Solution?"
 			}]
 		}
 		{
-			x: 4.0d
-			y: 3.0d
+			x: 5.0d
+			y: 2.0d
 			subtitle: "Machine go nyoom"
 			dependencies: [
 				"4887A0F37F0FF05D"
@@ -191,6 +198,78 @@
 					Count: 1b
 					tag: { }
 				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.5d
+			dependencies: [
+				"1378CBB9821082B6"
+				"5ACD90E637161C6D"
+			]
+			invisible: true
+			id: "76EB4622CEEC020B"
+			tasks: [{
+				id: "0C1E5A412C7E7F4B"
+				type: "item"
+				item: "tconstruct:greenheart_planks"
+			}]
+		}
+		{
+			title: "Hint 3.1"
+			x: 4.0d
+			y: 3.0d
+			description: ["This crafter has an interesting property"]
+			dependencies: ["18F9130A0C071C65"]
+			hide_text_until_complete: true
+			invisible_until_tasks: 1
+			id: "67FA084745FDC14C"
+			tasks: [{
+				id: "0D25A82E56F6A122"
+				type: "checkmark"
+				title: "Hint 1"
+			}]
+		}
+		{
+			title: "Hint 3.2"
+			x: 3.5d
+			y: 4.5d
+			description: ["It can craft from in world blocks"]
+			dependencies: ["67FA084745FDC14C"]
+			hide_text_until_complete: true
+			id: "07C52B93068DD14A"
+			tasks: [{
+				id: "1F4865347E856016"
+				type: "checkmark"
+				title: "Hint 2"
+			}]
+		}
+		{
+			title: "Hint 3.3"
+			x: 0.5d
+			y: 4.5d
+			description: ["Slime logs drop slime when you break them"]
+			dependencies: ["07C52B93068DD14A"]
+			hide_text_until_complete: true
+			id: "4C5417A9F2399E85"
+			tasks: [{
+				id: "402483A81A9DA1FB"
+				type: "checkmark"
+				title: "Hint 3"
+			}]
+		}
+		{
+			title: "Solution 3"
+			x: 0.0d
+			y: 3.5d
+			description: ["Green heart logs can be crafted into planks in world with a structured crafter"]
+			dependencies: ["4C5417A9F2399E85"]
+			hide_text_until_complete: true
+			id: "1DC608091514F19B"
+			tasks: [{
+				id: "7E5622117878E0E6"
+				type: "checkmark"
+				title: "Reveal Solution?"
 			}]
 		}
 	]

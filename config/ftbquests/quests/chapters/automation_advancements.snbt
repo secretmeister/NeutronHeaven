@@ -4,7 +4,7 @@
 	order_index: 2
 	filename: "automation_advancements"
 	title: "Automation Advancements"
-	icon: "craftingautomat:autocrafter"
+	icon: "create:mechanical_crafter"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
