@@ -2,17 +2,17 @@ LycheeRecipeManager.addRecipe("crushgravf", <recipetype:lychee:block_interacting
     .itemIn(<tag:items:crafttweaker:hammerandexca>)
     .blockIn(<block:minecraft:gravel>)
     .setGhost(true)
-    .post([LycheePosts.dropItem(<item:minecraft:sand>).condition([LycheeConditions.chance(0.5).description("Replaces with sand")]),LycheePosts.random([LycheePosts.dropItem(<item:minecraft:flint>).withWeight(2),LycheePosts.placeBlock(<block:minecraft:sand>).withWeight(18)]),LycheePosts.damageItem(1)]));
+    .post([LycheePosts.dropItem(<item:minecraft:sand>).condition([LycheeConditions.chance(0.5).description("Replaces with sand")]),LycheePosts.random([LycheePosts.dropItem(<item:minecraft:flint>).withWeight(2),LycheePosts.placeBlock(<block:minecraft:sand>).withWeight(12)]),LycheePosts.damageItem(1)]));
   LycheeRecipeManager.addRecipe("crushcobf", <recipetype:lychee:block_interacting>, new LycheeRecipeBuilder()
     .itemIn(<tag:items:crafttweaker:hammers>)
     .setGhost(true)
     .blockIn(<block:minecraft:cobblestone>)
-    .post([LycheePosts.dropItem(<item:minecraft:gravel>).condition([LycheeConditions.chance(0.5).description("Replaces with gravel")]),LycheePosts.random([LycheePosts.dropItem(<item:minecraft:coal>),LycheePosts.placeBlock(<block:minecraft:gravel>).withWeight(13)]),LycheePosts.damageItem(1)]));
+    .post([LycheePosts.dropItem(<item:minecraft:gravel>).condition([LycheeConditions.chance(0.5).description("Replaces with gravel")]),LycheePosts.random([LycheePosts.dropItem(<item:minecraft:coal>),LycheePosts.placeBlock(<block:minecraft:gravel>).withWeight(5)]),LycheePosts.damageItem(1)]));
 LycheeRecipeManager.addRecipe("crushgranf", <recipetype:lychee:block_interacting>, new LycheeRecipeBuilder()
     .itemIn(<tag:items:crafttweaker:hammers>)
     .blockIn(<block:minecraft:granite>)
     .setGhost(true)
-    .post([LycheePosts.dropItem(<item:minecraft:red_sand>).condition([LycheeConditions.chance(0.5).description("Replaces with red sand")]),LycheePosts.random([LycheePosts.dropItem(<item:create:crushed_raw_copper>),LycheePosts.placeBlock(<block:minecraft:red_sand>).withWeight(4)]),LycheePosts.damageItem(1)]));
+    .post([LycheePosts.dropItem(<item:minecraft:red_sand>).condition([LycheeConditions.chance(0.5).description("Replaces with red sand")]),LycheePosts.random([LycheePosts.dropItem(<item:create:crushed_raw_copper>),LycheePosts.placeBlock(<block:minecraft:red_sand>).withWeight(3)]),LycheePosts.damageItem(1)]));
 LycheeRecipeManager.addRecipe("crushcoarsedirtf", <recipetype:lychee:block_interacting>, new LycheeRecipeBuilder()
     .itemIn(<tag:items:crafttweaker:hammerandexca>)
     .blockIn(<block:minecraft:coarse_dirt>)

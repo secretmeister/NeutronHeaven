@@ -1,0 +1,9 @@
+
+["Enable Gamerule On Start"]
+	#Enable gamerule doCreativeFlight on world start
+	enableGameruleOnWorldStart = true
+
+["Command to Enable Flight"]
+	#Change this if you want to use a different command to grant flight e.g. /goflynow playername true
+	flightCommand = "flight"
+

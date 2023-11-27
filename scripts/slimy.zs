@@ -29,11 +29,11 @@ LycheeRecipeManager.addRecipe("soulsand", <recipetype:lychee:lightning_channelin
 LycheeRecipeManager.addRecipe("quartzinter", <recipetype:lychee:block_crushing>, new LycheeRecipeBuilder()
     .crushingFallingBlock(<block:minecraft:gravel>)
     .crushingLandingBlock(<block:minecraft:diorite>)
-    .post([LycheePosts.preventDefault(),LycheePosts.dropItem(<item:minecraft:quartz>).condition([LycheeConditions.chance(0.2)])]));
+    .post([LycheePosts.preventDefault(),LycheePosts.dropItem(<item:minecraft:quartz>).condition([LycheeConditions.chance(0.7)]),LycheePosts.dropItem(<item:create:crushed_raw_zinc>).condition([LycheeConditions.chance(0.1)])]));
 LycheeRecipeManager.addRecipe("lapisinter", <recipetype:lychee:block_crushing>, new LycheeRecipeBuilder()
     .crushingFallingBlock(<block:minecraft:blue_concrete_powder>)
     .crushingLandingBlock(<block:minecraft:diorite>)
-    .post([LycheePosts.preventDefault(),LycheePosts.dropItem(<item:minecraft:lapis_lazuli>).condition([LycheeConditions.chance(0.3)]),LycheePosts.dropItem(<item:minecraft:quartz>).condition([LycheeConditions.chance(0.075)])]));
+    .post([LycheePosts.preventDefault(),LycheePosts.dropItem(<item:minecraft:lapis_lazuli>).condition([LycheeConditions.chance(0.5)]),LycheePosts.dropItem(<item:minecraft:quartz>).condition([LycheeConditions.chance(0.1)])]));
 LycheeRecipeManager.addRecipe("lapisgood", <recipetype:lychee:block_crushing>, new LycheeRecipeBuilder()
     .crushingFallingBlock(<tag:blocks:minecraft:anvil>)
     .crushingLandingBlock(<block:minecraft:diorite>)
@@ -79,7 +79,7 @@ LycheeRecipeManager.addRecipe("clear", <recipetype:lychee:item_burning>, new Lyc
   	"item":"minecraft:trident",
   	"nbt":"{\"Enchantments\":[{\"id\": \"minecraft:channeling\", \"lvl\": 1}] }"
     },
-  "cooling_time": 300
+  "cooling_time": 100
 });
 
 LycheeRecipeManager.addRecipe("earthslimecryst", <recipetype:lychee:block_interacting>, new LycheeRecipeBuilder()

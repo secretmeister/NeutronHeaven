@@ -8,6 +8,9 @@ recipes.remove(<item:create:belt_connector>);
 recipes.remove(<item:create:blaze_cake>);
 recipes.remove(<item:create:encased_chain_drive>);
 <recipetype:create:filling>.remove(<item:minecraft:grass_block>);
+<recipetype:create:crushing>.removeByInput(<item:minecraft:diorite>);
+<recipetype:create:milling>.removeByInput(<item:minecraft:calcite>);
+
 
 <recipetype:create:item_application>.addRecipe("copcas", [<item:create:copper_casing>], <item:minecraft:polished_andesite>, <item:create:copper_sheet>, false);
 
@@ -23,11 +26,10 @@ craftingTable.addShapeless("alloy",<item:create:andesite_alloy>, [<item:minecraf
 <recipetype:create:filling>.addRecipe("blazcak",<item:create:blaze_cake>, <item:create:blaze_cake_base>, <fluid:tconstruct:blazing_blood>*150);
 <recipetype:create:filling>.addRecipe("end",<item:tconstruct:ender_slime_grass_seeds>, <item:botania:mutated_seeds>, <fluid:tconstruct:ender_slime>*750);
 
-<recipetype:create:milling>.removeByInput(<item:minecraft:calcite>);
 <recipetype:create:milling>.addRecipe("calcite", [<item:minecraft:white_dye>%75], <item:minecraft:calcite>, 200);
 <recipetype:create:milling>.addRecipe("snow", [<item:minecraft:snowball>*3%75,<item:minecraft:snowball>%50], <item:minecraft:packed_ice>, 100);
-
-<recipetype:create:crushing>.addRecipe("string", [<item:minecraft:string>*5%80,<item:minecraft:string>*2%65,<item:minecraft:string>%40], <item:minecraft:cobweb>, 20);
+<recipetype:create:milling>.addRecipe("zinc", [<item:minecraft:quartz>%75,<item:create:crushed_raw_zinc>%20], <item:minecraft:diorite>, 200);
+<recipetype:create:milling>.addRecipe("string", [<item:minecraft:string>*5%80,<item:minecraft:string>*2%65,<item:minecraft:string>%40], <item:minecraft:cobweb>, 20);
 
 <recipetype:create:compacting>.addRecipe("amethy", <constant:create:heat_condition:none>, [<item:minecraft:amethyst_block>], [<item:botania:lavender_quartz>, <item:tconstruct:earth_slime_crystal_block>], []);
 <recipetype:create:compacting>.addRecipe("feather", <constant:create:heat_condition:none>, [<item:minecraft:feather>*4], [<item:create:white_sail>], [<fluid:tconstruct:blood>*250]);

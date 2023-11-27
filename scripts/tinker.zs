@@ -1,6 +1,9 @@
 <recipetype:tconstruct:alloying>.removeByName("tconstruct:smeltery/alloys/molten_slimesteel");
 <recipetype:tconstruct:alloying>.removeByName("tconstruct:smeltery/alloys/molten_brass");
 <recipetype:tconstruct:casting_basin>.removeByName("tconstruct:smeltery/casting/slime/earth/dirt");
+<recipetype:tconstruct:melting>.removeByInput(<item:minecraft:anvil>);
+<recipetype:tconstruct:melting>.removeByInput(<item:minecraft:chipped_anvil>);
+<recipetype:tconstruct:melting>.removeByInput(<item:minecraft:damaged_anvil>);
 
 
 <recipetype:tconstruct:molding_table>.addJsonRecipe("roundplatesand",{
@@ -88,10 +91,22 @@
   },
   "result": {
     "fluid": "tconstruct:molten_iron",
-    "amount": 60
+    "amount": 70
   },
   "temperature": 500,
   "time": 200
+});
+<recipetype:tconstruct:melting>.addJsonRecipe("anv",{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "minecraft:anvil"
+  },
+  "result": {
+    "fluid": "tconstruct:molten_iron",
+    "amount": 360
+  },
+  "temperature": 500,
+  "time": 300
 });
 <recipetype:tconstruct:melting>.addJsonRecipe("crushediron",{
   "type": "tconstruct:melting",
