@@ -83,3 +83,10 @@ LycheeRecipeManager.addRecipe("claybetf", <recipetype:lychee:item_inside>, new L
     .setGhost(true)
     .post([LycheePosts.dropItem(<item:minecraft:clay>).condition(LycheeConditions.chance(0.8).description("Mixes with the water to become clay"))])
 );
+
+LycheeRecipeManager.addRecipe("redst3f", <recipetype:lychee:block_crushing>, new LycheeRecipeBuilder()
+    .itemIn(<item:minecraft:redstone_block>)
+    .crushingFallingBlock(<tag:blocks:minecraft:anvil>)
+    .crushingLandingBlock(<block:minecraft:deepslate>)
+    .setGhost(true)
+    .post([LycheePosts.anvilDamageChance(0.9),LycheePosts.dropItem(<item:minecraft:deepslate_redstone_ore>).condition([LycheeConditions.chance(0.5).description("Forces the redstone into the deepslate, making a permanent source of redstone! (has a 90% chance to damage anvil)")])]));

@@ -125,10 +125,20 @@ LycheeRecipeManager.addRecipe("redst", <recipetype:lychee:block_crushing>, new L
     .crushingLandingBlock(<block:minecraft:stone>)
     .setHideInJEI(true)
     .post([LycheePosts.anvilDamageChance(0.1),LycheePosts.placeBlock(<block:minecraft:redstone_ore>)]));
+LycheeRecipeManager.addRecipe("redst3", <recipetype:lychee:block_crushing>, new LycheeRecipeBuilder()
+    .itemIn(<item:minecraft:redstone_block>)
+    .crushingFallingBlock(<tag:blocks:minecraft:anvil>)
+    .crushingLandingBlock(<block:minecraft:deepslate>)
+    .setHideInJEI(true)
+    .post([LycheePosts.anvilDamageChance(0.9),LycheePosts.placeBlock(<block:minecraft:deepslate_redstone_ore>)]));
 LycheeRecipeManager.addRecipe("redst2", <recipetype:lychee:block_crushing>, new LycheeRecipeBuilder()
     .crushingFallingBlock(<block:minecraft:sand>)
     .crushingLandingBlock(<block:minecraft:redstone_ore>)
-    .post([LycheePosts.dropItem(<item:minecraft:redstone>).condition([LycheeConditions.chance(0.4)]),LycheePosts.preventDefault()]));
+    .post([LycheePosts.dropItem(<item:minecraft:redstone>).condition([LycheeConditions.chance(0.4)]),LycheePosts.placeBlock(<block:minecraft:stone>).condition([LycheeConditions.chance(0.01)]),LycheePosts.preventDefault()]));
+LycheeRecipeManager.addRecipe("redst4", <recipetype:lychee:block_crushing>, new LycheeRecipeBuilder()
+    .crushingFallingBlock(<block:minecraft:sand>)
+    .crushingLandingBlock(<block:minecraft:deepslate_redstone_ore>)
+    .post([LycheePosts.dropItem(<item:minecraft:redstone>).condition([LycheeConditions.chance(0.5)]),LycheePosts.preventDefault()]));
 
 
 
